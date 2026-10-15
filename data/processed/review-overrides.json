@@ -1,0 +1,58 @@
+{
+  "lessonpro": {
+    "review_status": "approved",
+    "verified_at": "2026-03-19",
+    "reviewer_note": "与一线课堂任务匹配度高，可前台展示。",
+    "featured": true,
+    "is_active": true,
+    "is_member_only": false
+  },
+  "slidegenius": {
+    "review_status": "approved",
+    "verified_at": "2026-03-20",
+    "reviewer_note": "适合课件场景，保留推荐位。",
+    "featured": true,
+    "is_active": true,
+    "is_member_only": false
+  },
+  "gradergpt": {
+    "review_status": "approved",
+    "verified_at": "2026-03-20",
+    "reviewer_note": "大班批改场景价值明确。",
+    "featured": true,
+    "is_active": true,
+    "is_member_only": false
+  },
+  "quizwiz": {
+    "review_status": "approved",
+    "verified_at": "2026-03-18",
+    "reviewer_note": "出题能力可用，需提示教师二次审题。",
+    "featured": false,
+    "is_active": true,
+    "is_member_only": false
+  },
+  "scholarsync": {
+    "review_status": "pending",
+    "verified_at": null,
+    "reviewer_note": "等待补充国内可访问性说明。",
+    "featured": false,
+    "is_active": false,
+    "is_member_only": true
+  },
+  "edumind": {
+    "review_status": "approved",
+    "verified_at": "2026-03-17",
+    "reviewer_note": "适合师范生试讲准备。",
+    "featured": false,
+    "is_active": true,
+    "is_member_only": false
+  },
+  "linguatutor": {
+    "review_status": "approved",
+    "verified_at": "2026-03-19",
+    "reviewer_note": "国际课程场景保留，标记付费与门槛提示。",
+    "featured": true,
+    "is_active": true,
+    "is_member_only": false
+  }
+}

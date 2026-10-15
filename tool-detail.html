@@ -1,0 +1,643 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>工具详情评测 | 师航AI</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries,line-clamp"></script>
+    <link rel="stylesheet" href="./globals.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <script id="tailwind-config">
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                primary: "rgb(var(--brand-primary) / <alpha-value>)",
+                light: "rgb(var(--brand-primary-light) / <alpha-value>)",
+                dark: "rgb(var(--brand-primary-dark) / <alpha-value>)"
+              },
+              surface: {
+                page: "rgb(var(--surface-page) / <alpha-value>)",
+                card: "rgb(var(--surface-card) / <alpha-value>)",
+                soft: "rgb(var(--surface-soft) / <alpha-value>)"
+              },
+              text: {
+                primary: "rgb(var(--text-primary) / <alpha-value>)",
+                secondary: "rgb(var(--text-secondary) / <alpha-value>)",
+                muted: "rgb(var(--text-muted) / <alpha-value>)"
+              },
+              stroke: {
+                default: "rgb(var(--stroke-default) / <alpha-value>)",
+                subtle: "rgb(var(--stroke-subtle) / <alpha-value>)"
+              },
+              state: {
+                success: "rgb(var(--state-success) / <alpha-value>)",
+                warning: "rgb(var(--state-warning) / <alpha-value>)",
+                error: "rgb(var(--state-error) / <alpha-value>)"
+              }
+            },
+            fontFamily: {
+              display: ["Inter", "PingFang SC", "Microsoft YaHei", "sans-serif"]
+            },
+            borderRadius: {
+              lg: "var(--radius-sm)",
+              xl: "var(--radius-md)",
+              "2xl": "var(--radius-lg)",
+              full: "var(--radius-full)"
+            },
+            boxShadow: {
+              card: "0 1px 2px rgba(32, 33, 36, 0.06)",
+              "card-hover": "0 8px 24px rgba(32, 33, 36, 0.12)"
+            }
+          }
+        }
+      };
+    </script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+      }
+      .fill-1 {
+        font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+      }
+    </style>
+  </head>
+  <body class="bg-surface-page font-display text-text-primary">
+    <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+      <header class="sticky top-0 z-50 border-b border-stroke-default bg-surface-card/95 px-6 py-4 backdrop-blur md:px-20">
+        <div class="mx-auto flex max-w-7xl items-center justify-between gap-8">
+          <a class="flex items-center gap-4 text-brand-primary" href="./index.html">
+            <span class="material-symbols-outlined text-3xl">auto_stories</span>
+            <div>
+              <h2 class="text-xl font-bold leading-tight tracking-tight text-text-primary">师航AI</h2>
+              <p class="hidden text-xs font-medium text-text-secondary xl:block">师范生与教育工作者的 AI 工具导航与资源平台</p>
+            </div>
+          </a>
+          <nav class="hidden items-center gap-7 md:flex">
+            <a class="text-sm font-medium text-text-secondary transition-colors hover:text-brand-primary" href="./index.html">首页</a>
+            <a class="text-sm font-semibold text-brand-primary" href="./directory.html">工具目录</a>
+            <a class="text-sm font-medium text-text-secondary transition-colors hover:text-brand-primary" href="./resources.html">资源库</a>
+            <a class="text-sm font-medium text-text-secondary transition-colors hover:text-brand-primary" href="./community.html">社区</a>
+            <a class="text-sm font-medium text-text-secondary transition-colors hover:text-brand-primary" href="./pricing.html">会员计划</a>
+          </nav>
+          <a class="rounded-lg bg-brand-primary px-4 py-2 text-sm font-bold text-white transition-colors hover:bg-brand-dark" href="./directory.html">返回目录</a>
+        </div>
+      </header>
+
+      <main class="mx-auto w-full max-w-7xl flex-1 px-4 py-8 md:px-20">
+        <section class="grid grid-cols-1 gap-6 border-b border-stroke-default pb-8 lg:grid-cols-3">
+          <div class="space-y-5 lg:col-span-2">
+            <div class="flex items-start gap-5">
+              <img id="tool-cover" class="size-24 shrink-0 rounded-xl border border-brand-primary/20 object-cover md:size-28" alt="工具封面" src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=300&q=80" />
+              <div class="space-y-3">
+                <div class="flex flex-wrap items-center gap-2">
+                  <h1 class="text-3xl font-extrabold" id="tool-name">工具加载中...</h1>
+                  <span class="rounded-full bg-brand-light px-2 py-1 text-xs font-bold text-brand-primary" id="tool-source">编辑整理</span>
+                  <span class="rounded-full bg-state-success/15 px-2 py-1 text-xs font-bold text-state-success" id="tool-status">持续维护</span>
+                </div>
+                <p class="text-base text-text-secondary" id="tool-short-description">正在读取工具信息...</p>
+                <div class="flex flex-wrap gap-2" id="tool-target-users"></div>
+                <div class="flex flex-wrap items-center gap-4">
+                  <div class="flex items-center text-state-warning" id="tool-rating-stars"></div>
+                  <span class="text-sm text-text-secondary">最近更新：<span id="tool-updated">-</span></span>
+                </div>
+                <div class="flex gap-3 pt-1">
+                  <a class="rounded-lg bg-brand-primary px-5 py-2.5 text-sm font-bold text-white transition-colors hover:bg-brand-dark" id="tool-official-link" href="./directory.html" target="_blank" rel="noopener">访问工具官网</a>
+                  <a class="rounded-lg border border-brand-primary px-5 py-2.5 text-sm font-bold text-brand-primary transition-colors hover:bg-brand-light" href="./resources.html">查看配套资源</a>
+                </div>
+              </div>
+            </div>
+
+            <article class="rounded-xl border border-brand-primary/20 bg-brand-light/30 p-5" id="editor-conclusion">
+              <h2 class="mb-2 text-lg font-bold text-text-primary">编辑结论</h2>
+              <p class="text-sm leading-relaxed text-text-secondary" id="editor-conclusion-text">正在生成评测结论...</p>
+            </article>
+          </div>
+
+          <aside class="rounded-2xl border border-brand-primary/20 bg-surface-card p-5 shadow-card">
+            <h2 class="mb-4 text-base font-bold">快速决策摘要卡</h2>
+            <div class="space-y-2 text-sm">
+              <div class="flex items-center justify-between rounded-lg bg-surface-soft px-3 py-2"><span class="text-text-secondary">中文支持</span><span class="font-bold" id="summary-cn-support">-</span></div>
+              <div class="flex items-center justify-between rounded-lg bg-surface-soft px-3 py-2"><span class="text-text-secondary">价格类型</span><span class="font-bold" id="summary-pricing">-</span></div>
+              <div class="flex items-center justify-between rounded-lg bg-surface-soft px-3 py-2"><span class="text-text-secondary">国内访问</span><span class="font-bold" id="summary-access">-</span></div>
+              <div class="rounded-lg bg-surface-soft px-3 py-2">
+                <p class="mb-1 text-text-secondary">适合对象</p>
+                <p class="font-semibold" id="summary-users">-</p>
+              </div>
+              <div class="rounded-lg bg-surface-soft px-3 py-2">
+                <p class="mb-1 text-text-secondary">适合任务</p>
+                <p class="font-semibold" id="summary-tasks">-</p>
+              </div>
+              <div class="flex items-center justify-between rounded-lg bg-surface-soft px-3 py-2"><span class="text-text-secondary">最近更新</span><span class="font-bold" id="summary-updated">-</span></div>
+              <div class="flex items-center justify-between rounded-lg bg-surface-soft px-3 py-2"><span class="text-text-secondary">信息来源</span><span class="font-bold" id="summary-source">-</span></div>
+            </div>
+          </aside>
+        </section>
+
+        <div class="mb-8 mt-2 flex overflow-x-auto border-b border-stroke-default">
+          <a class="whitespace-nowrap border-b-2 border-brand-primary px-6 py-4 text-sm font-bold text-brand-primary" href="#teacher-feature">任务能力</a>
+          <a class="whitespace-nowrap px-6 py-4 text-sm font-bold text-text-secondary hover:text-brand-primary" href="#china-cases">课堂案例</a>
+          <a class="whitespace-nowrap px-6 py-4 text-sm font-bold text-text-secondary hover:text-brand-primary" href="#fit">适配结论</a>
+          <a class="whitespace-nowrap px-6 py-4 text-sm font-bold text-text-secondary hover:text-brand-primary" href="#compare">替代工具</a>
+          <a class="whitespace-nowrap px-6 py-4 text-sm font-bold text-text-secondary hover:text-brand-primary" href="#prompt-demo">示例 Prompt</a>
+          <a class="whitespace-nowrap px-6 py-4 text-sm font-bold text-text-secondary hover:text-brand-primary" href="#resources-reco">相关资源</a>
+          <a class="whitespace-nowrap px-6 py-4 text-sm font-bold text-text-secondary hover:text-brand-primary" href="#review-basis">评测依据</a>
+        </div>
+
+        <div class="grid grid-cols-1 gap-12 lg:grid-cols-3">
+          <div class="space-y-12 lg:col-span-2">
+            <section id="teacher-feature">
+              <h2 class="mb-6 text-2xl font-bold">教师任务能力总览</h2>
+              <div class="grid grid-cols-1 gap-4 md:grid-cols-2" id="tool-features-grid"></div>
+            </section>
+
+            <section id="china-cases">
+              <h2 class="mb-6 text-2xl font-bold">中国课堂案例</h2>
+              <div class="space-y-4" id="tool-scenarios-list"></div>
+            </section>
+
+            <section id="fit">
+              <h2 class="mb-6 text-2xl font-bold">适合谁 / 不适合谁</h2>
+              <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+                <article class="rounded-xl border border-state-success/30 bg-state-success/5 p-5">
+                  <h3 class="mb-3 flex items-center gap-2 font-bold text-state-success"><span class="material-symbols-outlined">thumb_up</span>适合谁</h3>
+                  <ul class="space-y-2 text-sm text-text-secondary" id="fit-for-list"></ul>
+                </article>
+                <article class="rounded-xl border border-state-error/30 bg-state-error/5 p-5">
+                  <h3 class="mb-3 flex items-center gap-2 font-bold text-state-error"><span class="material-symbols-outlined">thumb_down</span>不适合谁</h3>
+                  <ul class="space-y-2 text-sm text-text-secondary" id="not-fit-list"></ul>
+                </article>
+              </div>
+            </section>
+
+            <section id="compare">
+              <h2 class="mb-6 text-2xl font-bold">替代工具对比</h2>
+              <div class="overflow-x-auto rounded-xl border border-stroke-default bg-surface-card">
+                <table class="min-w-[760px] w-full text-left text-sm">
+                  <thead class="bg-surface-soft">
+                    <tr>
+                      <th class="px-4 py-3 font-bold">工具名称</th>
+                      <th class="px-4 py-3 font-bold">匹配任务</th>
+                      <th class="px-4 py-3 font-bold">中文支持 / 价格</th>
+                      <th class="px-4 py-3 font-bold">评分</th>
+                    </tr>
+                  </thead>
+                  <tbody class="divide-y divide-stroke-subtle" id="alternatives-body"></tbody>
+                </table>
+              </div>
+            </section>
+
+            <section id="prompt-demo">
+              <h2 class="mb-6 text-2xl font-bold">示例 Prompt / 示例产出</h2>
+              <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+                <article class="rounded-xl border border-stroke-default bg-surface-card p-5">
+                  <h3 class="mb-3 text-base font-bold">可复制 Prompt</h3>
+                  <pre class="whitespace-pre-wrap rounded-lg bg-surface-soft p-4 text-sm leading-relaxed text-text-secondary" id="sample-prompt"></pre>
+                </article>
+                <article class="rounded-xl border border-stroke-default bg-surface-card p-5">
+                  <h3 class="mb-3 text-base font-bold">示例产出片段</h3>
+                  <pre class="whitespace-pre-wrap rounded-lg bg-surface-soft p-4 text-sm leading-relaxed text-text-secondary" id="sample-output"></pre>
+                </article>
+              </div>
+            </section>
+
+            <section id="resources-reco">
+              <h2 class="mb-6 text-2xl font-bold">相关资源推荐</h2>
+              <div class="grid grid-cols-1 gap-4 md:grid-cols-3" id="resource-recommend-grid"></div>
+            </section>
+
+            <section id="review-basis">
+              <h2 class="mb-4 text-2xl font-bold">最近更新时间与评测依据</h2>
+              <article class="rounded-xl border border-stroke-default bg-surface-card p-5 text-sm text-text-secondary">
+                <p>最近更新时间：<span class="font-semibold text-text-primary" id="review-last-updated">-</span></p>
+                <p class="mt-2">评测依据：<span class="font-semibold text-text-primary" id="review-source">-</span> + 编辑实测 + 教学场景核对。</p>
+                <p class="mt-2">审核状态：<span class="font-semibold text-text-primary" id="review-status">-</span>。如工具近期策略变更，请以官网公告为准。</p>
+                <p class="mt-2">评测说明：本站优先评估“是否适合中国课堂落地”，不承诺替代教师专业判断。</p>
+              </article>
+            </section>
+          </div>
+
+          <aside class="space-y-6">
+            <div class="sticky top-24 space-y-6">
+              <div class="rounded-xl border border-stroke-default bg-surface-card p-5">
+                <h3 class="mb-4 text-base font-bold">教育评测结果</h3>
+                <div class="grid grid-cols-1 gap-3 text-sm">
+                  <div class="rounded-lg bg-surface-soft p-3"><p class="text-xs text-text-muted">教学实用性</p><p class="mt-1 text-base font-bold" id="metric-teaching">-</p></div>
+                  <div class="rounded-lg bg-surface-soft p-3"><p class="text-xs text-text-muted">中文适配度</p><p class="mt-1 text-base font-bold" id="metric-chinese">-</p></div>
+                  <div class="rounded-lg bg-surface-soft p-3"><p class="text-xs text-text-muted">上手难度</p><p class="mt-1 text-base font-bold" id="metric-ease">-</p></div>
+                  <div class="rounded-lg bg-surface-soft p-3"><p class="text-xs text-text-muted">性价比</p><p class="mt-1 text-base font-bold" id="metric-cost">-</p></div>
+                  <div class="rounded-lg bg-surface-soft p-3"><p class="text-xs text-text-muted">师范生友好度</p><p class="mt-1 text-base font-bold" id="metric-normal-student">-</p></div>
+                </div>
+              </div>
+
+              <div class="rounded-xl border border-stroke-default bg-surface-card p-5">
+                <h3 class="mb-4 text-base font-bold">相关标签</h3>
+                <div class="flex flex-wrap gap-2" id="tool-tags"></div>
+                <a class="mt-4 inline-flex w-full items-center justify-center rounded-lg border border-brand-primary px-4 py-2.5 text-sm font-bold text-brand-primary transition-colors hover:bg-brand-light" href="./directory.html">回到目录继续筛选</a>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </main>
+
+      <footer class="mt-12 border-t border-stroke-default bg-surface-card px-6 py-12 md:px-20">
+        <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-8 md:flex-row">
+          <div class="flex items-center gap-3">
+            <div class="flex size-6 items-center justify-center rounded bg-brand-primary text-white">
+              <span class="material-symbols-outlined text-sm">school</span>
+            </div>
+            <span class="font-bold text-text-primary">师航AI</span>
+          </div>
+          <div class="flex gap-8">
+            <a class="text-sm text-text-secondary hover:text-brand-primary" href="./pricing.html">隐私政策</a>
+            <a class="text-sm text-text-secondary hover:text-brand-primary" href="./pricing.html">服务条款</a>
+            <a class="text-sm text-text-secondary hover:text-brand-primary" href="./community.html">联系我们</a>
+          </div>
+          <p class="text-sm text-text-muted">© 2024 师航AI · 师范生与教育工作者的 AI 工具导航与资源平台</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./js/tools-data.js"></script>
+    <script>
+      (async function renderToolDetail() {
+        const params = new URLSearchParams(window.location.search);
+        const slug = String(params.get("slug") || "").trim().toLowerCase();
+        const id = String(params.get("id") || "").trim().toLowerCase();
+
+        function $(idValue) {
+          return document.getElementById(idValue);
+        }
+
+        function escapeHTML(value) {
+          return String(value || "")
+            .replace(/&/g, "&amp;")
+            .replace(/</g, "&lt;")
+            .replace(/>/g, "&gt;")
+            .replace(/"/g, "&quot;")
+            .replace(/'/g, "&#39;");
+        }
+
+        function setText(idValue, value) {
+          const el = $(idValue);
+          if (el) el.textContent = value;
+        }
+
+        function setHTML(idValue, html) {
+          const el = $(idValue);
+          if (el) el.innerHTML = html;
+        }
+
+        function pricingLabel(type) {
+          if (type === "免费") return "免费";
+          if (type === "免费增值") return "部分免费";
+          if (type === "付费") return "付费";
+          return type || "未知";
+        }
+
+        function accessLabel(type) {
+          if (type === "国内可直连") return "可直连";
+          if (type === "需注册") return "需注册";
+          if (type === "需特殊网络") return "需特殊网络";
+          return type || "未知";
+        }
+
+        function ratingStars(rating) {
+          const score = Number(rating || 0);
+          const full = Math.floor(score);
+          const half = score - full >= 0.5;
+          const empty = 5 - full - (half ? 1 : 0);
+          let html = "";
+          for (let i = 0; i < full; i += 1) html += '<span class="material-symbols-outlined fill-1 text-xl">star</span>';
+          if (half) html += '<span class="material-symbols-outlined fill-1 text-xl">star_half</span>';
+          for (let i = 0; i < empty; i += 1) html += '<span class="material-symbols-outlined text-xl">star</span>';
+          html += '<span class="ml-2 font-bold text-text-primary">' + score.toFixed(1) + "</span>";
+          return html;
+        }
+
+        function scoreLabel(value) {
+          return Number(value || 0).toFixed(1) + " / 5";
+        }
+
+        function normalizeDate(value) {
+          if (!value) return "未知";
+          const date = new Date(value);
+          if (Number.isNaN(date.getTime())) return String(value);
+          return date.toISOString().slice(0, 10);
+        }
+
+        function defaultPromptByScenario(scenario, toolName) {
+          if (scenario === "说课稿") {
+            return (
+              "你是一名高中语文教研员，请为《荷塘月色》生成一份 12 分钟说课稿。\n" +
+              "要求：\n" +
+              "1. 含学情分析、教学目标、重难点、教学流程、板书设计。\n" +
+              "2. 每一环节标注时间分配。\n" +
+              "3. 增加 2 个课堂提问和预设追问。\n" +
+              "4. 语言适合新教师试讲。"
+            );
+          }
+          if (scenario === "PPT课件") {
+            return (
+              "请基于小学四年级数学《小数的意义》生成 18 页课堂课件大纲。\n" +
+              "要求包含：导入、例题讲解、课堂练习、易错点提醒、当堂小测、课后作业。\n" +
+              "每页给出标题和核心文案，风格清晰简洁。"
+            );
+          }
+          return (
+            "请以“高中语文必修上《赤壁赋》”为主题，生成一份可直接使用的教案框架。\n" +
+            "要求：\n" +
+            "1. 45 分钟课时；2. 明确目标、重难点与评价方式；3. 提供分层任务；4. 输出可复制到 Word 的结构。"
+          );
+        }
+
+        function defaultOutputByScenario(scenario) {
+          if (scenario === "说课稿") {
+            return (
+              "【教学目标】\n" +
+              "1. 梳理文章意象与情感线索；2. 学会用“景—情—理”结构分析散文；3. 提升朗读与鉴赏表达。\n\n" +
+              "【教学流程】\n" +
+              "导入(2') -> 初读感知(3') -> 重点赏析(4') -> 互动提问(2') -> 小结与迁移(1')\n\n" +
+              "【预设提问】\n" +
+              "Q1：作者为何反复写月色与荷香？\n" +
+              "追问：这种描写如何服务人物心境变化？"
+            );
+          }
+          if (scenario === "PPT课件") {
+            return (
+              "第1页：课程导入《生活中的小数》\n" +
+              "第2页：学习目标与关键问题\n" +
+              "第3-6页：概念讲解与图示\n" +
+              "第7-10页：例题分步演示\n" +
+              "第11-14页：课堂练习（分层）\n" +
+              "第15页：易错点总结\n" +
+              "第16页：当堂小测\n" +
+              "第17页：答案与讲评要点\n" +
+              "第18页：课后任务与家校延伸"
+            );
+          }
+          return (
+            "【教案框架】\n" +
+            "一、学情分析\n" +
+            "二、教学目标（知识/能力/素养）\n" +
+            "三、教学重难点\n" +
+            "四、教学过程（导入-探究-应用-总结）\n" +
+            "五、作业设计（基础/提升）\n" +
+            "六、板书设计\n" +
+            "七、教学反思模板"
+          );
+        }
+
+        function resourceCardsByTool(tool) {
+          const task = (tool.usage_scenarios || [])[0] || "教案";
+          return [
+            {
+              title: task + "模板包",
+              desc: "可直接复用的课堂结构模板，含导入、活动、评价与反思。",
+              link: "./resources.html"
+            },
+            {
+              title: "说课稿模板",
+              desc: "适合试讲和比赛的说课结构模板，支持时间分配与板书方案。",
+              link: "./resources.html"
+            },
+            {
+              title: "Prompt 提示词清单",
+              desc: "覆盖教案、PPT、作业批改与教学反思的高频提示词。",
+              link: "./resources.html"
+            }
+          ];
+        }
+
+        function editorConclusion(tool) {
+          const pricing = pricingLabel(tool.pricing_type);
+          const users = (tool.target_users || []).slice(0, 2).join("、") || "教育工作者";
+          const fit = (tool.fit_for || [])[0] || "需要提升备课效率的人群";
+          const notFit = (tool.not_fit_for || [])[0] || "希望完全零修改自动生成的人群";
+          return (
+            "结论：值得先试。该工具在“" + ((tool.usage_scenarios || [])[0] || "教学任务") + "”场景表现稳定，" +
+            "对 " + users + " 更友好。当前价格类型为“" + pricing + "”，建议先用免费能力验证课堂匹配度，再决定是否长期投入。 " +
+            "总体更适合：" + fit + "；不太适合：" + notFit + "。"
+          );
+        }
+
+        function fillFallbackScenarios(tool) {
+          const list = (tool.scenarios || []).filter(function (item) {
+            return item && item.value && item.value !== "待补充案例描述";
+          });
+          if (list.length) return list;
+
+          const firstTask = (tool.usage_scenarios || [])[0] || "教案";
+          return [
+            {
+              title: "高中语文说课与试讲打磨",
+              context: "新教师公开课准备",
+              value: "先用工具生成说课主线，再人工加入班级学情与课堂互动设计，可把试讲准备时间压缩到 1-2 天。"
+            },
+            {
+              title: "小学数学教案结构搭建",
+              context: "师范生教育实习",
+              value: "围绕“目标-活动-评价”快速搭建教案初稿，教师只需补充本校教学进度和差异化任务。"
+            },
+            {
+              title: "任务拓展：" + firstTask,
+              context: "常态课堂提效",
+              value: "将工具产出作为第一版，再结合班级实际二次修订，兼顾效率与教学专业性。"
+            }
+          ];
+        }
+
+        function similarTools(currentTool, tools) {
+          const currentScenarios = currentTool.usage_scenarios || [];
+          const currentCategory = currentTool.category || "";
+          return tools
+            .filter((tool) => tool.is_active && tool.id !== currentTool.id)
+            .map(function (tool) {
+              let score = 0;
+              if (tool.category === currentCategory) score += 3;
+              (tool.usage_scenarios || []).forEach(function (scenario) {
+                if (currentScenarios.includes(scenario)) score += 2;
+              });
+              return { tool, score };
+            })
+            .filter((item) => item.score > 0)
+            .sort((a, b) => b.score - a.score || Number(b.tool.rating || 0) - Number(a.tool.rating || 0))
+            .slice(0, 4)
+            .map((item) => item.tool);
+        }
+
+        try {
+          const response = await fetch("./data/tools.json", { cache: "no-store" });
+          if (!response.ok) throw new Error("读取 data/tools.json 失败");
+          const tools = await response.json();
+          const list = Array.isArray(tools) ? tools : [];
+
+          const target =
+            list.find((tool) => String(tool.slug || "").toLowerCase() === slug) ||
+            list.find((tool) => String(tool.id || "").toLowerCase() === id) ||
+            list.find((tool) => tool.is_active) ||
+            list[0];
+          if (!target) throw new Error("工具不存在");
+
+          document.title = (target.name || "工具详情") + " | 师航AI";
+          setText("tool-name", target.name || "-");
+          setText("tool-source", target.source_type || "编辑整理");
+          setText("tool-short-description", target.short_description || "-");
+          setText("tool-updated", normalizeDate(target.last_updated || target.updated_at));
+          setText("tool-status", target.is_active ? "持续维护" : "暂停收录");
+          setText("editor-conclusion-text", editorConclusion(target));
+
+          const cover = $("tool-cover");
+          if (cover && target.cover_image) cover.src = target.cover_image;
+          const officialLink = $("tool-official-link");
+          if (officialLink) officialLink.href = target.official_url || "./directory.html";
+
+          const userBadges = (target.target_users || []).map(function (user) {
+            return '<span class="rounded-full bg-surface-soft px-3 py-1 text-xs font-semibold text-text-secondary">' + escapeHTML(user) + "</span>";
+          });
+          setHTML("tool-target-users", userBadges.join(""));
+          setHTML("tool-rating-stars", ratingStars(target.rating));
+
+          setText("summary-cn-support", target.chinese_support || "未知");
+          setText("summary-pricing", pricingLabel(target.pricing_type));
+          setText("summary-access", accessLabel(target.access_type));
+          setText("summary-users", (target.target_users || []).slice(0, 3).join(" / ") || "-");
+          setText("summary-tasks", (target.usage_scenarios || []).slice(0, 3).join("、") || "-");
+          setText("summary-updated", normalizeDate(target.last_updated || target.updated_at));
+          setText("summary-source", target.source_type || "-");
+
+          const features = (target.features || []).length
+            ? target.features
+            : [
+                { title: "任务生成能力", desc: "支持教育场景下的结构化任务输出，并可二次编辑。" },
+                { title: "课堂落地友好", desc: "输出内容可直接迁移到教案、说课稿或课件制作流程中。" },
+                { title: "教师工作流衔接", desc: "可与资源模板、专题路线联动，减少重复准备工作。" },
+                { title: "评测可维护", desc: "采用统一数据字段，后续可随工具更新同步刷新页面结论。" }
+              ];
+          setHTML(
+            "tool-features-grid",
+            features
+              .map(function (feature) {
+                return (
+                  '<article class="rounded-xl border border-stroke-default bg-surface-card p-5">' +
+                  '<div class="mb-2 flex items-center gap-2 text-brand-primary"><span class="material-symbols-outlined">auto_awesome</span><h3 class="font-bold text-text-primary">' + escapeHTML(feature.title) + "</h3></div>" +
+                  '<p class="text-sm text-text-secondary">' + escapeHTML(feature.desc) + "</p>" +
+                  "</article>"
+                );
+              })
+              .join("")
+          );
+
+          const scenarios = fillFallbackScenarios(target);
+          setHTML(
+            "tool-scenarios-list",
+            scenarios
+              .map(function (item, index) {
+                return (
+                  '<article class="rounded-xl border border-stroke-default bg-surface-card p-6">' +
+                  '<div class="mb-3 flex flex-wrap items-center gap-2 text-xs">' +
+                  '<span class="rounded-full bg-brand-light px-3 py-1 font-bold text-brand-primary">案例 ' + (index + 1) + "</span>" +
+                  '<span class="rounded-full bg-surface-soft px-3 py-1 font-medium text-text-secondary">' + escapeHTML(item.context || "教学场景") + "</span>" +
+                  "</div>" +
+                  '<h3 class="mb-2 text-lg font-bold">' + escapeHTML(item.title || "课堂案例") + "</h3>" +
+                  '<p class="text-sm leading-relaxed text-text-secondary">' + escapeHTML(item.value || "") + "</p>" +
+                  "</article>"
+                );
+              })
+              .join("")
+          );
+
+          const fitFor = (target.fit_for || []).length
+            ? target.fit_for
+            : [
+                "师范生：需要快速完成教案/说课稿初稿并学习结构化表达。",
+                "新教师：希望在备课高压期先拿到可用版本，再做教学风格化调整。",
+                "一线教师：需要提高重复性文案任务效率，把时间留给课堂互动与学情分析。"
+              ];
+          const notFit = (target.not_fit_for || []).length
+            ? target.not_fit_for
+            : [
+                "希望一键生成后完全不改稿直接上课的用户。",
+                "需要高度个性化、强校本要求且拒绝人工复核的场景。",
+                "对外网依赖敏感但工具访问条件不满足的用户。"
+              ];
+
+          setHTML("fit-for-list", fitFor.map((item) => "<li>" + escapeHTML(item) + "</li>").join(""));
+          setHTML("not-fit-list", notFit.map((item) => "<li>" + escapeHTML(item) + "</li>").join(""));
+
+          const alternatives = similarTools(target, list);
+          setHTML(
+            "alternatives-body",
+            alternatives.length
+              ? alternatives
+                  .map(function (tool) {
+                    const task = (tool.usage_scenarios || [])[0] || "教案";
+                    return (
+                      "<tr>" +
+                      '<td class="px-4 py-3"><a class="font-semibold text-brand-primary hover:underline" href="./tool-detail.html?slug=' + encodeURIComponent(tool.slug || "") + '">' + escapeHTML(tool.name) + "</a></td>" +
+                      '<td class="px-4 py-3 text-text-secondary">' + escapeHTML(task) + "</td>" +
+                      '<td class="px-4 py-3 text-text-secondary">' + escapeHTML((tool.chinese_support || "未知") + " / " + pricingLabel(tool.pricing_type)) + "</td>" +
+                      '<td class="px-4 py-3 font-semibold text-text-primary">' + Number(tool.rating || 0).toFixed(1) + "</td>" +
+                      "</tr>"
+                    );
+                  })
+                  .join("")
+              : '<tr><td class="px-4 py-3 text-text-secondary" colspan="4">暂无可比较的相似工具，建议前往目录页按任务继续筛选。</td></tr>'
+          );
+
+          const primaryScenario = (target.usage_scenarios || [])[0] || "教案";
+          const promptValue = target.sample_prompt && !/可直接用于课堂的教学任务输出/.test(target.sample_prompt)
+            ? target.sample_prompt
+            : defaultPromptByScenario(primaryScenario, target.name || "该工具");
+          const outputValue = target.sample_output && !/建议根据学情进行二次调整/.test(target.sample_output)
+            ? target.sample_output
+            : defaultOutputByScenario(primaryScenario);
+
+          setText("sample-prompt", promptValue);
+          setText("sample-output", outputValue);
+
+          const resources = resourceCardsByTool(target);
+          setHTML(
+            "resource-recommend-grid",
+            resources
+              .map(function (item) {
+                return (
+                  '<article class="rounded-xl border border-stroke-default bg-surface-card p-5">' +
+                  '<h3 class="text-base font-bold text-text-primary">' + escapeHTML(item.title) + "</h3>" +
+                  '<p class="mt-2 text-sm text-text-secondary">' + escapeHTML(item.desc) + "</p>" +
+                  '<a class="mt-4 inline-flex text-sm font-bold text-brand-primary hover:underline" href="' + item.link + '">查看资源</a>' +
+                  "</article>"
+                );
+              })
+              .join("")
+          );
+
+          const eva = target.evaluation || {};
+          setText("metric-teaching", scoreLabel(eva.teaching_practicality));
+          setText("metric-chinese", scoreLabel(eva.chinese_adaptation));
+          setText("metric-ease", scoreLabel(eva.ease_of_use));
+          setText("metric-cost", scoreLabel(eva.cost_performance));
+          setText("metric-normal-student", scoreLabel(eva.normal_student_friendliness));
+
+          setText("review-last-updated", normalizeDate(target.last_updated || target.updated_at));
+          setText("review-source", target.source_type || "编辑整理");
+          setText("review-status", target.review_status || "pending");
+
+          const tags = (target.tags || []).slice(0, 8);
+          setHTML(
+            "tool-tags",
+            tags.length
+              ? tags.map((tag) => '<span class="rounded-full bg-brand-light px-2.5 py-1 text-xs font-semibold text-brand-primary">' + escapeHTML(tag) + "</span>").join("")
+              : '<span class="text-sm text-text-secondary">暂无标签</span>'
+          );
+        } catch (error) {
+          setText("tool-name", "工具数据加载失败");
+          setText("tool-short-description", "请检查 data/tools.json 是否存在且格式正确。");
+          setText("editor-conclusion-text", "当前无法生成评测结论，请稍后重试。");
+        }
+      })();
+    </script>
+  </body>
+</html>

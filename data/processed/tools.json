@@ -1,0 +1,334 @@
+[
+  {
+    "id": "tool_slidegenius",
+    "slug": "slidegenius",
+    "name": "SlideGenius 中文版",
+    "short_description": "同一工具来自另一批原始采集，用于测试去重逻辑。",
+    "full_description": "同一工具来自另一批原始采集，用于测试去重逻辑。",
+    "category": "PPT 生成",
+    "scenarios": [
+      {
+        "title": "新教师公开课课件搭建",
+        "context": "短时间内需完成高质量视觉排版",
+        "value": "生成统一风格页面并自动补充课堂练习页"
+      }
+    ],
+    "target_users": [
+      "新教师",
+      "一线教师",
+      "师范生"
+    ],
+    "usage_scenarios": [
+      "PPT课件"
+    ],
+    "education_stages": [
+      "小学",
+      "初中",
+      "高中"
+    ],
+    "subjects": [
+      "语文",
+      "数学",
+      "英语",
+      "综合通用"
+    ],
+    "chinese_support": "中",
+    "access_type": "需注册",
+    "pricing_type": "免费增值",
+    "source_type": "官方信息",
+    "rating": 4,
+    "editor_note": "暂无编辑点评",
+    "tags": [
+      "生成 PPT",
+      "课件",
+      "PPT 生成"
+    ],
+    "official_url": "https://example.com/slidegenius/",
+    "cover_image": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1200&q=80",
+    "review_status": "approved",
+    "verified_at": "2026-03-20",
+    "reviewer_note": "适合课件场景，保留推荐位。",
+    "is_active": true,
+    "featured": true,
+    "is_member_only": false,
+    "last_updated": "2026-03-19",
+    "updated_at": "2026-03-21"
+  },
+  {
+    "id": "tool_scholarsync",
+    "slug": "scholarsync",
+    "name": "学术同步（ScholarSync）",
+    "short_description": "支持论文摘要、观点对比与引用梳理，面向教研和高校课堂更友好。",
+    "full_description": "支持论文摘要、观点对比与引用梳理，面向教研和高校课堂更友好。",
+    "category": "研究辅助",
+    "scenarios": [],
+    "target_users": [
+      "教研员"
+    ],
+    "usage_scenarios": [
+      "论文写作"
+    ],
+    "education_stages": [
+      "大学"
+    ],
+    "subjects": [
+      "综合通用"
+    ],
+    "chinese_support": "中",
+    "access_type": "需特殊网络",
+    "pricing_type": "免费增值",
+    "source_type": "官方信息",
+    "rating": 4.9,
+    "editor_note": "适合做文献综述前期梳理，建议结合本土数据库交叉验证。",
+    "tags": [
+      "论文润色",
+      "研究辅助"
+    ],
+    "official_url": "https://example.com/scholarsync",
+    "cover_image": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1200&q=80",
+    "review_status": "pending",
+    "verified_at": null,
+    "reviewer_note": "等待补充国内可访问性说明。",
+    "is_active": false,
+    "featured": false,
+    "is_member_only": true,
+    "last_updated": "2026-03-19",
+    "updated_at": "2026-03-21"
+  },
+  {
+    "id": "tool_lessonpro",
+    "slug": "lessonpro",
+    "name": "课课灵（LessonPro）",
+    "short_description": "输入课程目标后自动生成“目标-活动-评价”三段式教案，适合公开课与实习课堂。",
+    "full_description": "课课灵是面向中国课堂的教案与教学设计助手，支持按课标、学段和课时输出完整教案草案，并提供分层提问、课堂活动建议与作业设计。",
+    "category": "教案生成",
+    "scenarios": [
+      {
+        "title": "初中语文《背影》教案重构",
+        "context": "学情基础不均、课堂互动弱",
+        "value": "输出三层提问路径和可直接使用的课堂追问语句"
+      },
+      {
+        "title": "高中数学试讲教案准备",
+        "context": "实习教师备课时间有限",
+        "value": "快速生成含目标、重难点、板书与评价的完整模板"
+      }
+    ],
+    "target_users": [
+      "师范生",
+      "实习教师",
+      "新教师"
+    ],
+    "usage_scenarios": [
+      "教案"
+    ],
+    "education_stages": [
+      "初中",
+      "高中"
+    ],
+    "subjects": [
+      "语文",
+      "数学"
+    ],
+    "chinese_support": "强",
+    "access_type": "国内可直连",
+    "pricing_type": "免费",
+    "source_type": "编辑整理",
+    "rating": 4.9,
+    "editor_note": "模板结构清晰，适合新手快速成稿；建议配合课堂提问工具使用。",
+    "tags": [
+      "写教案",
+      "课堂活动",
+      "中文友好"
+    ],
+    "official_url": "https://example.com/lessonpro",
+    "cover_image": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1200&q=80",
+    "review_status": "approved",
+    "verified_at": "2026-03-19",
+    "reviewer_note": "与一线课堂任务匹配度高，可前台展示。",
+    "is_active": true,
+    "featured": true,
+    "is_member_only": false,
+    "last_updated": "2026-03-18",
+    "updated_at": "2026-03-21"
+  },
+  {
+    "id": "tool_gradergpt",
+    "slug": "gradergpt",
+    "name": "批改助手（GraderGPT）",
+    "short_description": "按评分维度给出建议反馈，支持“共性问题归纳 + 个体评语模板”。",
+    "full_description": "批改助手用于提升作业反馈效率，支持主观题评分建议、共性错误归类和个体评语生成，适合大班教学场景。",
+    "category": "作业批改",
+    "scenarios": [],
+    "target_users": [
+      "新教师",
+      "一线教师"
+    ],
+    "usage_scenarios": [
+      "教学反思",
+      "作业批改"
+    ],
+    "education_stages": [
+      "初中",
+      "高中"
+    ],
+    "subjects": [
+      "语文",
+      "英语"
+    ],
+    "chinese_support": "强",
+    "access_type": "需注册",
+    "pricing_type": "免费",
+    "source_type": "社区实测",
+    "rating": 4.7,
+    "editor_note": "对大班批改非常友好，建议提前定义评分 rubric，效果更稳定。",
+    "tags": [
+      "教学反思",
+      "作业批改"
+    ],
+    "official_url": "https://example.com/gradergpt",
+    "cover_image": "https://images.unsplash.com/photo-1456406644174-8ddd4cd52a06?auto=format&fit=crop&w=1200&q=80",
+    "review_status": "approved",
+    "verified_at": "2026-03-20",
+    "reviewer_note": "大班批改场景价值明确。",
+    "is_active": true,
+    "featured": true,
+    "is_member_only": false,
+    "last_updated": "2026-03-17",
+    "updated_at": "2026-03-21"
+  },
+  {
+    "id": "tool_linguatutor",
+    "slug": "linguatutor",
+    "name": "多语导师（LinguaTutor）",
+    "short_description": "面向跨语言课堂与国际课程，提供翻译、转录与表达优化。",
+    "full_description": "面向跨语言课堂与国际课程，提供翻译、转录与表达优化。",
+    "category": "多语言支持",
+    "scenarios": [],
+    "target_users": [
+      "一线教师",
+      "教研员"
+    ],
+    "usage_scenarios": [
+      "教案"
+    ],
+    "education_stages": [
+      "高中",
+      "大学"
+    ],
+    "subjects": [
+      "英语"
+    ],
+    "chinese_support": "中",
+    "access_type": "需注册",
+    "pricing_type": "付费",
+    "source_type": "官方信息",
+    "rating": 4.5,
+    "editor_note": "跨语言课堂很实用，但付费门槛略高，建议先评估班级实际需求。",
+    "tags": [
+      "翻译",
+      "双语教学",
+      "课堂转录"
+    ],
+    "official_url": "https://example.com/linguatutor",
+    "cover_image": "https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&w=1200&q=80",
+    "review_status": "approved",
+    "verified_at": "2026-03-19",
+    "reviewer_note": "国际课程场景保留，标记付费与门槛提示。",
+    "is_active": true,
+    "featured": true,
+    "is_member_only": false,
+    "last_updated": "2026-03-16",
+    "updated_at": "2026-03-21"
+  },
+  {
+    "id": "tool_quizwiz",
+    "slug": "quizwiz",
+    "name": "出题宝（QuizWiz）",
+    "short_description": "从文本自动生成选择题、判断题与简答题，适用于随堂检测和周测。",
+    "full_description": "从文本自动生成选择题、判断题与简答题，适用于随堂检测和周测。",
+    "category": "题库生成",
+    "scenarios": [],
+    "target_users": [
+      "新教师",
+      "一线教师"
+    ],
+    "usage_scenarios": [
+      "出题测验"
+    ],
+    "education_stages": [
+      "初中",
+      "高中"
+    ],
+    "subjects": [
+      "数学",
+      "英语",
+      "物理"
+    ],
+    "chinese_support": "中",
+    "access_type": "需注册",
+    "pricing_type": "付费",
+    "source_type": "编辑整理",
+    "rating": 4,
+    "editor_note": "出题效率高，但建议教师做最后审题，确保难度与学情一致。",
+    "tags": [
+      "出题测验",
+      "题库生成"
+    ],
+    "official_url": "https://example.com/quizwiz",
+    "cover_image": "https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=1200&q=80",
+    "review_status": "approved",
+    "verified_at": "2026-03-18",
+    "reviewer_note": "出题能力可用，需提示教师二次审题。",
+    "is_active": true,
+    "featured": false,
+    "is_member_only": false,
+    "last_updated": "2026-03-11",
+    "updated_at": "2026-03-21"
+  },
+  {
+    "id": "tool_edumind",
+    "slug": "edumind",
+    "name": "育灵导图（EduMind）",
+    "short_description": "把说课逻辑和知识点关系图可视化，适合试讲、磨课和公开课准备。",
+    "full_description": "把说课逻辑和知识点关系图可视化，适合试讲、磨课和公开课准备。",
+    "category": "说课辅助",
+    "scenarios": [],
+    "target_users": [
+      "师范生",
+      "新教师"
+    ],
+    "usage_scenarios": [
+      "说课稿"
+    ],
+    "education_stages": [
+      "初中",
+      "高中"
+    ],
+    "subjects": [
+      "语文",
+      "数学",
+      "英语"
+    ],
+    "chinese_support": "强",
+    "access_type": "国内可直连",
+    "pricing_type": "免费",
+    "source_type": "编辑整理",
+    "rating": 4.4,
+    "editor_note": "对说课结构梳理帮助明显，尤其适合首次参与教学比赛的用户。",
+    "tags": [
+      "写说课稿",
+      "知识建模"
+    ],
+    "official_url": "https://example.com/edumind",
+    "cover_image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80",
+    "review_status": "approved",
+    "verified_at": "2026-03-17",
+    "reviewer_note": "适合师范生试讲准备。",
+    "is_active": true,
+    "featured": false,
+    "is_member_only": false,
+    "last_updated": "2026-03-10",
+    "updated_at": "2026-03-21"
+  }
+]

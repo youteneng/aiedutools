@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>社区沉淀区 | 师航AI</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries,line-clamp"></script>
+    <link rel="stylesheet" href="./globals.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <script id="tailwind-config">
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                primary: "rgb(var(--brand-primary) / <alpha-value>)",
+                light: "rgb(var(--brand-primary-light) / <alpha-value>)",
+                dark: "rgb(var(--brand-primary-dark) / <alpha-value>)"
+              },
+              surface: {
+                page: "rgb(var(--surface-page) / <alpha-value>)",
+                card: "rgb(var(--surface-card) / <alpha-value>)",
+                soft: "rgb(var(--surface-soft) / <alpha-value>)"
+              },
+              text: {
+                primary: "rgb(var(--text-primary) / <alpha-value>)",
+                secondary: "rgb(var(--text-secondary) / <alpha-value>)",
+                muted: "rgb(var(--text-muted) / <alpha-value>)"
+              },
+              stroke: {
+                default: "rgb(var(--stroke-default) / <alpha-value>)",
+                subtle: "rgb(var(--stroke-subtle) / <alpha-value>)"
+              },
+              state: {
+                success: "rgb(var(--state-success) / <alpha-value>)",
+                warning: "rgb(var(--state-warning) / <alpha-value>)",
+                error: "rgb(var(--state-error) / <alpha-value>)"
+              }
+            },
+            fontFamily: {
+              display: ["Inter", "system-ui", "sans-serif"]
+            },
+            borderRadius: {
+              lg: "var(--radius-sm)",
+              xl: "var(--radius-md)",
+              "2xl": "var(--radius-lg)",
+              full: "var(--radius-full)"
+            },
+            boxShadow: {
+              card: "0 1px 2px rgba(32, 33, 36, 0.06)",
+              "card-hover": "0 8px 24px rgba(32, 33, 36, 0.12)"
+            }
+          }
+        }
+      };
+    </script>
+  </head>
+  <body class="bg-surface-page font-display text-text-primary">
+    <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+      <header class="sticky top-0 z-50 w-full border-b border-stroke-default bg-surface-card/95 px-4 py-3 backdrop-blur md:px-10">
+        <div class="mx-auto flex max-w-7xl items-center justify-between">
+          <div class="flex items-center gap-8">
+            <a class="flex items-center gap-3 text-brand-primary" href="./index.html">
+              <span class="material-symbols-outlined text-3xl">school</span>
+              <div>
+                <h2 class="text-lg font-bold leading-tight tracking-tight text-text-primary">师航AI</h2>
+                <p class="hidden text-xs font-medium text-text-secondary xl:block">师范生与教育工作者的 AI 工具导航与资源平台</p>
+              </div>
+            </a>
+            <nav class="hidden items-center gap-8 md:flex">
+              <a class="text-sm font-medium text-text-secondary transition-colors hover:text-brand-primary" href="./index.html">首页</a>
+              <a class="text-sm font-medium text-text-secondary transition-colors hover:text-brand-primary" href="./directory.html">工具目录</a>
+              <a class="text-sm font-medium text-text-secondary transition-colors hover:text-brand-primary" href="./resources.html">资源库</a>
+              <a class="border-b-2 border-brand-primary pb-1 text-sm font-bold text-brand-primary" href="./community.html">社区</a>
+              <a class="text-sm font-medium text-text-secondary transition-colors hover:text-brand-primary" href="./pricing.html">会员计划</a>
+            </nav>
+          </div>
+          <a class="hidden rounded-lg bg-brand-primary px-4 py-2 text-sm font-bold text-white transition-colors hover:bg-brand-dark sm:inline-flex" href="./directory.html">先找工具</a>
+        </div>
+      </header>
+
+      <main class="mx-auto w-full max-w-7xl flex-1 px-4 py-8 md:px-10">
+        <section class="mb-8 rounded-2xl border border-brand-primary/20 bg-gradient-to-br from-brand-primary to-blue-700 p-8 text-white shadow-xl shadow-brand-primary/20">
+          <div class="max-w-4xl">
+            <span class="inline-flex items-center gap-2 rounded-full bg-white/20 px-3 py-1 text-xs font-bold uppercase tracking-wider">
+              <span class="material-symbols-outlined !text-base">hub</span>
+              经验与资源沉淀区
+            </span>
+            <h1 class="mt-4 text-3xl font-black leading-tight md:text-4xl">把“可复用的教学经验”留下来，让后来者少走弯路</h1>
+            <p class="mt-3 text-sm leading-relaxed text-blue-50 md:text-base">
+              这里不追求热闹讨论，而是沉淀可验证、可复用的实测记录、Prompt、模板与课堂案例。
+              每条内容默认标注作者身份、内容类型与可落地场景。
+            </p>
+            <div class="mt-5 flex flex-wrap gap-2 text-xs">
+              <span class="rounded-full bg-white/20 px-3 py-1 font-semibold">师范生</span>
+              <span class="rounded-full bg-white/20 px-3 py-1 font-semibold">实习教师</span>
+              <span class="rounded-full bg-white/20 px-3 py-1 font-semibold">一线教师</span>
+              <span class="rounded-full bg-white/20 px-3 py-1 font-semibold">教研员</span>
+              <span class="rounded-full bg-white/20 px-3 py-1 font-semibold">高校教师</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="mb-6 rounded-xl border border-stroke-default bg-surface-card p-4">
+          <h2 class="mb-3 text-base font-bold">内容分区导航</h2>
+          <div class="flex flex-wrap gap-2 text-sm">
+            <a class="rounded-lg bg-brand-light px-3 py-2 font-semibold text-brand-primary" href="#tool-test">工具实测</a>
+            <a class="rounded-lg bg-surface-soft px-3 py-2 font-medium text-text-secondary hover:text-brand-primary" href="#prompt-share">Prompt 共享</a>
+            <a class="rounded-lg bg-surface-soft px-3 py-2 font-medium text-text-secondary hover:text-brand-primary" href="#teaching-cases">教学案例</a>
+            <a class="rounded-lg bg-surface-soft px-3 py-2 font-medium text-text-secondary hover:text-brand-primary" href="#resource-share">资源分享</a>
+            <a class="rounded-lg bg-surface-soft px-3 py-2 font-medium text-text-secondary hover:text-brand-primary" href="#internship-exp">教育实习经验</a>
+            <a class="rounded-lg bg-surface-soft px-3 py-2 font-medium text-text-secondary hover:text-brand-primary" href="#reusable-zone">可直接复用</a>
+          </div>
+        </section>
+
+        <div class="grid grid-cols-1 gap-8 lg:grid-cols-12">
+          <div class="space-y-8 lg:col-span-8">
+            <section id="tool-test" class="rounded-xl border border-stroke-default bg-surface-card p-6 shadow-card">
+              <div class="mb-4 flex items-center justify-between">
+                <h2 class="text-xl font-bold">工具实测</h2>
+                <a class="text-sm font-bold text-brand-primary hover:underline" href="./tool-detail.html?slug=lessonpro">查看工具详情页</a>
+              </div>
+              <article class="rounded-lg border border-stroke-default bg-surface-soft p-4">
+                <div class="mb-2 flex flex-wrap items-center gap-2 text-xs">
+                  <span class="rounded-full bg-brand-light px-2 py-0.5 font-bold text-brand-primary">实测</span>
+                  <span class="rounded-full bg-surface-card px-2 py-0.5 font-semibold text-text-secondary">一线教师</span>
+                  <span class="text-text-muted">适用任务：作业批改</span>
+                </div>
+                <h3 class="text-lg font-bold text-text-primary">批改助手在“高一物理实验报告”中的稳定性记录</h3>
+                <p class="mt-2 text-sm text-text-secondary">实测结论：批改速度明显提升，但对开放题推理链解释不够完整。建议先生成“共性问题”再补人工点评。</p>
+                <div class="mt-3 flex flex-wrap gap-3 text-xs">
+                  <a class="font-semibold text-brand-primary hover:underline" href="./tool-detail.html?slug=gradergpt">关联工具：批改助手</a>
+                  <a class="font-semibold text-brand-primary hover:underline" href="./resources.html">配套资源：评估量表模板</a>
+                </div>
+              </article>
+            </section>
+
+            <section id="prompt-share" class="rounded-xl border border-stroke-default bg-surface-card p-6 shadow-card">
+              <div class="mb-4 flex items-center justify-between">
+                <h2 class="text-xl font-bold">Prompt 共享</h2>
+                <a class="text-sm font-bold text-brand-primary hover:underline" href="./resources.html">去资源库查看 Prompt 包</a>
+              </div>
+              <article class="rounded-lg border border-stroke-default bg-surface-soft p-4">
+                <div class="mb-2 flex flex-wrap items-center gap-2 text-xs">
+                  <span class="rounded-full bg-brand-light px-2 py-0.5 font-bold text-brand-primary">提示词</span>
+                  <span class="rounded-full bg-surface-card px-2 py-0.5 font-semibold text-text-secondary">实习教师</span>
+                  <span class="rounded-full bg-surface-card px-2 py-0.5 font-semibold text-text-secondary">模板</span>
+                </div>
+                <h3 class="text-lg font-bold text-text-primary">可直接复制：高中语文说课稿 Prompt（12 分钟版本）</h3>
+                <pre class="mt-2 whitespace-pre-wrap rounded bg-surface-card p-3 text-xs text-text-secondary">请生成《荷塘月色》说课稿：含学情分析、目标、重难点、流程、时间分配、板书。</pre>
+                <p class="mt-2 text-sm text-text-secondary">适合首次参加说课比赛的师范生。建议在“学情分析”里补上本校班级基础。</p>
+              </article>
+            </section>
+
+            <section id="teaching-cases" class="rounded-xl border border-stroke-default bg-surface-card p-6 shadow-card">
+              <h2 class="mb-4 text-xl font-bold">教学案例</h2>
+              <article class="rounded-lg border border-stroke-default bg-surface-soft p-4">
+                <div class="mb-2 flex flex-wrap items-center gap-2 text-xs">
+                  <span class="rounded-full bg-brand-light px-2 py-0.5 font-bold text-brand-primary">经验帖</span>
+                  <span class="rounded-full bg-surface-card px-2 py-0.5 font-semibold text-text-secondary">教研员</span>
+                  <span class="text-text-muted">学段：初中</span>
+                </div>
+                <h3 class="text-lg font-bold text-text-primary">“先工具后模板”备课流程在教研组落地的 3 周复盘</h3>
+                <p class="mt-2 text-sm text-text-secondary">复盘重点：如何把工具输出与教研组统一模板对齐，避免“看起来很智能但不可用”的内容进入课堂。</p>
+                <div class="mt-3 flex gap-4 text-xs">
+                  <a class="font-semibold text-brand-primary hover:underline" href="./directory.html">关联：工具目录筛选路径</a>
+                  <a class="font-semibold text-brand-primary hover:underline" href="./resources.html">关联：教案模板区</a>
+                </div>
+              </article>
+            </section>
+
+            <section id="resource-share" class="rounded-xl border border-stroke-default bg-surface-card p-6 shadow-card">
+              <h2 class="mb-4 text-xl font-bold">资源分享</h2>
+              <article class="rounded-lg border border-stroke-default bg-surface-soft p-4">
+                <div class="mb-2 flex flex-wrap items-center gap-2 text-xs">
+                  <span class="rounded-full bg-brand-light px-2 py-0.5 font-bold text-brand-primary">模板</span>
+                  <span class="rounded-full bg-surface-card px-2 py-0.5 font-semibold text-text-secondary">高校教师</span>
+                  <span class="rounded-full bg-surface-card px-2 py-0.5 font-semibold text-text-secondary">资源分享</span>
+                </div>
+                <h3 class="text-lg font-bold text-text-primary">可复用听评课表格（含达成度记录）</h3>
+                <p class="mt-2 text-sm text-text-secondary">已按“目标达成、互动质量、作业设计、改进建议”四块拆分，可直接改成院系版本。</p>
+                <a class="mt-3 inline-flex text-xs font-semibold text-brand-primary hover:underline" href="./resources.html">进入资源库查看</a>
+              </article>
+            </section>
+
+            <section id="internship-exp" class="rounded-xl border border-stroke-default bg-surface-card p-6 shadow-card">
+              <h2 class="mb-4 text-xl font-bold">教育实习经验</h2>
+              <article class="rounded-lg border border-stroke-default bg-surface-soft p-4">
+                <div class="mb-2 flex flex-wrap items-center gap-2 text-xs">
+                  <span class="rounded-full bg-brand-light px-2 py-0.5 font-bold text-brand-primary">经验帖</span>
+                  <span class="rounded-full bg-surface-card px-2 py-0.5 font-semibold text-text-secondary">师范生</span>
+                  <span class="rounded-full bg-surface-card px-2 py-0.5 font-semibold text-text-secondary">求助</span>
+                </div>
+                <h3 class="text-lg font-bold text-text-primary">实习第 2 周：如何把 AI 生成教案改成“导师认可版”</h3>
+                <p class="mt-2 text-sm text-text-secondary">总结了导师最关注的 3 个点：学情贴合度、课堂活动可执行性、作业设计分层。欢迎补充更好的修改方法。</p>
+                <a class="mt-3 inline-flex text-xs font-semibold text-brand-primary hover:underline" href="./resources.html">查看实习模板区</a>
+              </article>
+            </section>
+
+            <section id="reusable-zone" class="rounded-xl border border-brand-primary/20 bg-brand-light/30 p-6">
+              <h2 class="mb-4 text-xl font-bold text-text-primary">精选内容：可直接复用</h2>
+              <div class="grid grid-cols-1 gap-3 md:grid-cols-2">
+                <a class="rounded-lg border border-stroke-default bg-surface-card p-4 transition-colors hover:border-brand-primary" href="./resources.html">
+                  <p class="text-sm font-bold text-text-primary">教案模板（可直接改）</p>
+                  <p class="mt-1 text-xs text-text-secondary">适合师范生试讲与新教师常态备课。</p>
+                </a>
+                <a class="rounded-lg border border-stroke-default bg-surface-card p-4 transition-colors hover:border-brand-primary" href="./resources.html">
+                  <p class="text-sm font-bold text-text-primary">说课稿 Prompt（可复制）</p>
+                  <p class="mt-1 text-xs text-text-secondary">含时间分配和答辩准备要点。</p>
+                </a>
+                <a class="rounded-lg border border-stroke-default bg-surface-card p-4 transition-colors hover:border-brand-primary" href="./tool-detail.html?slug=lessonpro">
+                  <p class="text-sm font-bold text-text-primary">工具实测结论（可参考）</p>
+                  <p class="mt-1 text-xs text-text-secondary">先看结论再试用，减少踩坑。</p>
+                </a>
+                <a class="rounded-lg border border-stroke-default bg-surface-card p-4 transition-colors hover:border-brand-primary" href="./directory.html">
+                  <p class="text-sm font-bold text-text-primary">任务导向选工具路径</p>
+                  <p class="mt-1 text-xs text-text-secondary">按角色与任务快速定位可用工具。</p>
+                </a>
+              </div>
+            </section>
+          </div>
+
+          <aside class="space-y-6 lg:col-span-4">
+            <section class="rounded-xl border border-stroke-default bg-surface-card p-6 shadow-card">
+              <h2 class="mb-4 text-lg font-bold">社区机制入口</h2>
+              <div class="space-y-3">
+                <a class="flex items-center justify-between rounded-lg border border-stroke-default bg-surface-soft px-4 py-3 transition-colors hover:border-brand-primary" href="./community.html">
+                  <div>
+                    <p class="text-sm font-bold text-text-primary">发布你的实测</p>
+                    <p class="text-xs text-text-secondary">记录工具在真实课堂任务中的效果。</p>
+                  </div>
+                  <span class="material-symbols-outlined text-brand-primary">lab_profile</span>
+                </a>
+                <a class="flex items-center justify-between rounded-lg border border-stroke-default bg-surface-soft px-4 py-3 transition-colors hover:border-brand-primary" href="./resources.html">
+                  <div>
+                    <p class="text-sm font-bold text-text-primary">贡献资源模板</p>
+                    <p class="text-xs text-text-secondary">上传可复用模板，进入资源精选区。</p>
+                  </div>
+                  <span class="material-symbols-outlined text-brand-primary">upload_file</span>
+                </a>
+                <a class="flex items-center justify-between rounded-lg border border-stroke-default bg-surface-soft px-4 py-3 transition-colors hover:border-brand-primary" href="./community.html">
+                  <div>
+                    <p class="text-sm font-bold text-text-primary">分享课堂案例</p>
+                    <p class="text-xs text-text-secondary">优先沉淀“可复制流程 + 可复用材料”。</p>
+                  </div>
+                  <span class="material-symbols-outlined text-brand-primary">history_edu</span>
+                </a>
+              </div>
+            </section>
+
+            <section class="rounded-xl border border-stroke-default bg-surface-card p-6 shadow-card">
+              <h3 class="mb-3 text-base font-bold">发布规范（摘要）</h3>
+              <ul class="space-y-2 text-sm text-text-secondary">
+                <li>1. 帖子请标注内容类型：实测 / 提示词 / 模板 / 经验帖 / 求助。</li>
+                <li>2. 建议写清楚适用学段、学科与任务，方便后来者检索。</li>
+                <li>3. 涉及工具结论时，优先给出“可复用步骤”而不是观点。</li>
+              </ul>
+            </section>
+
+            <section class="rounded-xl border border-stroke-default bg-surface-card p-6 shadow-card">
+              <h3 class="mb-3 text-base font-bold">与产品联动</h3>
+              <div class="space-y-2 text-sm">
+                <a class="block rounded-lg bg-surface-soft px-3 py-2 font-medium text-text-secondary transition-colors hover:text-brand-primary" href="./directory.html">去工具目录：按任务继续筛选</a>
+                <a class="block rounded-lg bg-surface-soft px-3 py-2 font-medium text-text-secondary transition-colors hover:text-brand-primary" href="./resources.html">去资源库：下载可复用模板</a>
+                <a class="block rounded-lg bg-surface-soft px-3 py-2 font-medium text-text-secondary transition-colors hover:text-brand-primary" href="./tool-detail.html?slug=lessonpro">去评测页：看完整决策结论</a>
+              </div>
+            </section>
+
+            <section class="rounded-xl bg-surface-soft p-6">
+              <h3 class="mb-2 text-sm font-bold text-text-secondary">社区定位</h3>
+              <p class="text-xs leading-relaxed text-text-secondary">
+                师航AI 社区优先沉淀“能被复用的教育内容”，包括实测结论、可复制 Prompt、可下载模板与课堂复盘。
+                我们更关注“是否能帮助下一位教师更快落地”。
+              </p>
+            </section>
+          </aside>
+        </div>
+      </main>
+
+      <footer class="mt-20 border-t border-stroke-default px-10 py-10 text-center">
+        <p class="text-xs text-text-muted">© 2024 师航AI · 师范生与教育工作者的 AI 工具导航与资源平台</p>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>专题任务包 | 师航AI</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries,line-clamp"></script>
+    <link rel="stylesheet" href="./globals.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <script id="tailwind-config">
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                primary: "rgb(var(--brand-primary) / <alpha-value>)",
+                light: "rgb(var(--brand-primary-light) / <alpha-value>)",
+                dark: "rgb(var(--brand-primary-dark) / <alpha-value>)"
+              },
+              surface: {
+                page: "rgb(var(--surface-page) / <alpha-value>)",
+                card: "rgb(var(--surface-card) / <alpha-value>)",
+                soft: "rgb(var(--surface-soft) / <alpha-value>)"
+              },
+              text: {
+                primary: "rgb(var(--text-primary) / <alpha-value>)",
+                secondary: "rgb(var(--text-secondary) / <alpha-value>)",
+                muted: "rgb(var(--text-muted) / <alpha-value>)"
+              },
+              stroke: {
+                default: "rgb(var(--stroke-default) / <alpha-value>)"
+              },
+              state: {
+                success: "rgb(var(--state-success) / <alpha-value>)",
+                warning: "rgb(var(--state-warning) / <alpha-value>)",
+                error: "rgb(var(--state-error) / <alpha-value>)"
+              }
+            },
+            fontFamily: {
+              display: ["Inter", "PingFang SC", "Microsoft YaHei", "sans-serif"]
+            },
+            borderRadius: {
+              lg: "var(--radius-sm)",
+              xl: "var(--radius-md)",
+              "2xl": "var(--radius-lg)"
+            },
+            boxShadow: {
+              card: "0 1px 2px rgba(32, 33, 36, 0.06)",
+              "card-hover": "0 8px 24px rgba(32, 33, 36, 0.12)"
+            }
+          }
+        }
+      };
+    </script>
+  </head>
+  <body class="bg-surface-page font-display text-text-primary">
+    <header class="sticky top-0 z-50 w-full border-b border-stroke-default bg-surface-card/95 px-4 py-3 backdrop-blur md:px-20">
+      <div class="mx-auto flex max-w-7xl items-center justify-between gap-8">
+        <div class="flex items-center gap-8">
+          <a class="flex items-center gap-2 text-brand-primary" href="./index.html">
+            <span class="material-symbols-outlined text-3xl">auto_awesome</span>
+            <div>
+              <h2 class="text-lg font-bold leading-tight tracking-tight text-text-primary">师航AI</h2>
+              <p class="hidden text-xs font-medium text-text-secondary xl:block">师范生与教育工作者的 AI 工具导航与资源平台</p>
+            </div>
+          </a>
+          <nav class="hidden items-center gap-8 md:flex">
+            <a class="text-sm font-medium text-text-secondary transition-colors hover:text-brand-primary" href="./index.html">首页</a>
+            <a class="text-sm font-medium text-text-secondary transition-colors hover:text-brand-primary" href="./directory.html">工具目录</a>
+            <a class="text-sm font-medium text-text-secondary transition-colors hover:text-brand-primary" href="./resources.html">资源库</a>
+            <a class="text-sm font-medium text-text-secondary transition-colors hover:text-brand-primary" href="./community.html">社区</a>
+            <a class="text-sm font-medium text-text-secondary transition-colors hover:text-brand-primary" href="./pricing.html">会员计划</a>
+          </nav>
+        </div>
+        <a class="rounded-lg bg-brand-primary px-4 py-2 text-sm font-bold text-white transition-colors hover:bg-brand-dark" href="./directory.html">查看相关工具详情</a>
+      </div>
+    </header>
+
+    <main class="mx-auto max-w-7xl px-4 py-8 md:px-20">
+      <section class="mb-6 rounded-2xl border border-brand-primary/20 bg-gradient-to-br from-brand-primary to-blue-700 p-8 text-white">
+        <span class="inline-flex items-center gap-2 rounded-full bg-white/15 px-3 py-1 text-xs font-bold uppercase tracking-wider">
+          <span class="material-symbols-outlined !text-base">inventory_2</span>
+          专题任务包
+        </span>
+        <h1 class="mt-4 text-3xl font-black leading-tight md:text-4xl" id="topic-title">高效备课与说课任务包</h1>
+        <p class="mt-3 max-w-4xl text-sm text-blue-50 md:text-base" id="topic-subtitle">
+          面向中国师范生与教师的任务解决方案：从教案到课件再到课堂反馈，一条流程打通。
+        </p>
+        <div class="mt-5 flex flex-wrap gap-2">
+          <button id="copy-workflow-btn" class="inline-flex items-center gap-2 rounded-lg bg-white px-4 py-2 text-sm font-bold text-brand-primary transition-colors hover:bg-slate-50">
+            <span class="material-symbols-outlined !text-base">content_copy</span>
+            复制本专题工作流
+          </button>
+          <a class="inline-flex items-center gap-2 rounded-lg border border-white/35 bg-white/10 px-4 py-2 text-sm font-bold transition-colors hover:bg-white/20" href="./resources.html">
+            <span class="material-symbols-outlined !text-base">folder</span>
+            查看推荐资源模板
+          </a>
+        </div>
+      </section>
+
+      <div class="grid grid-cols-1 gap-8 lg:grid-cols-12">
+        <aside class="space-y-5 lg:col-span-3">
+          <section class="rounded-xl border border-stroke-default bg-surface-card p-5 shadow-card">
+            <h2 class="text-base font-bold">任务目标</h2>
+            <p class="mt-2 text-sm text-text-secondary" id="topic-goal">正在加载任务目标...</p>
+          </section>
+
+          <section class="rounded-xl border border-stroke-default bg-surface-card p-5 shadow-card">
+            <h2 class="text-base font-bold">适合谁</h2>
+            <div class="mt-3 flex flex-wrap gap-2" id="topic-roles"></div>
+          </section>
+
+          <section class="rounded-xl border border-stroke-default bg-surface-card p-5 shadow-card">
+            <h2 class="text-base font-bold">使用步骤</h2>
+            <ol class="mt-3 space-y-2 text-sm text-text-secondary" id="topic-steps"></ol>
+          </section>
+        </aside>
+
+        <div class="space-y-8 lg:col-span-9">
+          <section class="rounded-xl border border-stroke-default bg-surface-card p-6 shadow-card">
+            <div class="mb-4 flex items-center justify-between">
+              <h2 class="text-xl font-bold">推荐工具组合</h2>
+              <span class="text-xs text-text-muted">数据来源：tools.json</span>
+            </div>
+            <div class="grid grid-cols-1 gap-4 md:grid-cols-2" id="topic-tools-grid">
+              <article class="rounded-xl border border-stroke-default bg-surface-soft p-4">
+                <p class="text-sm text-text-secondary">正在加载推荐工具...</p>
+              </article>
+            </div>
+          </section>
+
+          <section class="rounded-xl border border-stroke-default bg-surface-card p-6 shadow-card">
+            <div class="mb-4 flex items-center justify-between">
+              <h2 class="text-xl font-bold">推荐资源模板</h2>
+              <span class="text-xs text-text-muted">数据来源：resources.json</span>
+            </div>
+            <div class="grid grid-cols-1 gap-4 md:grid-cols-2" id="topic-resources-grid">
+              <article class="rounded-xl border border-stroke-default bg-surface-soft p-4">
+                <p class="text-sm text-text-secondary">正在加载推荐资源...</p>
+              </article>
+            </div>
+          </section>
+
+          <section class="rounded-xl border border-stroke-default bg-surface-card p-6 shadow-card">
+            <h2 class="text-xl font-bold">常见误区</h2>
+            <div class="mt-4 grid grid-cols-1 gap-3 md:grid-cols-2" id="topic-pitfalls"></div>
+          </section>
+
+          <section class="rounded-xl border border-stroke-default bg-surface-card p-6 shadow-card">
+            <div class="mb-4 flex items-center justify-between">
+              <h2 class="text-xl font-bold">相关推荐</h2>
+              <span class="text-xs text-text-muted" id="topic-updated-hint">最近更新：-</span>
+            </div>
+            <div class="grid grid-cols-1 gap-3 md:grid-cols-3" id="related-topics-grid">
+              <article class="rounded-lg border border-stroke-default bg-surface-soft p-4">
+                <p class="text-sm text-text-secondary">正在加载推荐专题...</p>
+              </article>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer class="mt-20 border-t border-stroke-default bg-surface-card py-12">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col items-center justify-between gap-8 md:flex-row">
+          <div class="flex items-center gap-2 text-brand-primary opacity-60 grayscale">
+            <span class="material-symbols-outlined text-2xl">auto_awesome</span>
+            <h2 class="text-md font-bold leading-tight text-text-primary">师航AI</h2>
+          </div>
+          <div class="flex gap-8">
+            <a class="text-text-secondary transition-colors hover:text-brand-primary" href="./pricing.html">隐私政策</a>
+            <a class="text-text-secondary transition-colors hover:text-brand-primary" href="./pricing.html">服务条款</a>
+            <a class="text-text-secondary transition-colors hover:text-brand-primary" href="./community.html">联系我们</a>
+          </div>
+          <p class="text-sm text-text-secondary">© 2024 师航AI · 师范生与教育工作者的 AI 工具导航与资源平台</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      (async function renderTopicPackagePage() {
+        const params = new URLSearchParams(window.location.search);
+        const topicSlug = String(params.get("slug") || "lesson-workflow-core");
+
+        const $ = (id) => document.getElementById(id);
+        function escapeHTML(value) {
+          return String(value || "")
+            .replace(/&/g, "&amp;")
+            .replace(/</g, "&lt;")
+            .replace(/>/g, "&gt;")
+            .replace(/"/g, "&quot;")
+            .replace(/'/g, "&#39;");
+        }
+        function dateLabel(value) {
+          if (!value) return "未知";
+          const date = new Date(value);
+          if (Number.isNaN(date.getTime())) return String(value);
+          return date.toISOString().slice(0, 10);
+        }
+
+        const fallbackTopic = {
+          id: "topic_lesson_workflow_core",
+          slug: "lesson-workflow-core",
+          title: "高效备课与说课任务包",
+          subtitle: "面向中国师范生与教师的任务解决方案：从教案到课件再到课堂反馈，一条流程打通。",
+          task_goal: "在保证教学质量的前提下，稳定缩短备课与说课准备时间，并形成可复用的校本资料。",
+          for_roles: ["师范生", "实习教师", "新教师", "一线教师"],
+          recommended_tool_slugs: ["lessonpro", "slidegenius", "gradergpt", "edumind"],
+          recommended_resource_ids: ["res_lessonplan_cn_001", "res_speech_math_001", "res_prompt_pack_001"],
+          steps: [
+            "明确本节课任务目标与学情",
+            "选 1-2 个核心工具生成初稿",
+            "使用模板做结构对齐与本土化改写",
+            "课堂实施后沉淀可复用版本"
+          ],
+          common_pitfalls: [
+            "只套 AI 初稿，不按校本模板修订",
+            "忽略学情差异，课堂活动不可执行",
+            "一次叠加过多工具，流程反而变慢",
+            "没有复盘沉淀，重复劳动"
+          ],
+          updated_at: "2026-03-21"
+        };
+
+        function renderTopicBase(topic) {
+          $("topic-title").textContent = topic.title || fallbackTopic.title;
+          $("topic-subtitle").textContent = topic.subtitle || fallbackTopic.subtitle;
+          $("topic-goal").textContent = topic.task_goal || fallbackTopic.task_goal;
+          $("topic-updated-hint").textContent = "最近更新：" + dateLabel(topic.updated_at);
+
+          $("topic-roles").innerHTML = (topic.for_roles || [])
+            .map((role) => '<span class="rounded-full bg-brand-light px-2.5 py-1 text-xs font-semibold text-brand-primary">' + escapeHTML(role) + "</span>")
+            .join("");
+
+          $("topic-steps").innerHTML = (topic.steps || [])
+            .map((step, index) => '<li class="flex gap-2"><span class="mt-0.5 inline-flex h-5 w-5 items-center justify-center rounded-full bg-brand-light text-xs font-bold text-brand-primary">' + (index + 1) + '</span><span>' + escapeHTML(step) + "</span></li>")
+            .join("");
+
+          $("topic-pitfalls").innerHTML = (topic.common_pitfalls || [])
+            .map((item) => '<article class="rounded-lg border border-stroke-default bg-surface-soft p-3 text-sm text-text-secondary"><p class="font-semibold text-text-primary">误区提醒</p><p class="mt-1">' + escapeHTML(item) + "</p></article>")
+            .join("");
+        }
+
+        function renderTools(topic, tools) {
+          const toolMap = {};
+          tools.forEach((tool) => {
+            toolMap[tool.slug] = tool;
+          });
+          const selected = (topic.recommended_tool_slugs || [])
+            .map((slug) => toolMap[slug])
+            .filter(Boolean);
+
+          $("topic-tools-grid").innerHTML = selected.length
+            ? selected
+                .map((tool) => {
+                  const scenario = (tool.usage_scenarios || [])[0] || "教案";
+                  return (
+                    '<article class="rounded-xl border border-stroke-default bg-surface-soft p-4">' +
+                    '<div class="mb-2 flex items-center justify-between">' +
+                    '<h3 class="text-base font-bold text-text-primary">' + escapeHTML(tool.name) + "</h3>" +
+                    '<span class="rounded-full bg-brand-light px-2 py-0.5 text-xs font-semibold text-brand-primary">' + escapeHTML(tool.source_type || "编辑整理") + "</span>" +
+                    "</div>" +
+                    '<p class="line-clamp-2 text-sm text-text-secondary">' + escapeHTML(tool.short_description || "") + "</p>" +
+                    '<div class="mt-3 flex flex-wrap gap-2 text-xs">' +
+                    '<span class="rounded bg-surface-card px-2 py-0.5 text-text-secondary">任务：' + escapeHTML(scenario) + "</span>" +
+                    '<span class="rounded bg-surface-card px-2 py-0.5 text-text-secondary">中文支持：' + escapeHTML(tool.chinese_support || "未知") + "</span>" +
+                    "</div>" +
+                    '<a class="mt-3 inline-flex text-xs font-bold text-brand-primary hover:underline" href="./tool-detail.html?slug=' + encodeURIComponent(tool.slug || "") + '">查看相关工具详情</a>' +
+                    "</article>"
+                  );
+                })
+                .join("")
+            : '<article class="rounded-xl border border-stroke-default bg-surface-soft p-4"><p class="text-sm text-text-secondary">暂无工具推荐，请在 topics.json 配置 recommended_tool_slugs。</p></article>';
+        }
+
+        function renderResources(topic, resources, tools) {
+          const toolMap = {};
+          tools.forEach((tool) => {
+            toolMap[tool.slug] = tool.name;
+          });
+          const resMap = {};
+          resources.forEach((resource) => {
+            resMap[resource.id] = resource;
+          });
+          const selected = (topic.recommended_resource_ids || [])
+            .map((id) => resMap[id])
+            .filter(Boolean);
+
+          $("topic-resources-grid").innerHTML = selected.length
+            ? selected
+                .map((resource) => {
+                  const linkedTools = (resource.linked_tool_slugs || [])
+                    .slice(0, 2)
+                    .map((slug) => toolMap[slug] || slug);
+                  return (
+                    '<article class="rounded-xl border border-stroke-default bg-surface-soft p-4">' +
+                    '<h3 class="text-base font-bold text-text-primary">' + escapeHTML(resource.title) + "</h3>" +
+                    '<p class="mt-1 text-xs text-text-muted">' + escapeHTML(resource.type || "资源模板") + " · 更新 " + escapeHTML(dateLabel(resource.updated_at)) + "</p>" +
+                    '<p class="mt-2 text-sm text-text-secondary">适用：' + escapeHTML(resource.education_stage || "全学段") + " / " + escapeHTML(resource.subject || "综合通用") + " / " + escapeHTML(resource.purpose || "教学准备") + "</p>" +
+                    '<p class="mt-2 text-xs text-text-secondary">联动工具：' + escapeHTML(linkedTools.join("、") || "可在工具目录筛选") + "</p>" +
+                    '<a class="mt-3 inline-flex text-xs font-bold text-brand-primary hover:underline" href="./resources.html">查看模板详情</a>' +
+                    "</article>"
+                  );
+                })
+                .join("")
+            : '<article class="rounded-xl border border-stroke-default bg-surface-soft p-4"><p class="text-sm text-text-secondary">暂无资源推荐，请在 topics.json 配置 recommended_resource_ids。</p></article>';
+        }
+
+        function renderRelatedTopics(currentTopic, topics) {
+          const related = topics
+            .filter((topic) => topic.slug !== currentTopic.slug && topic.is_active)
+            .slice(0, 3);
+
+          $("related-topics-grid").innerHTML = related.length
+            ? related
+                .map((topic) => {
+                  return (
+                    '<article class="rounded-lg border border-stroke-default bg-surface-soft p-4">' +
+                    '<h3 class="text-sm font-bold text-text-primary">' + escapeHTML(topic.title || "专题任务包") + "</h3>" +
+                    '<p class="mt-1 line-clamp-2 text-xs text-text-secondary">' + escapeHTML(topic.summary || "专题说明") + "</p>" +
+                    '<a class="mt-2 inline-flex text-xs font-bold text-brand-primary hover:underline" href="./scenario-topic.html?slug=' + encodeURIComponent(topic.slug || "") + '">查看专题</a>' +
+                    "</article>"
+                  );
+                })
+                .join("")
+            : '<article class="rounded-lg border border-stroke-default bg-surface-soft p-4"><p class="text-sm text-text-secondary">暂无更多专题，后续可在 topics.json 批量扩展。</p></article>';
+        }
+
+        function bindCopyAction(topic) {
+          const btn = $("copy-workflow-btn");
+          if (!btn) return;
+          btn.addEventListener("click", async function () {
+            const text = [
+              "【专题】" + (topic.title || ""),
+              "任务目标：" + (topic.task_goal || ""),
+              "适合对象：" + (topic.for_roles || []).join("、"),
+              "使用步骤：",
+              ...(topic.steps || []).map((step, index) => (index + 1) + ". " + step)
+            ].join("\n");
+            try {
+              await navigator.clipboard.writeText(text);
+              btn.textContent = "已复制工作流";
+              setTimeout(() => {
+                btn.innerHTML = '<span class="material-symbols-outlined !text-base">content_copy</span>复制本专题工作流';
+              }, 1500);
+            } catch (error) {
+              btn.textContent = "复制失败，请手动复制";
+            }
+          });
+        }
+
+        try {
+          const [topicsRes, toolsRes, resourcesRes] = await Promise.all([
+            fetch("./data/topics.json", { cache: "no-store" }),
+            fetch("./data/tools.json", { cache: "no-store" }),
+            fetch("./data/resources.json", { cache: "no-store" })
+          ]);
+
+          const topics = topicsRes.ok ? await topicsRes.json() : [];
+          const tools = toolsRes.ok ? await toolsRes.json() : [];
+          const resources = resourcesRes.ok ? await resourcesRes.json() : [];
+
+          const topic =
+            (Array.isArray(topics) ? topics : []).find((item) => item.slug === topicSlug && item.is_active) ||
+            (Array.isArray(topics) ? topics : []).find((item) => item.is_active) ||
+            fallbackTopic;
+
+          renderTopicBase(topic);
+          renderTools(topic, Array.isArray(tools) ? tools : []);
+          renderResources(topic, Array.isArray(resources) ? resources : [], Array.isArray(tools) ? tools : []);
+          renderRelatedTopics(topic, Array.isArray(topics) ? topics : []);
+          bindCopyAction(topic);
+        } catch (error) {
+          renderTopicBase(fallbackTopic);
+          $("topic-tools-grid").innerHTML = '<article class="rounded-xl border border-stroke-default bg-surface-soft p-4"><p class="text-sm text-state-error">工具数据加载失败，请检查 data/tools.json。</p></article>';
+          $("topic-resources-grid").innerHTML = '<article class="rounded-xl border border-stroke-default bg-surface-soft p-4"><p class="text-sm text-state-error">资源数据加载失败，请检查 data/resources.json。</p></article>';
+          $("related-topics-grid").innerHTML = '<article class="rounded-lg border border-stroke-default bg-surface-soft p-4"><p class="text-sm text-state-error">专题数据加载失败，请检查 data/topics.json。</p></article>';
+          bindCopyAction(fallbackTopic);
+        }
+      })();
+    </script>
+  </body>
+</html>

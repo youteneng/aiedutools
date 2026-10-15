@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>会员计划 | 师航AI</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries,line-clamp"></script>
+    <link rel="stylesheet" href="./globals.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                primary: "rgb(var(--brand-primary) / <alpha-value>)",
+                light: "rgb(var(--brand-primary-light) / <alpha-value>)",
+                dark: "rgb(var(--brand-primary-dark) / <alpha-value>)"
+              },
+              surface: {
+                page: "rgb(var(--surface-page) / <alpha-value>)",
+                card: "rgb(var(--surface-card) / <alpha-value>)",
+                soft: "rgb(var(--surface-soft) / <alpha-value>)"
+              },
+              text: {
+                primary: "rgb(var(--text-primary) / <alpha-value>)",
+                secondary: "rgb(var(--text-secondary) / <alpha-value>)",
+                muted: "rgb(var(--text-muted) / <alpha-value>)"
+              },
+              stroke: {
+                default: "rgb(var(--stroke-default) / <alpha-value>)",
+                subtle: "rgb(var(--stroke-subtle) / <alpha-value>)"
+              },
+              state: {
+                success: "rgb(var(--state-success) / <alpha-value>)",
+                warning: "rgb(var(--state-warning) / <alpha-value>)",
+                error: "rgb(var(--state-error) / <alpha-value>)"
+              }
+            },
+            fontFamily: {
+              display: ["Inter", "sans-serif"]
+            },
+            borderRadius: {
+              lg: "var(--radius-sm)",
+              xl: "var(--radius-md)",
+              full: "var(--radius-full)"
+            }
+          }
+        }
+      };
+    </script>
+  </head>
+  <body class="bg-surface-page font-display text-text-primary antialiased">
+    <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+      <header class="sticky top-0 z-50 border-b border-stroke-default bg-surface-card/90 px-6 py-4 backdrop-blur-md lg:px-20">
+        <div class="mx-auto flex max-w-7xl items-center justify-between">
+          <a class="flex items-center gap-3" href="./index.html">
+            <div class="text-brand-primary">
+              <span class="material-symbols-outlined text-4xl">school</span>
+            </div>
+            <div>
+              <h2 class="text-xl font-bold leading-tight tracking-tight">师航AI</h2>
+              <p class="hidden text-xs font-medium text-text-secondary xl:block">师范生与教育工作者的 AI 工具导航与资源平台</p>
+            </div>
+          </a>
+          <nav class="hidden flex-1 justify-center gap-10 md:flex">
+            <a class="text-sm font-medium text-text-secondary transition-colors hover:text-brand-primary" href="./index.html">首页</a>
+            <a class="text-sm font-medium text-text-secondary transition-colors hover:text-brand-primary" href="./directory.html">工具目录</a>
+            <a class="text-sm font-medium text-text-secondary transition-colors hover:text-brand-primary" href="./resources.html">资源库</a>
+            <a class="text-sm font-medium text-text-secondary transition-colors hover:text-brand-primary" href="./community.html">社区</a>
+            <a class="text-sm font-bold text-brand-primary" href="./pricing.html">会员计划</a>
+          </nav>
+          <div class="flex items-center gap-4">
+            <button class="px-4 text-sm font-medium text-text-secondary">登录</button>
+            <a class="flex h-10 min-w-[100px] items-center justify-center rounded-lg bg-brand-primary px-5 text-sm font-bold text-white shadow-lg shadow-brand-primary/20 transition-all hover:bg-brand-dark" href="./resources.html">
+              免费使用
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <main class="mx-auto w-full max-w-7xl flex-1 px-6 py-12 lg:py-16">
+        <section class="mb-12 rounded-2xl border border-brand-primary/20 bg-gradient-to-br from-brand-primary to-brand-dark px-7 py-9 text-white lg:px-10 lg:py-10">
+          <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
+            <div class="lg:col-span-2">
+              <p class="mb-3 inline-flex items-center gap-2 rounded-full bg-white/15 px-3 py-1 text-xs font-bold tracking-wider">
+                <span class="material-symbols-outlined !text-base">workspace_premium</span>
+                教育场景专用会员方案
+              </p>
+              <h1 class="mb-4 text-3xl font-black leading-tight lg:text-5xl">不是“买功能”，而是把备课效率和教学质量真正提上来</h1>
+              <p class="max-w-3xl text-sm leading-relaxed text-white/90 lg:text-base">
+                师航AI 会员核心价值：每周节省备课与资料整理时间，持续获得高质量模板和任务型工具推荐，
+                让你把更多精力放在课堂互动、学生反馈和教学改进上。
+              </p>
+              <div class="mt-6 grid grid-cols-1 gap-3 text-sm sm:grid-cols-3">
+                <div class="rounded-lg bg-white/10 px-4 py-3">
+                  <p class="text-xs text-white/80">平均节省备课时间</p>
+                  <p class="mt-1 text-xl font-extrabold">6-10 小时/周</p>
+                </div>
+                <div class="rounded-lg bg-white/10 px-4 py-3">
+                  <p class="text-xs text-white/80">可直接套用模板</p>
+                  <p class="mt-1 text-xl font-extrabold">500+ 份</p>
+                </div>
+                <div class="rounded-lg bg-white/10 px-4 py-3">
+                  <p class="text-xs text-white/80">教师实测推荐率</p>
+                  <p class="mt-1 text-xl font-extrabold">92%</p>
+                </div>
+              </div>
+            </div>
+            <div class="rounded-xl border border-white/20 bg-white/10 p-5 text-sm">
+              <h2 class="mb-3 text-base font-bold">本土购买与服务支持</h2>
+              <div class="space-y-2 text-white/90">
+                <p class="flex items-center gap-2"><span class="material-symbols-outlined !text-base">payments</span>支持微信支付 / 支付宝（占位）</p>
+                <p class="flex items-center gap-2"><span class="material-symbols-outlined !text-base">receipt_long</span>企业/学校采购与发票咨询（占位）</p>
+                <p class="flex items-center gap-2"><span class="material-symbols-outlined !text-base">support_agent</span>机构客户专属顾问与对公方案（占位）</p>
+              </div>
+              <a class="mt-4 inline-flex w-full items-center justify-center rounded-lg bg-white px-4 py-2.5 font-bold text-brand-primary transition-colors hover:bg-slate-100" href="./community.html">咨询采购方案</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="mb-14 grid grid-cols-1 gap-8 md:grid-cols-3">
+          <article class="flex flex-col gap-6 rounded-xl border border-stroke-default bg-surface-card p-8 transition-all hover:border-brand-primary/40">
+            <div>
+              <h3 class="text-xl font-bold">师范生版</h3>
+              <p class="mt-1 text-sm text-text-secondary">适合课程作业、微格试讲与实习准备</p>
+              <div class="mt-4 flex items-baseline gap-1">
+                <span class="text-5xl font-black tracking-tighter">¥0</span>
+                <span class="text-lg font-medium text-text-secondary">/月</span>
+              </div>
+            </div>
+            <a class="flex h-12 w-full items-center justify-center rounded-lg bg-surface-soft px-4 text-base font-bold transition-colors hover:bg-stroke-subtle" href="./resources.html">免费使用</a>
+            <div class="space-y-3 text-sm text-text-secondary">
+              <p class="flex items-start gap-2"><span class="material-symbols-outlined text-state-success">check_circle</span>完成课程作业和试讲准备的基础模板够用，不再从零写起。</p>
+              <p class="flex items-start gap-2"><span class="material-symbols-outlined text-state-success">check_circle</span>每月可下载 10 份核心教学资料，覆盖教案、说课和实习记录。</p>
+              <p class="flex items-start gap-2"><span class="material-symbols-outlined text-state-success">check_circle</span>可加入教师社区，查看真实课堂经验与常见踩坑总结。</p>
+            </div>
+          </article>
+
+          <article class="relative z-10 flex scale-105 flex-col gap-6 rounded-xl border-2 border-brand-primary bg-surface-card p-8 shadow-2xl shadow-brand-primary/10">
+            <div class="absolute -top-4 left-1/2 -translate-x-1/2 rounded-full bg-brand-primary px-4 py-1 text-xs font-bold uppercase tracking-widest text-white">
+              转化最佳
+            </div>
+            <div>
+              <h3 class="text-xl font-bold">教师专业版</h3>
+              <p class="mt-1 text-sm text-text-secondary">适合新教师与一线教师高频教学任务</p>
+              <div class="mt-4 flex items-baseline gap-1">
+                <span class="text-5xl font-black tracking-tighter">¥99</span>
+                <span class="text-lg font-medium text-text-secondary">/月</span>
+              </div>
+            </div>
+            <a class="flex h-12 w-full items-center justify-center rounded-lg bg-brand-primary px-4 text-base font-bold text-white shadow-lg shadow-brand-primary/30 transition-all hover:bg-brand-dark" href="./resources.html">升级专业版</a>
+            <div class="space-y-3 text-sm text-text-secondary">
+              <p class="flex items-start gap-2"><span class="material-symbols-outlined text-brand-primary">check_circle</span>不限次数调用，日常备课、说课、评语生成可稳定覆盖整周工作。</p>
+              <p class="flex items-start gap-2"><span class="material-symbols-outlined text-brand-primary">check_circle</span>解锁“高质量模板 + Prompt 提示词库”，快速产出可直接改用的初稿。</p>
+              <p class="flex items-start gap-2"><span class="material-symbols-outlined text-brand-primary">check_circle</span>无限下载资源与每周更新推荐，避免反复筛选无效工具。</p>
+            </div>
+          </article>
+
+          <article class="flex flex-col gap-6 rounded-xl border border-stroke-default bg-surface-card p-8 transition-all hover:border-brand-primary/40">
+            <div>
+              <h3 class="text-xl font-bold">学校机构版</h3>
+              <p class="mt-1 text-sm text-text-secondary">适合学校、教研室、院系集中采购与协作</p>
+              <div class="mt-4 flex items-baseline gap-1">
+                <span class="text-4xl font-black tracking-tighter">定制报价</span>
+              </div>
+            </div>
+            <a class="flex h-12 w-full items-center justify-center rounded-lg bg-text-primary px-4 text-base font-bold text-white transition-colors hover:bg-text-primary/90" href="./community.html">联系销售</a>
+            <div class="space-y-3 text-sm text-text-secondary">
+              <p class="flex items-start gap-2"><span class="material-symbols-outlined text-text-primary">check_circle</span>支持教师账号统一管理，减少校内工具采购和培训割裂。</p>
+              <p class="flex items-start gap-2"><span class="material-symbols-outlined text-text-primary">check_circle</span>可做组织级模板库沉淀，形成校本教研方法资产。</p>
+              <p class="flex items-start gap-2"><span class="material-symbols-outlined text-text-primary">check_circle</span>支持发票、对公流程、采购合同与专属顾问沟通（占位）。</p>
+            </div>
+          </article>
+        </section>
+
+        <section class="mb-14">
+          <h2 class="mb-6 text-2xl font-bold">适合谁</h2>
+          <div class="grid grid-cols-1 gap-4 md:grid-cols-3">
+            <article class="rounded-xl border border-stroke-default bg-surface-card p-5">
+              <h3 class="mb-2 font-bold text-brand-primary">师范生版适合谁</h3>
+              <p class="text-sm text-text-secondary">正在做课程作业、试讲打磨、教育实习准备的师范生。希望先低门槛上手，形成稳定资料模板。</p>
+            </article>
+            <article class="rounded-xl border border-brand-primary/30 bg-brand-light/35 p-5">
+              <h3 class="mb-2 font-bold text-brand-primary">教师专业版适合谁</h3>
+              <p class="text-sm text-text-secondary">备课任务重、课时密度高的新教师与一线教师。需要持续输出教案、课件、说课稿并追求效率和质量平衡。</p>
+            </article>
+            <article class="rounded-xl border border-stroke-default bg-surface-card p-5">
+              <h3 class="mb-2 font-bold text-brand-primary">学校机构版适合谁</h3>
+              <p class="text-sm text-text-secondary">有组织化协作需求的学校/院系/教研团队。关注统一管理、规范流程、对公采购和长期教研资产沉淀。</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="mb-14">
+          <h2 class="mb-6 text-2xl font-bold">会员可获得的具体内容示例</h2>
+          <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
+            <article class="rounded-xl border border-stroke-default bg-surface-card p-5">
+              <h3 class="mb-2 font-bold">教案模板包</h3>
+              <p class="text-sm text-text-secondary">初中语文、高中数学等高频课型模板，含目标、活动、评价完整结构。</p>
+            </article>
+            <article class="rounded-xl border border-stroke-default bg-surface-card p-5">
+              <h3 class="mb-2 font-bold">说课稿模板</h3>
+              <p class="text-sm text-text-secondary">按“教材分析-学情分析-教法学法-过程设计”输出，可直接用于试讲准备。</p>
+            </article>
+            <article class="rounded-xl border border-stroke-default bg-surface-card p-5">
+              <h3 class="mb-2 font-bold">Prompt 提示词库</h3>
+              <p class="text-sm text-text-secondary">覆盖写教案、生成 PPT、论文润色、出题测验等任务的可复制提示词。</p>
+            </article>
+            <article class="rounded-xl border border-stroke-default bg-surface-card p-5">
+              <h3 class="mb-2 font-bold">教学评估量表</h3>
+              <p class="text-sm text-text-secondary">听评课记录表、课堂观察量表、班会复盘模板等，可用于教研归档。</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="mb-14 rounded-xl border border-stroke-default bg-surface-card p-6">
+          <h2 class="mb-4 text-2xl font-bold">免费版 vs 专业版：核心差异</h2>
+          <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+            <div class="rounded-lg border border-stroke-subtle bg-surface-soft p-4">
+              <h3 class="mb-2 font-bold">免费版</h3>
+              <ul class="space-y-2 text-sm text-text-secondary">
+                <li>1. 适合尝试核心功能，完成轻量任务。</li>
+                <li>2. 调用次数和下载次数有限，适合低频使用。</li>
+                <li>3. 模板覆盖面较基础，深度资源有限。</li>
+              </ul>
+            </div>
+            <div class="rounded-lg border border-brand-primary/30 bg-brand-light/30 p-4">
+              <h3 class="mb-2 font-bold text-brand-primary">专业版</h3>
+              <ul class="space-y-2 text-sm text-text-secondary">
+                <li>1. 支持高频教学任务，连续使用无明显中断。</li>
+                <li>2. 高质量模板 + Prompt 库持续更新，降低重复劳动。</li>
+                <li>3. 更适合“每周都要交付备课成果”的真实教学节奏。</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="mb-14 rounded-2xl border border-brand-primary/20 bg-brand-light/25 p-8 lg:p-10">
+          <div class="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
+            <div class="max-w-3xl">
+              <h2 class="mb-2 text-2xl font-bold">中国本土支付与采购说明（占位）</h2>
+              <p class="text-sm text-text-secondary">支持个人端微信/支付宝支付，机构端支持对公转账、合同采购、发票开具与采购流程咨询。可根据学校预算周期提供按学期/按年方案。</p>
+            </div>
+            <div class="flex flex-wrap gap-3">
+              <a class="rounded-lg bg-brand-primary px-5 py-2.5 text-sm font-bold text-white transition-colors hover:bg-brand-dark" href="./community.html">发票咨询</a>
+              <a class="rounded-lg border border-brand-primary px-5 py-2.5 text-sm font-bold text-brand-primary transition-colors hover:bg-brand-light" href="./community.html">机构采购咨询</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="mx-auto max-w-5xl">
+          <h2 class="mb-8 text-center text-3xl font-bold">教育用户常见顾虑</h2>
+          <div class="space-y-5">
+            <article class="rounded-xl border border-stroke-default bg-surface-card p-6">
+              <h3 class="mb-2 font-bold">我担心 AI 结果不符合学校教研要求，怎么办？</h3>
+              <p class="text-sm text-text-secondary">平台提供“可直接编辑”的模板化输出，建议按本校教案格式做二次调整。专业版还提供示例 Prompt，帮助你稳定获得更贴近教学规范的内容。</p>
+            </article>
+            <article class="rounded-xl border border-stroke-default bg-surface-card p-6">
+              <h3 class="mb-2 font-bold">我只是师范生，真的需要付费吗？</h3>
+              <p class="text-sm text-text-secondary">如果你当前任务频率不高，先用免费版足够；如果正处在实习密集期、频繁写教案和说课稿，专业版会明显节省时间和精力。</p>
+            </article>
+            <article class="rounded-xl border border-stroke-default bg-surface-card p-6">
+              <h3 class="mb-2 font-bold">学校集体采购是否支持合同、发票和对公付款？</h3>
+              <p class="text-sm text-text-secondary">支持。机构版提供采购咨询、对公流程和发票开具占位服务，可按学校需求配置。具体方案建议联系销售顾问评估。</p>
+            </article>
+            <article class="rounded-xl border border-stroke-default bg-surface-card p-6">
+              <h3 class="mb-2 font-bold">订阅后不满意，是否可以取消？</h3>
+              <p class="text-sm text-text-secondary">可以随时取消。取消后在当前计费周期内仍可继续使用已开通权益，不会立即中断。</p>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="mt-20 bg-text-primary px-6 py-12 text-white lg:px-20">
+        <div class="mx-auto grid max-w-7xl grid-cols-1 gap-12 md:grid-cols-4">
+          <div>
+            <div class="mb-6 flex items-center gap-3">
+              <span class="material-symbols-outlined text-3xl text-brand-primary">school</span>
+              <span class="text-xl font-bold">师航AI</span>
+            </div>
+            <p class="text-sm leading-relaxed text-slate-400">用人工智能重新定义未来教育，助力每一位教育者。</p>
+          </div>
+          <div>
+            <h5 class="mb-6 font-bold">产品</h5>
+            <ul class="space-y-4 text-sm text-slate-400">
+              <li><a class="transition-colors hover:text-brand-primary" href="./directory.html">功能特性</a></li>
+              <li><a class="transition-colors hover:text-brand-primary" href="./scenario-topic.html">应用案例</a></li>
+              <li><a class="transition-colors hover:text-brand-primary" href="./pricing.html">价格计划</a></li>
+            </ul>
+          </div>
+          <div>
+            <h5 class="mb-6 font-bold">资源</h5>
+            <ul class="space-y-4 text-sm text-slate-400">
+              <li><a class="transition-colors hover:text-brand-primary" href="./resources.html">帮助中心</a></li>
+              <li><a class="transition-colors hover:text-brand-primary" href="./community.html">博客</a></li>
+              <li><a class="transition-colors hover:text-brand-primary" href="./scenario-topic.html">教学视频</a></li>
+            </ul>
+          </div>
+          <div>
+            <h5 class="mb-6 font-bold">联系我们</h5>
+            <ul class="space-y-4 text-sm text-slate-400">
+              <li>support@aiedu.com</li>
+              <li>400-123-4567</li>
+              <li class="mt-6 flex gap-4">
+                <span class="material-symbols-outlined cursor-pointer hover:text-brand-primary">language</span>
+                <span class="material-symbols-outlined cursor-pointer hover:text-brand-primary">mail</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="mx-auto mt-12 flex max-w-7xl flex-col items-center justify-between gap-4 border-t border-slate-800 pt-8 text-xs text-slate-500 md:flex-row">
+          <p>© 2024 师航AI · 师范生与教育工作者的 AI 工具导航与资源平台</p>
+          <div class="flex gap-6">
+            <a class="hover:text-slate-300" href="./pricing.html">隐私政策</a>
+            <a class="hover:text-slate-300" href="./pricing.html">服务条款</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
