@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>AI 教育工具导航 - AI 工具库</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              primary: '#1c74e9',
+              'background-light': '#f6f7f8',
+              'background-dark': '#111821',
+            },
+            fontFamily: {
+              display: ['Inter', 'sans-serif'],
+            },
+            borderRadius: {
+              DEFAULT: '0.25rem',
+              lg: '0.5rem',
+              xl: '0.75rem',
+              full: '9999px',
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        font-family: 'Inter', 'Microsoft YaHei', sans-serif;
+      }
+
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+
+      .fill-icon {
+        font-variation-settings: 'FILL' 1;
+      }
+    </style>
+  </head>
+  <body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display">
+    <header class="sticky top-0 z-50 w-full border-b border-slate-200 dark:border-slate-800 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md px-6 lg:px-20 py-4">
+      <div class="max-w-7xl mx-auto flex items-center justify-between gap-8">
+        <div class="flex items-center gap-8">
+          <a class="flex items-center gap-3" href="index.html">
+            <span class="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-primary text-white text-sm font-bold tracking-wide">AI</span>
+            <h2 class="text-slate-900 dark:text-white text-xl font-bold tracking-tight">AI 教育工具导航</h2>
+          </a>
+          <nav class="hidden md:flex items-center gap-6">
+            <a class="text-slate-600 dark:text-slate-400 text-sm font-medium hover:text-primary transition-colors" href="index.html">首页</a>
+            <a class="text-primary text-sm font-semibold" href="tools.html">AI 工具库</a>
+            <a class="text-slate-600 dark:text-slate-400 text-sm font-medium hover:text-primary transition-colors" href="resources.html">资源中心</a>
+            <a class="text-slate-600 dark:text-slate-400 text-sm font-medium hover:text-primary transition-colors" href="about.html">关于我们</a>
+          </nav>
+        </div>
+          <div class="flex flex-1 justify-end items-center gap-4">
+            <div class="relative w-full max-w-sm hidden sm:block">
+              <span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400">search</span>
+              <input id="toolSearchInput" class="w-full pl-10 pr-4 py-2 bg-slate-100 dark:bg-slate-800 border-none rounded-lg focus:ring-2 focus:ring-primary text-sm" placeholder="搜索 AI 工具..." type="text" />
+            </div>
+          </div>
+        </div>
+      </header>
+
+    <main class="max-w-7xl mx-auto px-6 lg:px-20 py-8">
+      <section class="mb-6 rounded-2xl border border-primary/20 bg-gradient-to-br from-primary to-blue-700 p-6 md:p-7 text-white shadow-xl shadow-primary/20">
+        <span class="inline-flex items-center gap-2 rounded-full bg-white/20 px-3 py-1 text-xs font-bold uppercase tracking-wider">
+          <span class="material-symbols-outlined text-base">auto_awesome</span>
+          AI 工具库
+        </span>
+        <h2 class="mt-3 text-2xl md:text-3xl font-black leading-tight">面向教学场景的 AI 工具导航</h2>
+        <p class="mt-2 text-sm md:text-base text-blue-50 max-w-3xl">按教学阶段与工具类型快速筛选，发现可直接用于备课、课件、批改与教学管理的工具。</p>
+        <p class="mt-4 text-xs text-blue-100">本页工具为公开索引入口，相关版权归原权利方所有；请在使用前遵循原始来源的平台规则与服务条款。</p>
+      </section>
+
+      <div class="flex flex-col lg:flex-row gap-8">
+        <aside class="w-full lg:w-64 flex-shrink-0" data-filter-sidebar="true">
+          <div class="sticky top-28 space-y-8">
+            <section class="rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-4" data-filter-group="teaching-level">
+              <h3 class="text-sm font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-4">教学阶段</h3>
+              <div class="space-y-2">
+                <label class="flex items-center gap-3 text-sm cursor-pointer">
+                  <input class="rounded text-primary focus:ring-primary" data-filter-group="level" data-filter-value="elementary" type="checkbox" />
+                  <span class="text-sm font-semibold text-slate-700 dark:text-slate-300">小学教育</span>
+                </label>
+                <label class="flex items-center gap-3 text-sm cursor-pointer">
+                  <input class="rounded text-primary focus:ring-primary" data-filter-group="level" data-filter-value="secondary" type="checkbox" />
+                  <span class="text-sm font-semibold text-slate-700 dark:text-slate-300">中学教育</span>
+                </label>
+                <label class="flex items-center gap-3 text-sm cursor-pointer">
+                  <input class="rounded text-primary focus:ring-primary" data-filter-group="level" data-filter-value="higher-ed" type="checkbox" />
+                  <span class="text-sm font-semibold text-slate-700 dark:text-slate-300">高等教育</span>
+                </label>
+                <label class="flex items-center gap-3 text-sm cursor-pointer">
+                  <input class="rounded text-primary focus:ring-primary" data-filter-group="level" data-filter-value="general-ai" type="checkbox" />
+                  <span class="text-sm font-semibold text-slate-700 dark:text-slate-300">通用AI</span>
+                </label>
+              </div>
+            </section>
+
+            <section class="rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-4" data-filter-group="tool-type">
+              <h3 class="text-sm font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-4">工具类型</h3>
+              <div class="space-y-2">
+                <label class="flex items-center gap-3 text-sm cursor-pointer">
+                  <input class="rounded text-primary focus:ring-primary" data-filter-group="type" data-filter-value="lesson-planning" type="checkbox" />
+                  <span class="text-sm font-semibold text-slate-700 dark:text-slate-300">备课助手</span>
+                </label>
+                <label class="flex items-center gap-3 text-sm cursor-pointer">
+                  <input class="rounded text-primary focus:ring-primary" data-filter-group="type" data-filter-value="ppt-generation" type="checkbox" />
+                  <span class="text-sm font-semibold text-slate-700 dark:text-slate-300">PPT 生成</span>
+                </label>
+                <label class="flex items-center gap-3 text-sm cursor-pointer">
+                  <input class="rounded text-primary focus:ring-primary" data-filter-group="type" data-filter-value="grading" type="checkbox" />
+                  <span class="text-sm font-semibold text-slate-700 dark:text-slate-300">作业批改</span>
+                </label>
+                <label class="flex items-center gap-3 text-sm cursor-pointer">
+                  <input class="rounded text-primary focus:ring-primary" data-filter-group="type" data-filter-value="quiz-generation" type="checkbox" />
+                  <span class="text-sm font-semibold text-slate-700 dark:text-slate-300">题库生成</span>
+                </label>
+                <label class="flex items-center gap-3 text-sm cursor-pointer">
+                  <input class="rounded text-primary focus:ring-primary" data-filter-group="type" data-filter-value="teaching-management" type="checkbox" />
+                  <span class="text-sm font-semibold text-slate-700 dark:text-slate-300">教学管理</span>
+                </label>
+              </div>
+            </section>
+
+            <div data-filter-group="pricing" class="hidden">
+              <h3 class="text-sm font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-4">费用</h3>
+              <div class="space-y-2">
+                <label class="flex items-center gap-3 cursor-pointer group">
+                  <input class="h-4 w-4 border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-primary focus:ring-2 focus:ring-primary/30 focus:ring-offset-0" data-filter-group="price" data-filter-value="free" name="cost" type="radio" />
+                  <span class="text-sm font-semibold text-slate-700 dark:text-slate-300 group-hover:text-primary transition-colors">免费</span>
+                </label>
+                <label class="flex items-center gap-3 cursor-pointer group">
+                  <input class="h-4 w-4 border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-primary focus:ring-2 focus:ring-primary/30 focus:ring-offset-0" data-filter-group="price" data-filter-value="paid" name="cost" type="radio" />
+                  <span class="text-sm font-semibold text-slate-700 dark:text-slate-300 group-hover:text-primary transition-colors">付费 / 订阅</span>
+                </label>
+                <label class="flex items-center gap-3 cursor-pointer group">
+                  <input checked class="h-4 w-4 border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-primary focus:ring-2 focus:ring-primary/30 focus:ring-offset-0" data-filter-group="price" data-filter-value="all" name="cost" type="radio" />
+                  <span class="text-sm font-semibold text-slate-700 dark:text-slate-300 group-hover:text-primary transition-colors">全部</span>
+                </label>
+              </div>
+            </div>
+
+            <button id="resetFilters" class="w-full h-11 rounded-lg bg-primary/10 text-primary font-bold hover:bg-primary/20 transition-colors flex items-center justify-center gap-2">
+              <span class="material-symbols-outlined text-sm">restart_alt</span>
+              重置筛选
+            </button>
+          </div>
+        </aside>
+
+        <div class="flex-1 space-y-6">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <div>
+              <p id="resultCount" class="text-slate-500 dark:text-slate-400">加载中...</p>
+            </div>
+            <div class="flex flex-col items-start sm:items-end gap-2">
+              <button id="openSubmitModal" class="h-10 px-4 rounded-lg bg-primary text-white text-sm font-bold hover:bg-primary/90 transition-colors flex items-center gap-2 shadow-md shadow-primary/20">
+                <span class="material-symbols-outlined text-base">rocket_launch</span>
+                发现了新的 AI 教育工具，欢迎推荐！
+              </button>
+            </div>
+            <div class="flex items-center gap-2">
+              <div class="flex items-center gap-2 bg-white dark:bg-slate-800 p-1 rounded-lg border border-slate-200 dark:border-slate-700">
+                <span class="text-xs font-bold text-slate-400 uppercase px-2">排序:</span>
+                <select id="sortSelect" class="bg-transparent border-none text-sm font-semibold focus:ring-0 cursor-pointer">
+                  <option value="popular">按流行度</option>
+                  <option value="latest">按最新</option>
+                  <option value="rating">按评分</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div id="toolGrid" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6" data-tool-grid="true"></div>
+
+          <div id="emptyState" class="hidden rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 p-10 text-center text-slate-500 dark:text-slate-400">
+            没有匹配的工具，请调整筛选条件。
+          </div>
+
+          <div id="pagination" class="flex items-center justify-center gap-2 pt-8" data-pagination="true"></div>
+        </div>
+      </div>
+    </main>
+
+    <div id="submitModal" class="hidden fixed inset-0 z-[100]">
+      <div id="submitModalMask" class="absolute inset-0 bg-slate-900/50"></div>
+      <div class="relative mx-auto mt-10 w-[92%] max-w-2xl rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 shadow-2xl">
+        <div class="flex items-center justify-between px-6 py-4 border-b border-slate-200 dark:border-slate-700">
+          <h2 class="text-lg font-bold text-slate-900 dark:text-white">提交您发现的 AI 教育工具</h2>
+          <button id="closeSubmitModal" type="button" class="h-8 w-8 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-500">
+            <span class="material-symbols-outlined text-base">close</span>
+          </button>
+        </div>
+        <form id="toolSubmitForm" class="px-6 py-5 grid grid-cols-1 md:grid-cols-2 gap-4">
+          <label class="flex flex-col gap-2 md:col-span-1">
+            <span class="text-sm font-semibold text-slate-700 dark:text-slate-300">工具名称</span>
+            <input name="name" required class="rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-sm" placeholder="例如：师承万象" />
+          </label>
+          <label class="flex flex-col gap-2 md:col-span-1">
+            <span class="text-sm font-semibold text-slate-700 dark:text-slate-300">官网地址</span>
+            <input name="url" type="url" required class="rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-sm" placeholder="https://..." />
+          </label>
+          <label class="flex flex-col gap-2 md:col-span-1">
+            <span class="text-sm font-semibold text-slate-700 dark:text-slate-300">工具类型</span>
+            <select name="category" required class="rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-sm">
+              <option value="">请选择</option>
+              <option value="lesson-planning">备课助手</option>
+              <option value="ppt-generation">PPT生成</option>
+              <option value="grading">作业批改</option>
+              <option value="quiz-generation">题库生成</option>
+              <option value="teaching-management">教学管理</option>
+            </select>
+          </label>
+          <label class="flex flex-col gap-2 md:col-span-1">
+            <span class="text-sm font-semibold text-slate-700 dark:text-slate-300">教学阶段</span>
+            <select name="stage" required class="rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-sm">
+              <option value="">请选择</option>
+              <option value="elementary">小学教育</option>
+              <option value="secondary">中学教育</option>
+              <option value="higher-ed">高等教育</option>
+              <option value="general-ai">通用AI</option>
+            </select>
+          </label>
+          <label class="flex flex-col gap-2 md:col-span-2">
+            <span class="text-sm font-semibold text-slate-700 dark:text-slate-300">工具简介</span>
+            <textarea name="description" required rows="4" class="rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-sm" placeholder="请简要说明工具能力、适用人群和教育场景"></textarea>
+          </label>
+          <label class="flex flex-col gap-2 md:col-span-2">
+            <span class="text-sm font-semibold text-slate-700 dark:text-slate-300">提交人联系方式（邮箱/微信）</span>
+            <input name="contact" required class="rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-sm" placeholder="便于后续审核联系" />
+          </label>
+          <p id="submitFormError" class="hidden md:col-span-2 text-sm text-red-600"></p>
+          <p id="submitFormSuccess" class="hidden md:col-span-2 text-sm text-green-600"></p>
+          <div class="md:col-span-2 flex items-center justify-end gap-3 pt-2">
+            <button id="cancelSubmitBtn" type="button" class="h-10 px-4 rounded-lg border border-slate-300 dark:border-slate-700 text-sm font-semibold text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800">取消</button>
+            <button type="submit" class="h-10 px-5 rounded-lg bg-primary text-white text-sm font-bold hover:bg-primary/90">提交收录申请</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <footer class="mt-20 border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-background-dark px-6 lg:px-20 py-12">
+      <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+        <div class="flex items-center gap-3">
+          <span class="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-primary text-white text-sm font-bold tracking-wide">AI</span>
+          <h2 class="text-slate-900 dark:text-white text-lg font-bold">AI 教育工具导航</h2>
+        </div>
+        <p class="text-sm text-slate-500 dark:text-slate-400">© 2026 AI 教育工具导航目录. 保留所有权利。</p>
+        <div class="flex gap-6">
+          <a class="text-slate-400 hover:text-primary transition-colors" href="about.html"><span class="material-symbols-outlined">language</span></a>
+          <a class="text-slate-400 hover:text-primary transition-colors" href="mailto:contact@aiedutools.edu.cn"><span class="material-symbols-outlined">mail</span></a>
+          <a class="text-slate-400 hover:text-primary transition-colors" href="tools.html"><span class="material-symbols-outlined">share</span></a>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="./scripts/tools-page.js?v=20260322-3"></script>
+  </body>
+</html>

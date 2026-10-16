@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>工具详情 - AI 教育工具导航</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              primary: '#1c74e9',
+              'background-light': '#f6f7f8',
+              'background-dark': '#111821',
+            },
+            fontFamily: {
+              display: ['Inter', 'PingFang SC', 'Microsoft YaHei', 'sans-serif'],
+            },
+            borderRadius: {
+              DEFAULT: '0.25rem',
+              lg: '0.5rem',
+              xl: '0.75rem',
+              full: '9999px',
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        font-family: 'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+      }
+
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+
+      .fill-icon {
+        font-variation-settings: 'FILL' 1;
+      }
+    </style>
+  </head>
+  <body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100">
+    <div class="relative flex h-auto min-screen w-full flex-col overflow-x-hidden">
+      <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200 dark:border-slate-800 px-6 md:px-20 py-4 bg-white dark:bg-slate-900 sticky top-0 z-50">
+        <div class="flex items-center gap-8">
+          <a class="flex items-center gap-3" href="./index.html">
+            <span class="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-primary text-white text-sm font-bold tracking-wide">AI</span>
+            <h2 class="text-slate-900 dark:text-white text-xl font-bold leading-tight tracking-tight">AI 教育工具导航</h2>
+          </a>
+          <nav class="hidden lg:flex items-center gap-6">
+            <a class="text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-primary" href="./index.html">首页</a>
+            <a class="text-sm font-medium text-primary" href="./tools.html">AI 工具库</a>
+            <a class="text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-primary" href="./resources.html">资源中心</a>
+            <a class="text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-primary" href="./about.html">关于我们</a>
+          </nav>
+        </div>
+        <div class="flex flex-1 justify-end gap-4 items-center">
+          <label class="hidden md:flex flex-col min-w-40 h-10 max-w-64">
+            <div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+              <div class="text-slate-500 flex border-none bg-slate-100 dark:bg-slate-800 items-center justify-center pl-4 rounded-l-lg">
+                <span class="material-symbols-outlined text-xl">search</span>
+              </div>
+              <input id="headerSearchInput" class="form-input flex w-full min-w-0 flex-1 border-none bg-slate-100 dark:bg-slate-800 focus:ring-0 h-full placeholder:text-slate-500 px-4 rounded-r-lg text-sm font-normal" placeholder="搜索 AI 工具" value="" />
+            </div>
+          </label>
+          <a href="#reviews" class="flex items-center justify-center rounded-lg h-10 bg-primary text-white px-5 text-sm font-bold tracking-wide">查看评价</a>
+        </div>
+      </header>
+
+      <main class="flex-1 px-4 md:px-20 py-8 max-w-7xl mx-auto w-full">
+        <div class="mb-6">
+          <a class="flex items-center gap-2 text-slate-500 hover:text-primary transition-colors text-sm font-medium" href="./tools.html">
+            <span class="material-symbols-outlined text-base">arrow_back</span>
+            返回工具库
+          </a>
+        </div>
+
+        <section class="flex flex-col md:flex-row md:items-center justify-between gap-6 pb-8 border-b border-slate-200 dark:border-slate-800">
+          <div class="flex gap-6 items-start">
+            <div id="toolIconWrap" class="bg-primary/10 rounded-xl size-24 md:size-32 flex items-center justify-center border border-primary/20 shrink-0">
+              <span id="toolIcon" class="material-symbols-outlined text-primary text-5xl">school</span>
+            </div>
+            <div class="flex flex-col gap-2">
+              <div class="flex items-center gap-2">
+                <h1 id="toolName" class="text-3xl font-extrabold text-slate-900 dark:text-white">工具名称</h1>
+                <span id="toolBadge" class="hidden bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400 text-xs font-bold px-2 py-1 rounded-full uppercase">官方认证</span>
+              </div>
+              <p id="toolDescription" class="text-slate-600 dark:text-slate-400 text-lg">工具简介</p>
+              <div class="flex items-center gap-4 mt-2">
+                <div class="flex items-center text-amber-500">
+                  <div id="toolStars" class="flex items-center"></div>
+                  <span id="toolScore" class="ml-2 text-slate-900 dark:text-slate-100 font-bold">0.0</span>
+                  <span id="toolReviewCount" class="ml-1 text-slate-500 text-sm">(0 条评价)</span>
+                </div>
+                <div class="h-4 w-px bg-slate-300 dark:bg-slate-700"></div>
+                <p id="toolUpdatedText" class="text-sm text-slate-500 font-medium">更新于 -</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-3">
+            <a id="visitWebsiteBtn" target="_blank" rel="noopener noreferrer" class="flex-1 md:flex-none flex items-center justify-center gap-2 rounded-lg h-12 px-8 bg-primary text-white font-bold text-base hover:bg-primary/90 transition-colors" href="./tools.html">
+              访问网站
+              <span class="material-symbols-outlined text-lg">open_in_new</span>
+            </a>
+            <button id="copyLinkBtn" class="flex items-center justify-center rounded-lg h-12 w-12 border border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800" type="button" title="复制页面链接">
+              <span class="material-symbols-outlined">bookmark</span>
+            </button>
+          </div>
+        </section>
+
+        <div class="flex border-b border-slate-200 dark:border-slate-800 mb-8 overflow-x-auto">
+          <a class="border-b-2 border-primary text-primary px-6 py-4 text-sm font-bold whitespace-nowrap" href="#overview">概述</a>
+          <a class="text-slate-500 dark:text-slate-400 px-6 py-4 text-sm font-bold hover:text-primary whitespace-nowrap" href="#features">功能特性</a>
+          <a class="text-slate-500 dark:text-slate-400 px-6 py-4 text-sm font-bold hover:text-primary whitespace-nowrap" href="#use-cases">使用场景</a>
+          <a class="text-slate-500 dark:text-slate-400 px-6 py-4 text-sm font-bold hover:text-primary whitespace-nowrap" href="#reviews">评价</a>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+          <div class="lg:col-span-2 space-y-12">
+            <section id="overview" class="bg-white dark:bg-slate-900/60 rounded-2xl border border-slate-200 dark:border-slate-800 p-6 md:p-8">
+              <h2 class="text-2xl font-bold mb-4 text-slate-900 dark:text-white">工具概述</h2>
+              <p id="overviewText" class="text-slate-600 dark:text-slate-400 leading-relaxed"></p>
+            </section>
+
+            <section id="features">
+              <h2 class="text-2xl font-bold mb-6 text-slate-900 dark:text-white">功能概览</h2>
+              <div id="featuresGrid" class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
+            </section>
+
+            <section class="bg-primary/5 rounded-2xl p-8 border border-primary/10" id="use-cases">
+              <div class="flex items-center gap-3 mb-6">
+                <span class="material-symbols-outlined text-primary text-3xl">lightbulb</span>
+                <h2 class="text-2xl font-bold text-slate-900 dark:text-white">教学使用场景</h2>
+              </div>
+              <div id="useCasesContainer" class="space-y-6"></div>
+            </section>
+
+            <section data-reviews-container="true" id="reviews">
+              <h2 class="text-2xl font-bold mb-6 text-slate-900 dark:text-white">教师评价</h2>
+              <div class="flex flex-col md:flex-row gap-8 items-start">
+                <div class="w-full md:w-48 flex flex-col items-center justify-center p-6 bg-slate-100 dark:bg-slate-800 rounded-xl">
+                  <span id="ratingSummaryScore" class="text-5xl font-extrabold text-slate-900 dark:text-white">0.0</span>
+                  <div id="ratingSummaryStars" class="flex text-amber-500 my-2"></div>
+                  <span class="text-sm text-slate-500 font-medium">总分 5 星</span>
+                </div>
+                <div id="ratingBars" class="flex-1 w-full space-y-2"></div>
+              </div>
+              <div id="reviewList" class="mt-8 space-y-6"></div>
+            </section>
+          </div>
+
+          <aside class="space-y-8">
+            <div class="p-6 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 sticky top-24">
+              <h2 class="text-lg font-bold mb-4 text-slate-900 dark:text-white">价格方案</h2>
+              <div id="pricingPlans" class="space-y-3"></div>
+              <hr class="my-6 border-slate-200 dark:border-slate-800" />
+              <h2 class="text-lg font-bold mb-4 text-slate-900 dark:text-white">相关工具</h2>
+              <div id="relatedTools" class="space-y-4"></div>
+              <a class="block w-full mt-6 text-center text-sm font-bold text-primary hover:underline" href="./tools.html">查看所有 AI 工具</a>
+            </div>
+          </aside>
+        </div>
+      </main>
+
+      <footer class="bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 py-12 px-6 md:px-20 mt-12">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+          <div class="flex items-center gap-3">
+            <span class="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-primary text-white text-sm font-bold tracking-wide">AI</span>
+            <span class="font-bold text-slate-900 dark:text-white">AI 教育工具导航</span>
+          </div>
+          <div class="flex gap-8">
+            <a class="text-sm text-slate-500 hover:text-primary" href="./about.html">隐私政策</a>
+            <a class="text-sm text-slate-500 hover:text-primary" href="./about.html">服务条款</a>
+            <a class="text-sm text-slate-500 hover:text-primary" href="./about.html">联系我们</a>
+          </div>
+          <p class="text-sm text-slate-400">© 2026 AI EduTools. 赋能全球教育工作者。</p>
+        </div>
+      </footer>
+    </div>
+
+    <script type="module" src="./scripts/tool-detail-page.js"></script>
+  </body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>AI 教育工具导航 - 资源中心</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries,line-clamp"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              primary: '#1c74e9',
+              'background-light': '#f6f7f8',
+              'background-dark': '#111821',
+            },
+            fontFamily: {
+              display: ['Inter', 'sans-serif'],
+            },
+            borderRadius: {
+              DEFAULT: '0.25rem',
+              lg: '0.5rem',
+              xl: '0.75rem',
+              full: '9999px',
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        font-family: 'Inter', 'Microsoft YaHei', sans-serif;
+      }
+
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+    </style>
+  </head>
+  <body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display">
+    <header class="sticky top-0 z-50 w-full border-b border-slate-200 dark:border-slate-800 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md px-6 lg:px-20 py-4">
+      <div class="max-w-7xl mx-auto flex items-center justify-between gap-8">
+        <div class="flex items-center gap-8">
+          <a class="flex items-center gap-3" href="index.html">
+            <span class="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-primary text-white text-sm font-bold tracking-wide">AI</span>
+            <h2 class="text-slate-900 dark:text-white text-xl font-bold tracking-tight">AI 教育工具导航</h2>
+          </a>
+          <nav class="hidden md:flex items-center gap-6">
+            <a class="text-slate-600 dark:text-slate-400 text-sm font-medium hover:text-primary transition-colors" href="index.html">首页</a>
+            <a class="text-slate-600 dark:text-slate-400 text-sm font-medium hover:text-primary transition-colors" href="tools.html">AI 工具库</a>
+            <a class="text-primary text-sm font-semibold" href="resources.html">资源中心</a>
+            <a class="text-slate-600 dark:text-slate-400 text-sm font-medium hover:text-primary transition-colors" href="about.html">关于我们</a>
+          </nav>
+        </div>
+        <div class="flex flex-1 justify-end items-center gap-4">
+          <div class="relative w-full max-w-sm hidden sm:block">
+            <span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400">search</span>
+            <input id="resourceSearchInput" class="w-full pl-10 pr-4 py-2 bg-slate-100 dark:bg-slate-800 border-none rounded-lg focus:ring-2 focus:ring-primary text-sm" placeholder="搜索教材、题库、学科..." type="text" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 lg:px-20 py-8">
+      <section class="mb-6 max-w-6xl mx-auto rounded-2xl border border-primary/20 bg-gradient-to-br from-primary to-blue-700 p-6 md:p-7 text-white shadow-xl shadow-primary/20">
+        <span class="inline-flex items-center gap-2 rounded-full bg-white/20 px-3 py-1 text-xs font-bold uppercase tracking-wider">
+          <span class="material-symbols-outlined text-base">library_books</span>
+          资源中心
+        </span>
+        <h1 class="mt-3 text-2xl md:text-3xl font-black leading-tight">从小学到高中，教材、课标与题库统一入口</h1>
+        <p class="mt-2 text-sm md:text-base text-blue-50 max-w-3xl">你可以按学段、学科与资源类型快速定位。</p>
+        <p id="sourceNotice" class="mt-4 text-xs text-blue-100">加载中...</p>
+      </section>
+
+      <div class="lg:hidden mb-4 flex items-center gap-2">
+        <button type="button" data-scroll-to-filters class="inline-flex items-center gap-1 h-10 px-4 rounded-lg bg-white border border-slate-200 text-slate-700 text-sm font-semibold">
+          <span class="material-symbols-outlined text-base">tune</span>
+          打开筛选
+        </button>
+        <button type="button" data-scroll-to-search class="inline-flex items-center gap-1 h-10 px-4 rounded-lg bg-white border border-slate-200 text-slate-700 text-sm font-semibold">
+          <span class="material-symbols-outlined text-base">north</span>
+          回到搜索
+        </button>
+      </div>
+
+      <div class="flex flex-col lg:flex-row gap-8">
+        <aside class="w-full lg:w-72 flex-shrink-0">
+          <div id="resourceFilterPanel" class="sticky top-28 space-y-6 max-h-[calc(100vh-8rem)] overflow-y-auto pr-1">
+            <section class="rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-4">
+              <details class="group" open>
+                <summary class="list-none cursor-pointer flex items-center justify-between">
+                  <h3 class="text-sm font-bold uppercase tracking-wider text-slate-500">学段</h3>
+                  <span class="material-symbols-outlined text-slate-400 transition-transform group-open:rotate-180">expand_more</span>
+                </summary>
+                <div class="space-y-2 mt-3">
+                  <label class="flex items-center gap-3 text-sm"><input data-filter-group="stage" data-filter-value="elementary" type="checkbox" class="rounded text-primary focus:ring-primary"/>小学</label>
+                  <label class="flex items-center gap-3 text-sm"><input data-filter-group="stage" data-filter-value="secondary" type="checkbox" class="rounded text-primary focus:ring-primary"/>初中</label>
+                  <label class="flex items-center gap-3 text-sm"><input data-filter-group="stage" data-filter-value="highschool" type="checkbox" class="rounded text-primary focus:ring-primary"/>高中</label>
+                </div>
+              </details>
+            </section>
+
+            <section class="rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-4">
+              <details class="group">
+                <summary class="list-none cursor-pointer flex items-center justify-between">
+                  <h3 class="text-sm font-bold uppercase tracking-wider text-slate-500">学科</h3>
+                  <span class="material-symbols-outlined text-slate-400 transition-transform group-open:rotate-180">expand_more</span>
+                </summary>
+                <div class="space-y-2 mt-3">
+                  <label class="flex items-center gap-3 text-sm"><input data-filter-group="subject" data-filter-value="chinese" type="checkbox" class="rounded text-primary focus:ring-primary"/>语文</label>
+                  <label class="flex items-center gap-3 text-sm"><input data-filter-group="subject" data-filter-value="math" type="checkbox" class="rounded text-primary focus:ring-primary"/>数学</label>
+                  <label class="flex items-center gap-3 text-sm"><input data-filter-group="subject" data-filter-value="english" type="checkbox" class="rounded text-primary focus:ring-primary"/>英语</label>
+                  <label class="flex items-center gap-3 text-sm"><input data-filter-group="subject" data-filter-value="science" type="checkbox" class="rounded text-primary focus:ring-primary"/>科学</label>
+                  <label class="flex items-center gap-3 text-sm"><input data-filter-group="subject" data-filter-value="physics" type="checkbox" class="rounded text-primary focus:ring-primary"/>物理</label>
+                  <label class="flex items-center gap-3 text-sm"><input data-filter-group="subject" data-filter-value="chemistry" type="checkbox" class="rounded text-primary focus:ring-primary"/>化学</label>
+                  <label class="flex items-center gap-3 text-sm"><input data-filter-group="subject" data-filter-value="biology" type="checkbox" class="rounded text-primary focus:ring-primary"/>生物</label>
+                  <label class="flex items-center gap-3 text-sm"><input data-filter-group="subject" data-filter-value="history" type="checkbox" class="rounded text-primary focus:ring-primary"/>历史</label>
+                  <label class="flex items-center gap-3 text-sm"><input data-filter-group="subject" data-filter-value="geography" type="checkbox" class="rounded text-primary focus:ring-primary"/>地理</label>
+                  <label class="flex items-center gap-3 text-sm"><input data-filter-group="subject" data-filter-value="politics" type="checkbox" class="rounded text-primary focus:ring-primary"/>政治</label>
+                  <label class="flex items-center gap-3 text-sm"><input data-filter-group="subject" data-filter-value="it" type="checkbox" class="rounded text-primary focus:ring-primary"/>信息技术</label>
+                  <label class="flex items-center gap-3 text-sm"><input data-filter-group="subject" data-filter-value="music" type="checkbox" class="rounded text-primary focus:ring-primary"/>音乐</label>
+                  <label class="flex items-center gap-3 text-sm"><input data-filter-group="subject" data-filter-value="art" type="checkbox" class="rounded text-primary focus:ring-primary"/>美术</label>
+                  <label class="flex items-center gap-3 text-sm"><input data-filter-group="subject" data-filter-value="pe" type="checkbox" class="rounded text-primary focus:ring-primary"/>体育</label>
+                </div>
+              </details>
+            </section>
+
+            <section class="rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-4">
+              <details class="group">
+                <summary class="list-none cursor-pointer flex items-center justify-between">
+                  <h3 class="text-sm font-bold uppercase tracking-wider text-slate-500">资源类型</h3>
+                  <span class="material-symbols-outlined text-slate-400 transition-transform group-open:rotate-180">expand_more</span>
+                </summary>
+                <div class="space-y-2 mt-3">
+                  <label class="flex items-center gap-3 text-sm"><input data-filter-group="type" data-filter-value="textbook" type="checkbox" class="rounded text-primary focus:ring-primary"/>教材</label>
+                  <label class="flex items-center gap-3 text-sm"><input data-filter-group="type" data-filter-value="question-bank" type="checkbox" class="rounded text-primary focus:ring-primary"/>题库</label>
+                  <label class="flex items-center gap-3 text-sm"><input data-filter-group="type" data-filter-value="curriculum-standard" type="checkbox" class="rounded text-primary focus:ring-primary"/>课程标准</label>
+                  <label class="flex items-center gap-3 text-sm"><input data-filter-group="type" data-filter-value="worksheet" type="checkbox" class="rounded text-primary focus:ring-primary"/>练习单</label>
+                  <label class="flex items-center gap-3 text-sm"><input data-filter-group="type" data-filter-value="mock-paper" type="checkbox" class="rounded text-primary focus:ring-primary"/>试卷</label>
+                </div>
+              </details>
+            </section>
+
+            <button id="resetResourceFilters" class="w-full h-11 rounded-lg bg-primary/10 text-primary font-bold hover:bg-primary/20 transition-colors">重置筛选</button>
+          </div>
+        </aside>
+
+        <section class="flex-1 space-y-5">
+          <div class="flex items-center justify-between">
+            <p id="resourceCount" class="text-slate-500">加载中...</p>
+            <select id="resourceSortSelect" class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-lg px-3 py-2 text-sm font-semibold">
+              <option value="latest">按更新时间</option>
+              <option value="title">按名称</option>
+            </select>
+          </div>
+
+          <div id="resourceGrid" class="grid grid-cols-1 md:grid-cols-2 gap-5"></div>
+
+          <div id="resourceEmpty" class="hidden rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-10 text-center text-slate-500">
+            暂无匹配资源，请调整筛选条件。
+          </div>
+
+          <div id="resourcePagination" class="flex items-center justify-center gap-2 pt-1"></div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="mt-20 border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-background-dark px-6 lg:px-20 py-12">
+      <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+        <div class="flex items-center gap-3">
+          <span class="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-primary text-white text-sm font-bold tracking-wide">AI</span>
+          <h2 class="text-slate-900 dark:text-white text-lg font-bold">AI 教育工具导航</h2>
+        </div>
+        <p class="text-sm text-slate-500 dark:text-slate-400">© 2026 AI 教育工具导航. 保留所有权利。</p>
+        <div class="flex gap-6">
+          <a class="text-slate-400 hover:text-primary transition-colors" href="about.html"><span class="material-symbols-outlined">language</span></a>
+          <a class="text-slate-400 hover:text-primary transition-colors" href="mailto:contact@aiedutools.edu.cn"><span class="material-symbols-outlined">mail</span></a>
+          <a class="text-slate-400 hover:text-primary transition-colors" href="tools.html"><span class="material-symbols-outlined">share</span></a>
+        </div>
+      </div>
+    </footer>
+
+    <button type="button" data-scroll-to-filters class="lg:hidden fixed right-4 bottom-5 z-40 inline-flex items-center gap-1 h-11 px-4 rounded-full bg-primary text-white text-sm font-bold shadow-lg shadow-primary/30">
+      <span class="material-symbols-outlined text-base">tune</span>
+      筛选
+    </button>
+
+    <script type="module" src="./scripts/resources-page.js"></script>
+  </body>
+</html>

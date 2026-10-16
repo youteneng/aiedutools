@@ -1,0 +1,68 @@
+{
+  "capturedAt": "2026-03-22T09:45:00+08:00",
+  "tools": [
+    {
+      "source": "site-a",
+      "sourceUrl": "https://example.com/tools/scwx",
+      "name": "师承万象",
+      "subtitle": "",
+      "description": "面向基础教育教师，依据新课标生成素养导向型教案、启发性情境创设与智能出题。",
+      "url": "https://example.com/tools/scwx",
+      "category": "lesson-planning",
+      "teachingLevels": ["secondary"],
+      "pricingModel": "free",
+      "ratingScore": 4.9,
+      "ratingCount": 1200,
+      "popularityScore": 1200,
+      "publishedAt": "2026-02-18",
+      "icon": "menu_book",
+      "iconColorClass": "bg-blue-50 dark:bg-blue-900/30 text-primary",
+      "badge": {
+        "label": "高分推荐",
+        "variant": "highlight"
+      }
+    },
+    {
+      "source": "site-b",
+      "sourceUrl": "https://example.org/tools/seewo-ppt",
+      "name": "希沃白板AI备课",
+      "subtitle": "",
+      "description": "输入课文或知识点后自动生成配套课件PPT与课堂活动设计。",
+      "url": "https://example.org/tools/seewo-ppt",
+      "category": "ppt-generation",
+      "teachingLevels": ["secondary"],
+      "pricingModel": "paid",
+      "ratingScore": 4.2,
+      "ratingCount": 450,
+      "popularityScore": 450,
+      "publishedAt": "2026-03-12",
+      "icon": "present_to_all",
+      "iconColorClass": "bg-purple-50 dark:bg-purple-900/30 text-purple-600",
+      "badge": {
+        "label": "新品",
+        "variant": "new"
+      }
+    },
+    {
+      "source": "site-c",
+      "sourceUrl": "https://example.net/tools/research",
+      "name": "学术同步",
+      "subtitle": "ScholarSync",
+      "description": "面向高教的 AI 研究助理，支持论文总结与引用追踪。",
+      "url": "https://example.net/tools/research",
+      "category": "research",
+      "teachingLevels": ["higher-ed"],
+      "pricingModel": "free+premium",
+      "ratingScore": 4.9,
+      "ratingCount": 3400,
+      "popularityScore": 3400,
+      "publishedAt": "2025-12-08",
+      "icon": "magnification_small",
+      "iconColorClass": "bg-cyan-50 dark:bg-cyan-900/30 text-cyan-600",
+      "badge": {
+        "label": "高分推荐",
+        "variant": "highlight"
+      }
+    }
+  ]
+}

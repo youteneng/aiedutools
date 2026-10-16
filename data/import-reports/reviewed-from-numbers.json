@@ -1,0 +1,668 @@
+[
+  {
+    "name": "Eduaide.ai",
+    "url": "https://www.eduaide.ai",
+    "reviewResult": "",
+    "remark": "",
+    "raw": {
+      "序号": 1.0,
+      "工具名": "Eduaide.ai",
+      "URL": "https://www.eduaide.ai",
+      "检测状态码": 403.0,
+      "检测错误": null,
+      "最终URL": "https://www.eduaide.ai/",
+      "建议动作": "可能反爬拦截：改用浏览器人工访问确认；必要时补充备用网址。",
+      "人工复核结果": null,
+      "替代URL(如有)": null,
+      "备注": null
+    }
+  },
+  {
+    "name": "Twee",
+    "url": "https://twee.com",
+    "reviewResult": "",
+    "remark": "",
+    "raw": {
+      "序号": 3.0,
+      "工具名": "Twee",
+      "URL": "https://twee.com",
+      "检测状态码": 0.0,
+      "检测错误": "This operation was aborted",
+      "最终URL": null,
+      "建议动作": "网络/超时/证书问题：人工打开官网核验，必要时替换为可用入口。",
+      "人工复核结果": null,
+      "替代URL(如有)": null,
+      "备注": null
+    }
+  },
+  {
+    "name": "Canva Magic Write",
+    "url": "https://www.canva.com",
+    "reviewResult": "",
+    "remark": "",
+    "raw": {
+      "序号": 4.0,
+      "工具名": "Canva Magic Write",
+      "URL": "https://www.canva.com",
+      "检测状态码": 403.0,
+      "检测错误": null,
+      "最终URL": "https://www.canva.com/",
+      "建议动作": "可能反爬拦截：改用浏览器人工访问确认；必要时补充备用网址。",
+      "人工复核结果": null,
+      "替代URL(如有)": null,
+      "备注": null
+    }
+  },
+  {
+    "name": "Gamma",
+    "url": "https://gamma.app",
+    "reviewResult": "",
+    "remark": "",
+    "raw": {
+      "序号": 5.0,
+      "工具名": "Gamma",
+      "URL": "https://gamma.app",
+      "检测状态码": 0.0,
+      "检测错误": "This operation was aborted",
+      "最终URL": null,
+      "建议动作": "网络/超时/证书问题：人工打开官网核验，必要时替换为可用入口。",
+      "人工复核结果": null,
+      "替代URL(如有)": null,
+      "备注": null
+    }
+  },
+  {
+    "name": "Class Companion",
+    "url": "https://www.classcompanion.com",
+    "reviewResult": "",
+    "remark": "",
+    "raw": {
+      "序号": 6.0,
+      "工具名": "Class Companion",
+      "URL": "https://www.classcompanion.com",
+      "检测状态码": 403.0,
+      "检测错误": null,
+      "最终URL": "https://classcompanion.com/",
+      "建议动作": "可能反爬拦截：改用浏览器人工访问确认；必要时补充备用网址。",
+      "人工复核结果": null,
+      "替代URL(如有)": null,
+      "备注": null
+    }
+  },
+  {
+    "name": "作业帮AI",
+    "url": "https://www.zuoyebang.com",
+    "reviewResult": "",
+    "remark": "",
+    "raw": {
+      "序号": 7.0,
+      "工具名": "作业帮AI",
+      "URL": "https://www.zuoyebang.com",
+      "检测状态码": 404.0,
+      "检测错误": null,
+      "最终URL": "https://www.zuoyebang.com/",
+      "建议动作": "疑似下线：确认是否更换域名或产品停止服务。",
+      "人工复核结果": null,
+      "替代URL(如有)": null,
+      "备注": null
+    }
+  },
+  {
+    "name": "QuestionWell",
+    "url": "https://www.questionwell.org",
+    "reviewResult": "",
+    "remark": "",
+    "raw": {
+      "序号": 8.0,
+      "工具名": "QuestionWell",
+      "URL": "https://www.questionwell.org",
+      "检测状态码": 0.0,
+      "检测错误": "This operation was aborted",
+      "最终URL": null,
+      "建议动作": "网络/超时/证书问题：人工打开官网核验，必要时替换为可用入口。",
+      "人工复核结果": null,
+      "替代URL(如有)": null,
+      "备注": null
+    }
+  },
+  {
+    "name": "Quizgecko",
+    "url": "https://quizgecko.com",
+    "reviewResult": "",
+    "remark": "",
+    "raw": {
+      "序号": 9.0,
+      "工具名": "Quizgecko",
+      "URL": "https://quizgecko.com",
+      "检测状态码": 403.0,
+      "检测错误": null,
+      "最终URL": "https://quizgecko.com/",
+      "建议动作": "可能反爬拦截：改用浏览器人工访问确认；必要时补充备用网址。",
+      "人工复核结果": null,
+      "替代URL(如有)": null,
+      "备注": null
+    }
+  },
+  {
+    "name": "Quizlet",
+    "url": "https://quizlet.com",
+    "reviewResult": "",
+    "remark": "",
+    "raw": {
+      "序号": 10.0,
+      "工具名": "Quizlet",
+      "URL": "https://quizlet.com",
+      "检测状态码": 0.0,
+      "检测错误": "fetch failed",
+      "最终URL": null,
+      "建议动作": "网络/超时/证书问题：人工打开官网核验，必要时替换为可用入口。",
+      "人工复核结果": null,
+      "替代URL(如有)": null,
+      "备注": null
+    }
+  },
+  {
+    "name": "Jotform AI Trivia Generator",
+    "url": "https://www.jotform.com",
+    "reviewResult": "",
+    "remark": "",
+    "raw": {
+      "序号": 11.0,
+      "工具名": "Jotform AI Trivia Generator",
+      "URL": "https://www.jotform.com",
+      "检测状态码": 0.0,
+      "检测错误": "This operation was aborted",
+      "最终URL": null,
+      "建议动作": "网络/超时/证书问题：人工打开官网核验，必要时替换为可用入口。",
+      "人工复核结果": null,
+      "替代URL(如有)": null,
+      "备注": null
+    }
+  },
+  {
+    "name": "Trivia by Typito",
+    "url": "https://typito.com/login?nextUrl=/home",
+    "reviewResult": "",
+    "remark": "",
+    "raw": {
+      "序号": 12.0,
+      "工具名": "Trivia by Typito",
+      "URL": "https://typito.com/login?nextUrl=/home",
+      "检测状态码": 404.0,
+      "检测错误": null,
+      "最终URL": "https://typito.com/trivia",
+      "建议动作": "疑似下线：确认是否更换域名或产品停止服务。",
+      "人工复核结果": null,
+      "替代URL(如有)": null,
+      "备注": null
+    }
+  },
+  {
+    "name": "NotebookLM",
+    "url": "https://notebooklm.google",
+    "reviewResult": "",
+    "remark": "",
+    "raw": {
+      "序号": 13.0,
+      "工具名": "NotebookLM",
+      "URL": "https://notebooklm.google",
+      "检测状态码": 0.0,
+      "检测错误": "This operation was aborted",
+      "最终URL": null,
+      "建议动作": "网络/超时/证书问题：人工打开官网核验，必要时替换为可用入口。",
+      "人工复核结果": null,
+      "替代URL(如有)": null,
+      "备注": null
+    }
+  },
+  {
+    "name": "Google Classroom",
+    "url": "https://classroom.google.com",
+    "reviewResult": "",
+    "remark": "",
+    "raw": {
+      "序号": 14.0,
+      "工具名": "Google Classroom",
+      "URL": "https://classroom.google.com",
+      "检测状态码": 0.0,
+      "检测错误": "This operation was aborted",
+      "最终URL": null,
+      "建议动作": "网络/超时/证书问题：人工打开官网核验，必要时替换为可用入口。",
+      "人工复核结果": null,
+      "替代URL(如有)": null,
+      "备注": null
+    }
+  },
+  {
+    "name": "Remind",
+    "url": "https://www.remind.com",
+    "reviewResult": "",
+    "remark": "",
+    "raw": {
+      "序号": 15.0,
+      "工具名": "Remind",
+      "URL": "https://www.remind.com",
+      "检测状态码": 0.0,
+      "检测错误": "This operation was aborted",
+      "最终URL": null,
+      "建议动作": "网络/超时/证书问题：人工打开官网核验，必要时替换为可用入口。",
+      "人工复核结果": null,
+      "替代URL(如有)": null,
+      "备注": null
+    }
+  },
+  {
+    "name": "ChatGPT互动可视化（数学/科学）",
+    "url": "https://chat.openai.com",
+    "reviewResult": "",
+    "remark": "",
+    "raw": {
+      "序号": 16.0,
+      "工具名": "ChatGPT互动可视化（数学/科学）",
+      "URL": "https://chat.openai.com",
+      "检测状态码": 0.0,
+      "检测错误": "fetch failed",
+      "最终URL": null,
+      "建议动作": "网络/超时/证书问题：人工打开官网核验，必要时替换为可用入口。",
+      "人工复核结果": null,
+      "替代URL(如有)": null,
+      "备注": null
+    }
+  },
+  {
+    "name": "Claude (Anthropic)",
+    "url": "https://claude.ai",
+    "reviewResult": "",
+    "remark": "",
+    "raw": {
+      "序号": 17.0,
+      "工具名": "Claude (Anthropic)",
+      "URL": "https://claude.ai",
+      "检测状态码": 0.0,
+      "检测错误": "This operation was aborted",
+      "最终URL": null,
+      "建议动作": "网络/超时/证书问题：人工打开官网核验，必要时替换为可用入口。",
+      "人工复核结果": null,
+      "替代URL(如有)": null,
+      "备注": null
+    }
+  },
+  {
+    "name": "Google Gemini",
+    "url": "https://gemini.google.com",
+    "reviewResult": "",
+    "remark": "",
+    "raw": {
+      "序号": 18.0,
+      "工具名": "Google Gemini",
+      "URL": "https://gemini.google.com",
+      "检测状态码": 0.0,
+      "检测错误": "This operation was aborted",
+      "最终URL": null,
+      "建议动作": "网络/超时/证书问题：人工打开官网核验，必要时替换为可用入口。",
+      "人工复核结果": null,
+      "替代URL(如有)": null,
+      "备注": null
+    }
+  },
+  {
+    "name": "DeepL",
+    "url": "https://www.deepl.com",
+    "reviewResult": "",
+    "remark": "",
+    "raw": {
+      "序号": 19.0,
+      "工具名": "DeepL",
+      "URL": "https://www.deepl.com",
+      "检测状态码": 0.0,
+      "检测错误": "This operation was aborted",
+      "最终URL": null,
+      "建议动作": "网络/超时/证书问题：人工打开官网核验，必要时替换为可用入口。",
+      "人工复核结果": null,
+      "替代URL(如有)": null,
+      "备注": null
+    }
+  },
+  {
+    "name": "ELSA Speak",
+    "url": "https://elsaspeak.com",
+    "reviewResult": "",
+    "remark": "",
+    "raw": {
+      "序号": 20.0,
+      "工具名": "ELSA Speak",
+      "URL": "https://elsaspeak.com",
+      "检测状态码": 0.0,
+      "检测错误": "This operation was aborted",
+      "最终URL": null,
+      "建议动作": "网络/超时/证书问题：人工打开官网核验，必要时替换为可用入口。",
+      "人工复核结果": null,
+      "替代URL(如有)": null,
+      "备注": null
+    }
+  },
+  {
+    "name": "Microsoft Immersive Reader",
+    "url": "https://www.microsoft.com/en-us/edge/features/immersive-reader?form=MT0160",
+    "reviewResult": "",
+    "remark": "",
+    "raw": {
+      "序号": 21.0,
+      "工具名": "Microsoft Immersive Reader",
+      "URL": "https://www.microsoft.com/en-us/edge/features/immersive-reader?form=MT0160",
+      "检测状态码": 404.0,
+      "检测错误": null,
+      "最终URL": "https://www.microsoft.com/en-us/education/immersive-reader",
+      "建议动作": "疑似下线：确认是否更换域名或产品停止服务。",
+      "人工复核结果": null,
+      "替代URL(如有)": null,
+      "备注": null
+    }
+  },
+  {
+    "name": "Read&Write by Texthelp",
+    "url": "https://www.everway.com/products/read-and-write-education/",
+    "reviewResult": "",
+    "remark": "",
+    "raw": {
+      "序号": 22.0,
+      "工具名": "Read&Write by Texthelp",
+      "URL": "https://www.everway.com/products/read-and-write-education/",
+      "检测状态码": 0.0,
+      "检测错误": "This operation was aborted",
+      "最终URL": null,
+      "建议动作": "网络/超时/证书问题：人工打开官网核验，必要时替换为可用入口。",
+      "人工复核结果": null,
+      "替代URL(如有)": null,
+      "备注": null
+    }
+  },
+  {
+    "name": "ChatPDF",
+    "url": "https://www.chatpdf.com",
+    "reviewResult": "",
+    "remark": "",
+    "raw": {
+      "序号": 23.0,
+      "工具名": "ChatPDF",
+      "URL": "https://www.chatpdf.com",
+      "检测状态码": 0.0,
+      "检测错误": "This operation was aborted",
+      "最终URL": null,
+      "建议动作": "网络/超时/证书问题：人工打开官网核验，必要时替换为可用入口。",
+      "人工复核结果": null,
+      "替代URL(如有)": null,
+      "备注": null
+    }
+  },
+  {
+    "name": "Grammarly",
+    "url": "https://www.grammarly.com",
+    "reviewResult": "",
+    "remark": "",
+    "raw": {
+      "序号": 24.0,
+      "工具名": "Grammarly",
+      "URL": "https://www.grammarly.com",
+      "检测状态码": 0.0,
+      "检测错误": "This operation was aborted",
+      "最终URL": null,
+      "建议动作": "网络/超时/证书问题：人工打开官网核验，必要时替换为可用入口。",
+      "人工复核结果": null,
+      "替代URL(如有)": null,
+      "备注": null
+    }
+  },
+  {
+    "name": "CodaKid",
+    "url": "https://codakid.com",
+    "reviewResult": "",
+    "remark": "",
+    "raw": {
+      "序号": 26.0,
+      "工具名": "CodaKid",
+      "URL": "https://codakid.com",
+      "检测状态码": 0.0,
+      "检测错误": "This operation was aborted",
+      "最终URL": null,
+      "建议动作": "网络/超时/证书问题：人工打开官网核验，必要时替换为可用入口。",
+      "人工复核结果": null,
+      "替代URL(如有)": null,
+      "备注": null
+    }
+  },
+  {
+    "name": "Huawei AIEC Solution",
+    "url": "https://e.huawei.com",
+    "reviewResult": "",
+    "remark": "",
+    "raw": {
+      "序号": 27.0,
+      "工具名": "Huawei AIEC Solution",
+      "URL": "https://e.huawei.com",
+      "检测状态码": 0.0,
+      "检测错误": "This operation was aborted",
+      "最终URL": null,
+      "建议动作": "网络/超时/证书问题：人工打开官网核验，必要时替换为可用入口。",
+      "人工复核结果": null,
+      "替代URL(如有)": null,
+      "备注": null
+    }
+  },
+  {
+    "name": "Classover Tutor Studio",
+    "url": "https://www.classover.com",
+    "reviewResult": "",
+    "remark": "",
+    "raw": {
+      "序号": 28.0,
+      "工具名": "Classover Tutor Studio",
+      "URL": "https://www.classover.com",
+      "检测状态码": 0.0,
+      "检测错误": "This operation was aborted",
+      "最终URL": null,
+      "建议动作": "网络/超时/证书问题：人工打开官网核验，必要时替换为可用入口。",
+      "人工复核结果": null,
+      "替代URL(如有)": null,
+      "备注": null
+    }
+  },
+  {
+    "name": "Tutor AI",
+    "url": "https://www.tutorai.com",
+    "reviewResult": "",
+    "remark": "",
+    "raw": {
+      "序号": 29.0,
+      "工具名": "Tutor AI",
+      "URL": "https://www.tutorai.com",
+      "检测状态码": 0.0,
+      "检测错误": "This operation was aborted",
+      "最终URL": null,
+      "建议动作": "网络/超时/证书问题：人工打开官网核验，必要时替换为可用入口。",
+      "人工复核结果": null,
+      "替代URL(如有)": null,
+      "备注": null
+    }
+  },
+  {
+    "name": "Mindgrasp",
+    "url": "https://www.mindgrasp.ai",
+    "reviewResult": "",
+    "remark": "",
+    "raw": {
+      "序号": 30.0,
+      "工具名": "Mindgrasp",
+      "URL": "https://www.mindgrasp.ai",
+      "检测状态码": 0.0,
+      "检测错误": "This operation was aborted",
+      "最终URL": null,
+      "建议动作": "网络/超时/证书问题：人工打开官网核验，必要时替换为可用入口。",
+      "人工复核结果": null,
+      "替代URL(如有)": null,
+      "备注": null
+    }
+  },
+  {
+    "name": "Otter.ai",
+    "url": "https://otter.ai",
+    "reviewResult": "",
+    "remark": "",
+    "raw": {
+      "序号": 31.0,
+      "工具名": "Otter.ai",
+      "URL": "https://otter.ai",
+      "检测状态码": 0.0,
+      "检测错误": "This operation was aborted",
+      "最终URL": null,
+      "建议动作": "网络/超时/证书问题：人工打开官网核验，必要时替换为可用入口。",
+      "人工复核结果": null,
+      "替代URL(如有)": null,
+      "备注": null
+    }
+  },
+  {
+    "name": "九章龙虾 (NineClaw)",
+    "url": "https://www.jiuzhang.com",
+    "reviewResult": "",
+    "remark": "",
+    "raw": {
+      "序号": 32.0,
+      "工具名": "九章龙虾 (NineClaw)",
+      "URL": "https://www.jiuzhang.com",
+      "检测状态码": 0.0,
+      "检测错误": "This operation was aborted",
+      "最终URL": null,
+      "建议动作": "网络/超时/证书问题：人工打开官网核验，必要时替换为可用入口。",
+      "人工复核结果": null,
+      "替代URL(如有)": null,
+      "备注": null
+    }
+  },
+  {
+    "name": "Google Gemini (Docs/Slides/Forms集成)",
+    "url": "https://workspace.google.com/gemini",
+    "reviewResult": "",
+    "remark": "",
+    "raw": {
+      "序号": 34.0,
+      "工具名": "Google Gemini (Docs/Slides/Forms集成)",
+      "URL": "https://workspace.google.com/gemini",
+      "检测状态码": 0.0,
+      "检测错误": "This operation was aborted",
+      "最终URL": null,
+      "建议动作": "网络/超时/证书问题：人工打开官网核验，必要时替换为可用入口。",
+      "人工复核结果": null,
+      "替代URL(如有)": null,
+      "备注": null
+    }
+  },
+  {
+    "name": "Renaissance Intelligence",
+    "url": "https://www.renaissance.com",
+    "reviewResult": "",
+    "remark": "",
+    "raw": {
+      "序号": 35.0,
+      "工具名": "Renaissance Intelligence",
+      "URL": "https://www.renaissance.com",
+      "检测状态码": 0.0,
+      "检测错误": "This operation was aborted",
+      "最终URL": null,
+      "建议动作": "网络/超时/证书问题：人工打开官网核验，必要时替换为可用入口。",
+      "人工复核结果": null,
+      "替代URL(如有)": null,
+      "备注": null
+    }
+  },
+  {
+    "name": "Pearson Foundations of AI for PK-12 Educators",
+    "url": "https://www.pearson.com",
+    "reviewResult": "",
+    "remark": "",
+    "raw": {
+      "序号": 36.0,
+      "工具名": "Pearson Foundations of AI for PK-12 Educators",
+      "URL": "https://www.pearson.com",
+      "检测状态码": 0.0,
+      "检测错误": "This operation was aborted",
+      "最终URL": null,
+      "建议动作": "网络/超时/证书问题：人工打开官网核验，必要时替换为可用入口。",
+      "人工复核结果": null,
+      "替代URL(如有)": null,
+      "备注": null
+    }
+  },
+  {
+    "name": "Coteach",
+    "url": "https://www.coteach.ai",
+    "reviewResult": "",
+    "remark": "",
+    "raw": {
+      "序号": 37.0,
+      "工具名": "Coteach",
+      "URL": "https://www.coteach.ai",
+      "检测状态码": 0.0,
+      "检测错误": "This operation was aborted",
+      "最终URL": null,
+      "建议动作": "网络/超时/证书问题：人工打开官网核验，必要时替换为可用入口。",
+      "人工复核结果": null,
+      "替代URL(如有)": null,
+      "备注": null
+    }
+  },
+  {
+    "name": "Genially AI Quiz Generator",
+    "url": "https://genially.com",
+    "reviewResult": "",
+    "remark": "",
+    "raw": {
+      "序号": 39.0,
+      "工具名": "Genially AI Quiz Generator",
+      "URL": "https://genially.com",
+      "检测状态码": 0.0,
+      "检测错误": "This operation was aborted",
+      "最终URL": null,
+      "建议动作": "网络/超时/证书问题：人工打开官网核验，必要时替换为可用入口。",
+      "人工复核结果": null,
+      "替代URL(如有)": null,
+      "备注": null
+    }
+  },
+  {
+    "name": "BusyBee Grading Assistant",
+    "url": "https://www.agilix.com",
+    "reviewResult": "",
+    "remark": "",
+    "raw": {
+      "序号": 40.0,
+      "工具名": "BusyBee Grading Assistant",
+      "URL": "https://www.agilix.com",
+      "检测状态码": 0.0,
+      "检测错误": "This operation was aborted",
+      "最终URL": null,
+      "建议动作": "网络/超时/证书问题：人工打开官网核验，必要时替换为可用入口。",
+      "人工复核结果": null,
+      "替代URL(如有)": null,
+      "备注": null
+    }
+  },
+  {
+    "name": "Anywhere Testing Machine (ATM) by Pratham + Claude",
+    "url": "https://www.parentsquare.com",
+    "reviewResult": "",
+    "remark": "",
+    "raw": {
+      "序号": 41.0,
+      "工具名": "Anywhere Testing Machine (ATM) by Pratham + Claude",
+      "URL": "https://www.parentsquare.com",
+      "检测状态码": 0.0,
+      "检测错误": "This operation was aborted",
+      "最终URL": null,
+      "建议动作": "网络/超时/证书问题：人工打开官网核验，必要时替换为可用入口。",
+      "人工复核结果": null,
+      "替代URL(如有)": null,
+      "备注": null
+    }
+  }
+]

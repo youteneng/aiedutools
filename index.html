@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>AI 教育工具导航 | 赋能现代教育</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#1c74e9",
+              "background-light": "#f6f7f8",
+              "background-dark": "#111821",
+            },
+            fontFamily: {
+              display: ["Inter", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100">
+    <div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+      <header
+        class="sticky top-0 z-50 w-full border-b border-solid border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 px-6 lg:px-20 py-4"
+      >
+        <div class="max-w-7xl mx-auto flex items-center justify-between gap-8">
+          <div class="flex items-center gap-8">
+            <a class="flex items-center gap-3 text-primary" href="index.html">
+              <span class="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-primary text-white text-sm font-bold tracking-wide">AI</span>
+              <h2 class="text-slate-900 dark:text-slate-100 text-xl font-bold leading-tight tracking-tight">AI 教育工具导航</h2>
+            </a>
+            <nav class="hidden md:flex items-center gap-6">
+              <a class="text-slate-600 dark:text-slate-400 text-sm font-medium hover:text-primary transition-colors" href="index.html">首页</a>
+              <a class="text-slate-600 dark:text-slate-400 text-sm font-medium hover:text-primary transition-colors" href="tools.html">AI 工具库</a>
+              <a class="text-slate-600 dark:text-slate-400 text-sm font-medium hover:text-primary transition-colors" href="resources.html">资源中心</a>
+              <a class="text-slate-600 dark:text-slate-400 text-sm font-medium hover:text-primary transition-colors" href="about.html">关于我们</a>
+            </nav>
+          </div>
+          <div class="hidden sm:block w-full max-w-sm" aria-hidden="true"></div>
+        </div>
+      </header>
+
+      <main class="flex-1">
+        <section class="px-6 md:px-20 py-8 md:py-10 lg:py-12 bg-white dark:bg-slate-900">
+          <div class="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-6">
+            <div class="flex flex-col gap-5 flex-1">
+              <div class="flex flex-col gap-4">
+                <span class="text-primary font-bold tracking-widest text-xs uppercase bg-primary/10 w-fit px-3 py-1 rounded-full">学习的未来</span>
+                <h1 class="text-slate-900 dark:text-white text-3xl md:text-4xl lg:text-5xl leading-[1.12] tracking-tight">
+                  <span class="block text-[0.82em] font-extrabold">AI 教育工具导航</span>
+                  <span class="block mt-1 font-black text-primary">赋能每一位教育者</span>
+                </h1>
+                <p class="text-slate-600 dark:text-slate-400 text-base md:text-lg max-w-xl">
+                  为师范生到资深教师的所有教育场景，提供精选 AI 工具。<br />
+                  助力现代课堂教学与学术研究。
+                </p>
+              </div>
+              <div class="w-full max-w-2xl">
+                <form action="tools.html" class="flex flex-col md:flex-row p-2 bg-slate-100 dark:bg-slate-800 rounded-xl md:rounded-full shadow-sm border border-slate-200 dark:border-slate-700" method="GET">
+                  <div class="flex items-center flex-1 px-4 py-2">
+                    <span class="material-symbols-outlined text-slate-400 mr-2">search</span>
+                    <input name="q" class="w-full bg-transparent border-none focus:ring-0 text-slate-900 dark:text-white placeholder:text-slate-400" placeholder="查找教学设计、评估工具等 AI 助手..." type="text" />
+                  </div>
+                  <button class="bg-primary text-white px-7 py-2.5 rounded-lg md:rounded-full font-bold hover:bg-primary/90 transition-all shadow-lg shadow-primary/20" type="submit">
+                    搜索工具
+                  </button>
+                </form>
+                <div class="mt-4 flex flex-wrap gap-2 px-4">
+                  <span class="text-slate-400 text-xs font-medium">热门搜索:</span>
+                  <a href="tools.html?types=lesson-planning" class="text-primary text-xs font-bold hover:underline">备课设计</a>
+                  <a href="tools.html?types=ppt-generation" class="text-primary text-xs font-bold hover:underline">PPT生成</a>
+                  <a href="tools.html?types=quiz-generation" class="text-primary text-xs font-bold hover:underline">题库生成</a>
+                  <a href="tools.html?types=grading" class="text-primary text-xs font-bold hover:underline">作业评价</a>
+                  <a href="tools.html?types=teaching-management" class="text-primary text-xs font-bold hover:underline">教学管理</a>
+                </div>
+              </div>
+            </div>
+            <div class="flex-1 w-full max-w-md lg:max-w-lg">
+              <div class="relative rounded-2xl overflow-hidden shadow-2xl aspect-video md:aspect-[4/3] bg-slate-200" data-alt="Modern digital education interface with AI glowing elements">
+                <img alt="学生在明亮的教室内使用电脑学习" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCM_1_Z0th41NUnnbrzrlw2uo1XLrgZWkTbaGZYxVgSFF7U2uxIRhtKBNh4fxmhPisCX3hOLktbZLYjTKobVr1pFUvHCGyooC0lPKN1k-73sCqn8o6fLwFdLMSqQNI0qD07gLDIDlyecfunFC7NTUK8ClSJvoti4lJ_kMkVFD8_tpPpQk9sYevAlGv1MiO3zShh2iRAv_dDkiO3X-3fYfc0Aevo0LzdHza9eo1hanD9TnmDMxXc4FhtsyHvL-xnmpy7YUJQAbcNBcnM" />
+                <div class="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="px-6 md:px-20 py-10 bg-background-light dark:bg-background-dark">
+          <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-6">
+              <h2 class="text-slate-900 dark:text-white text-2xl md:text-3xl font-bold mb-3">按教学任务快速进入</h2>
+              <div class="h-1 w-20 bg-primary mx-auto rounded-full"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div class="group bg-white dark:bg-slate-800 p-5 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 hover:border-primary transition-all">
+                <div class="size-12 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-4 group-hover:bg-primary group-hover:text-white transition-all">
+                  <span class="material-symbols-outlined text-3xl">menu_book</span>
+                </div>
+                <h3 class="text-slate-900 dark:text-white text-lg font-bold mb-2">备课与课件</h3>
+                <p class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed text-sm">
+                  面向日常教学准备，聚合教案、工作表、课堂活动与幻灯片生成工具，快速完成课前产出。
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="text-[11px] font-bold px-2 py-1 rounded bg-blue-100 text-blue-700">教案生成</span>
+                  <span class="text-[11px] font-bold px-2 py-1 rounded bg-blue-100 text-blue-700">工作表</span>
+                  <span class="text-[11px] font-bold px-2 py-1 rounded bg-blue-100 text-blue-700">PPT生成</span>
+                </div>
+                <a class="text-primary font-bold flex items-center gap-2 group-hover:gap-3 transition-all" href="tools.html?types=lesson-planning,ppt-generation">
+                  开始探索 <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                </a>
+              </div>
+
+              <div class="group bg-white dark:bg-slate-800 p-5 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 hover:border-primary transition-all">
+                <div class="size-12 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-4 group-hover:bg-primary group-hover:text-white transition-all">
+                  <span class="material-symbols-outlined text-3xl">quiz</span>
+                </div>
+                <h3 class="text-slate-900 dark:text-white text-lg font-bold mb-2">作业与测评</h3>
+                <p class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed text-sm">
+                  聚合作业批改、量规评分、测验与题库生成工具，帮助教师高效完成评估与反馈闭环。
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="text-[11px] font-bold px-2 py-1 rounded bg-blue-100 text-blue-700">作业批改</span>
+                  <span class="text-[11px] font-bold px-2 py-1 rounded bg-blue-100 text-blue-700">量规评分</span>
+                  <span class="text-[11px] font-bold px-2 py-1 rounded bg-blue-100 text-blue-700">题库生成</span>
+                </div>
+                <a class="text-primary font-bold flex items-center gap-2 group-hover:gap-3 transition-all" href="tools.html?types=grading,quiz-generation">
+                  开始探索 <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                </a>
+              </div>
+
+              <div class="group bg-white dark:bg-slate-800 p-5 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 hover:border-primary transition-all">
+                <div class="size-12 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-4 group-hover:bg-primary group-hover:text-white transition-all">
+                  <span class="material-symbols-outlined text-3xl">analytics</span>
+                </div>
+                <h3 class="text-slate-900 dark:text-white text-lg font-bold mb-2">教研与管理</h3>
+                <p class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed text-sm">
+                  面向教学分析与教务协同，覆盖研究助理、学情洞察与班级管理场景，支持长期教学优化。
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="text-[11px] font-bold px-2 py-1 rounded bg-blue-100 text-blue-700">研究助理</span>
+                  <span class="text-[11px] font-bold px-2 py-1 rounded bg-blue-100 text-blue-700">学情分析</span>
+                  <span class="text-[11px] font-bold px-2 py-1 rounded bg-blue-100 text-blue-700">教学管理</span>
+                </div>
+                <a class="text-primary font-bold flex items-center gap-2 group-hover:gap-3 transition-all" href="tools.html?types=teaching-management">
+                  开始探索 <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                </a>
+              </div>
+            </div>
+            <div class="mt-5 flex flex-wrap items-center justify-center gap-2">
+              <a href="tools.html?levels=elementary" class="text-xs font-bold px-3 py-1.5 rounded-full bg-white border border-slate-200 text-slate-600 hover:text-primary hover:border-primary transition-colors">小学教育</a>
+              <a href="tools.html?levels=secondary" class="text-xs font-bold px-3 py-1.5 rounded-full bg-white border border-slate-200 text-slate-600 hover:text-primary hover:border-primary transition-colors">中学教育</a>
+              <a href="tools.html?levels=higher-ed" class="text-xs font-bold px-3 py-1.5 rounded-full bg-white border border-slate-200 text-slate-600 hover:text-primary hover:border-primary transition-colors">高等教育</a>
+              <a href="tools.html?levels=general-ai" class="text-xs font-bold px-3 py-1.5 rounded-full bg-white border border-slate-200 text-slate-600 hover:text-primary hover:border-primary transition-colors">通用AI</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="px-6 md:px-20 py-10 bg-white dark:bg-slate-900 overflow-hidden">
+          <div class="max-w-6xl mx-auto">
+            <div class="flex items-center justify-between mb-5">
+              <div>
+                <h2 class="text-slate-900 dark:text-white text-2xl md:text-3xl font-bold mb-1">趋势工具</h2>
+                <p class="text-slate-500 text-sm">本周最受教师欢迎的 AI 工具</p>
+              </div>
+              <a class="flex items-center gap-2 text-primary font-bold hover:underline" href="tools.html">
+                查看全部 <span class="material-symbols-outlined text-sm">keyboard_arrow_right</span>
+              </a>
+            </div>
+            <div id="homeTrendingGrid" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
+              <div class="w-full bg-slate-50 dark:bg-slate-800 rounded-xl p-5 border border-slate-100 dark:border-slate-700">
+                <p class="text-sm text-slate-500 dark:text-slate-400">正在加载最新工具...</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="px-6 md:px-20 py-10 bg-primary/5 dark:bg-slate-800/50">
+          <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-6">
+              <h2 class="text-slate-900 dark:text-white text-2xl md:text-3xl font-bold mb-3">资源中心精选</h2>
+              <p class="text-slate-600 dark:text-slate-400">教材、课标、题库与试卷，一键直达。</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+              <article class="bg-white dark:bg-slate-900 p-4 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700">
+                <div class="size-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-4">
+                  <span class="material-symbols-outlined">menu_book</span>
+                </div>
+                <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">学科教材</h3>
+                <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">覆盖核心学科教材索引，支持快速定位下载入口。</p>
+              </article>
+
+              <article class="bg-white dark:bg-slate-900 p-4 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700">
+                <div class="size-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-4">
+                  <span class="material-symbols-outlined">rule</span>
+                </div>
+                <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">课程标准</h3>
+                <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">按学段与学科整理课标文档，便于备课设计和目标对齐。</p>
+              </article>
+
+              <article class="bg-white dark:bg-slate-900 p-4 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700">
+                <div class="size-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-4">
+                  <span class="material-symbols-outlined">quiz</span>
+                </div>
+                <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">题库练习</h3>
+                <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">汇总题库、练习单与测评资源，支持课堂练习与课后巩固。</p>
+              </article>
+
+              <article class="bg-white dark:bg-slate-900 p-4 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700">
+                <div class="size-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-4">
+                  <span class="material-symbols-outlined">fact_check</span>
+                </div>
+                <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">试卷合集</h3>
+                <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">聚合历年试卷与模拟卷入口，便于阶段测评与复习安排。</p>
+              </article>
+            </div>
+            <div class="mt-6 text-center">
+              <a class="inline-flex items-center gap-2 bg-primary text-white px-7 py-2.5 rounded-lg font-bold hover:bg-primary/90 transition-all shadow-md" href="resources.html">
+                进入资源中心
+                <span class="material-symbols-outlined text-base">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+        </section>
+
+      </main>
+
+      <footer class="bg-white dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800 pt-10 pb-6 px-6 md:px-20">
+        <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 mb-9">
+          <div class="col-span-2 lg:col-span-3">
+            <div class="flex items-center gap-3 text-primary mb-6">
+              <span class="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-primary text-white text-sm font-bold tracking-wide">AI</span>
+              <h2 class="text-slate-900 dark:text-white text-xl font-bold">AI 教育工具导航</h2>
+            </div>
+            <p class="text-slate-500 dark:text-slate-400 max-w-xs mb-6 text-sm leading-relaxed">
+              全球领先的教育人工智能工具数据库。致力于帮助教师与学生导航学习的未来。
+            </p>
+            <div class="flex gap-4">
+              <a class="size-10 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-400 hover:bg-primary hover:text-white transition-all" href="tools.html"><span class="material-symbols-outlined text-xl">share</span></a>
+              <a class="size-10 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-400 hover:bg-primary hover:text-white transition-all" href="about.html"><span class="material-symbols-outlined text-xl">public</span></a>
+            </div>
+          </div>
+          <div>
+            <h4 class="font-bold text-slate-900 dark:text-white mb-6">工具导航</h4>
+            <ul class="flex flex-col gap-4 text-sm text-slate-500 dark:text-slate-400">
+              <li><a class="hover:text-primary" href="tools.html">热门工具</a></li>
+              <li><a class="hover:text-primary" href="tools.html?sort=latest">最新发布</a></li>
+              <li><a class="hover:text-primary" href="tools.html?submit=1">提交工具</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-bold text-slate-900 dark:text-white mb-6">关于我们</h4>
+            <ul class="flex flex-col gap-4 text-sm text-slate-500 dark:text-slate-400">
+              <li><a class="hover:text-primary" href="about.html">联系我们</a></li>
+              <li><a class="hover:text-primary" href="about.html">隐私政策</a></li>
+              <li><a class="hover:text-primary" href="about.html">服务条款</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="max-w-6xl mx-auto border-t border-slate-100 dark:border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-400 font-medium">
+          <p>© 2026 AI 教育工具导航 (EduAI Directory). 保留所有权利。</p>
+          <div class="flex items-center gap-6">
+            <a class="hover:text-slate-900 dark:hover:text-white" href="about.html">Cookie 设置</a>
+            <a class="hover:text-slate-900 dark:hover:text-white" href="about.html">安全保障</a>
+            <a class="hover:text-slate-900 dark:hover:text-white" href="about.html">帮助中心</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="./scripts/home-page.js"></script>
+  </body>
+</html>

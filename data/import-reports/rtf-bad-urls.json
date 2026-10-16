@@ -1,0 +1,671 @@
+[
+  {
+    "name": "Eduaide.ai",
+    "url": "https://www.eduaide.ai",
+    "tool_type": "lesson-planning",
+    "education_stage": [
+      "elementary",
+      "secondary",
+      "higher-ed"
+    ],
+    "short_description": "AI教学工作空间，支持生成教学资源、形成性评估和差异化学习活动。教师选择学科与年级后，可快速产出学习目标、活动设计和测验题，并支持按标准对齐调整。",
+    "check": {
+      "url": "https://www.eduaide.ai",
+      "ok": false,
+      "status": 403,
+      "finalUrl": "https://www.eduaide.ai/"
+    }
+  },
+  {
+    "name": "Our Teacher (DeepSeek教师版)",
+    "url": "https://www.ourteacher.ai",
+    "tool_type": "lesson-planning",
+    "education_stage": [
+      "elementary",
+      "secondary"
+    ],
+    "short_description": "基于DeepSeek推理模型开发的轻量化教学助手，支持分层教案定制和PPT大纲生成。教师输入课程主题后，可获得核心素养教案框架及配套课件结构建议。",
+    "check": {
+      "url": "https://www.ourteacher.ai",
+      "ok": false,
+      "status": 0,
+      "error": "fetch failed"
+    }
+  },
+  {
+    "name": "Twee",
+    "url": "https://twee.com",
+    "tool_type": "lesson-planning",
+    "education_stage": [
+      "secondary",
+      "higher-ed"
+    ],
+    "short_description": "面向英语教师的AI备课工具，将YouTube视频或新闻文章快速转化为完形填空、理解题、摘要和讨论题。教师输入视频链接即可生成配套练习，支持导出至PDF或Google Forms。免费版可用，Pro版11.95美元/月。",
+    "check": {
+      "url": "https://twee.com",
+      "ok": false,
+      "status": 0,
+      "error": "This operation was aborted"
+    }
+  },
+  {
+    "name": "Canva Magic Write",
+    "url": "https://www.canva.com",
+    "tool_type": "lesson-planning",
+    "education_stage": [
+      "elementary",
+      "secondary",
+      "higher-ed"
+    ],
+    "short_description": "Canva内置的AI内容生成工具，根据学科特点一键生成图文并茂的讲义和课件。教师输入主题后，可获得适配多端显示的视觉化教案，支持拖拽式编辑。",
+    "check": {
+      "url": "https://www.canva.com",
+      "ok": false,
+      "status": 403,
+      "finalUrl": "https://www.canva.com/"
+    }
+  },
+  {
+    "name": "Gamma",
+    "url": "https://gamma.app",
+    "tool_type": "ppt-generation",
+    "education_stage": [
+      "elementary",
+      "secondary",
+      "higher-ed"
+    ],
+    "short_description": "AI演示文稿生成工具，输入主题即可自动生成结构完整、视觉精美的课件。教师可用于快速制作课程幻灯片，支持多格式导出和在线分享。",
+    "check": {
+      "url": "https://gamma.app",
+      "ok": false,
+      "status": 0,
+      "error": "This operation was aborted"
+    }
+  },
+  {
+    "name": "Class Companion",
+    "url": "https://www.classcompanion.com",
+    "tool_type": "grading",
+    "education_stage": [
+      "secondary",
+      "higher-ed"
+    ],
+    "short_description": "AI写作反馈工具，教师设置量规后，学生提交作业可获得AI评分和评论。反馈严格对齐教师设定的标准，适合写作类作业的快速批改。",
+    "check": {
+      "url": "https://www.classcompanion.com",
+      "ok": false,
+      "status": 403,
+      "finalUrl": "https://classcompanion.com/"
+    }
+  },
+  {
+    "name": "作业帮AI",
+    "url": "https://www.zuoyebang.com",
+    "tool_type": "grading",
+    "education_stage": [
+      "elementary",
+      "secondary"
+    ],
+    "short_description": "依托19亿题库提供智能批改与作业质量评估，覆盖85%以上题型。教师使用其作业设计功能，可自动评估作业时长与难度，生成班级学情报告。",
+    "check": {
+      "url": "https://www.zuoyebang.com",
+      "ok": false,
+      "status": 404,
+      "finalUrl": "https://www.zuoyebang.com/"
+    }
+  },
+  {
+    "name": "QuestionWell",
+    "url": "https://www.questionwell.org",
+    "tool_type": "quiz-generation",
+    "education_stage": [
+      "elementary",
+      "secondary",
+      "higher-ed"
+    ],
+    "short_description": "AI出题工具，从任意文本、文章或视频字幕中生成选择题、简答题和开放题。教师上传阅读材料后自动生成测验题，支持一键导出至Google Forms或Canvas。免费基础版，Pro版7美元/月。",
+    "check": {
+      "url": "https://www.questionwell.org",
+      "ok": false,
+      "status": 0,
+      "error": "This operation was aborted"
+    }
+  },
+  {
+    "name": "Quizgecko",
+    "url": "https://quizgecko.com",
+    "tool_type": "quiz-generation",
+    "education_stage": [
+      "elementary",
+      "secondary",
+      "higher-ed"
+    ],
+    "short_description": "AI测验平台，上传文件即可自动生成多题型测验，支持间隔重复算法。教师将教材上传后，系统产出选择题、判断题、填空题，适合随堂测验。",
+    "check": {
+      "url": "https://quizgecko.com",
+      "ok": false,
+      "status": 403,
+      "finalUrl": "https://quizgecko.com/"
+    }
+  },
+  {
+    "name": "Quizlet",
+    "url": "https://quizlet.com",
+    "tool_type": "quiz-generation",
+    "education_stage": [
+      "elementary",
+      "secondary",
+      "higher-ed"
+    ],
+    "short_description": "数字闪卡平台，教师输入词汇或知识点后AI自动生成闪卡和测验。学生可通过游戏化学习、间隔重复算法巩固知识，教师后台查看班级掌握情况。免费版含广告，Plus版1.99美元/月。二、PPT生成类",
+    "check": {
+      "url": "https://quizlet.com",
+      "ok": false,
+      "status": 0,
+      "error": "fetch failed"
+    }
+  },
+  {
+    "name": "Jotform AI Trivia Generator",
+    "url": "https://www.jotform.com",
+    "tool_type": "quiz-generation",
+    "education_stage": [
+      "elementary",
+      "secondary",
+      "general-ai"
+    ],
+    "short_description": "输入主题即可快速生成测验或知识问答。教师输入主题和题目数量，AI自动生成完整的测验题，支持通过链接或二维码分享。",
+    "check": {
+      "url": "https://www.jotform.com",
+      "ok": false,
+      "status": 0,
+      "error": "This operation was aborted"
+    }
+  },
+  {
+    "name": "Trivia by Typito",
+    "url": "https://typito.com/trivia",
+    "tool_type": "quiz-generation",
+    "education_stage": [
+      "secondary",
+      "general-ai"
+    ],
+    "short_description": "生成短视频问答格式的测验，适配社交媒体分享。教师可创建趣味知识竞赛视频，自动格式化输出，用于课堂互动或线上活动。",
+    "check": {
+      "url": "https://typito.com/trivia",
+      "ok": false,
+      "status": 404,
+      "finalUrl": "https://typito.com/trivia"
+    }
+  },
+  {
+    "name": "NotebookLM",
+    "url": "https://notebooklm.google",
+    "tool_type": "lesson-planning",
+    "education_stage": [
+      "higher-ed",
+      "general-ai"
+    ],
+    "short_description": "Google开发的AI笔记与摘要工具，教师上传课程资料后自动生成摘要、学习指南、播客式概述和测验题。适用于课程材料整理、研究资料梳理和教学资源开发，免费使用。",
+    "check": {
+      "url": "https://notebooklm.google",
+      "ok": false,
+      "status": 0,
+      "error": "This operation was aborted"
+    }
+  },
+  {
+    "name": "Google Classroom",
+    "url": "https://classroom.google.com",
+    "tool_type": "teaching-management",
+    "education_stage": [
+      "elementary",
+      "secondary",
+      "higher-ed"
+    ],
+    "short_description": "云端课堂管理系统，集中发布作业、公告和反馈。教师可一键布置作业、自动收集提交、整合评分，与Google Docs无缝协作。",
+    "check": {
+      "url": "https://classroom.google.com",
+      "ok": false,
+      "status": 0,
+      "error": "This operation was aborted"
+    }
+  },
+  {
+    "name": "Remind",
+    "url": "https://www.remind.com",
+    "tool_type": "teaching-management",
+    "education_stage": [
+      "elementary",
+      "secondary",
+      "higher-ed"
+    ],
+    "short_description": "家校即时通讯工具，支持定时发送通知和作业提醒。教师可批量发送短信或App通知，家长无需安装额外应用即可接收消息。",
+    "check": {
+      "url": "https://www.remind.com",
+      "ok": false,
+      "status": 0,
+      "error": "This operation was aborted"
+    }
+  },
+  {
+    "name": "ChatGPT互动可视化（数学/科学）",
+    "url": "https://chat.openai.com",
+    "tool_type": "lesson-planning",
+    "education_stage": [
+      "secondary"
+    ],
+    "short_description": "OpenAI于2026年3月推出的动态可视化学习功能，覆盖70多个高中和大学数学、科学核心概念（如勾股定理、欧姆定律、二次方程）。学生可调整变量实时观察公式变化，将抽象概念转化为可交互实验。三、外语",
+    "check": {
+      "url": "https://chat.openai.com",
+      "ok": false,
+      "status": 0,
+      "error": "fetch failed"
+    }
+  },
+  {
+    "name": "Claude (Anthropic)",
+    "url": "https://claude.ai",
+    "tool_type": "lesson-planning",
+    "education_stage": [
+      "general-ai"
+    ],
+    "short_description": "高精度对话AI，擅长长文档分析和结构化输出。教师上传教学材料，AI可按指定格式生成教案、量规或反馈，支持200K上下文。",
+    "check": {
+      "url": "https://claude.ai",
+      "ok": false,
+      "status": 0,
+      "error": "This operation was aborted"
+    }
+  },
+  {
+    "name": "Google Gemini",
+    "url": "https://gemini.google.com",
+    "tool_type": "lesson-planning",
+    "education_stage": [
+      "general-ai"
+    ],
+    "short_description": "谷歌多模态AI，支持文本、图像、代码理解和生成。教师可用于课程内容总结、研究支持和多语言备课。",
+    "check": {
+      "url": "https://gemini.google.com",
+      "ok": false,
+      "status": 0,
+      "error": "This operation was aborted"
+    }
+  },
+  {
+    "name": "DeepL",
+    "url": "https://www.deepl.com",
+    "tool_type": "lesson-planning",
+    "education_stage": [
+      "general-ai"
+    ],
+    "short_description": "学术级翻译工具，支持课程材料精准本地化。教师可将外文教学资料翻译为中文，或用于多语言课堂材料准备。",
+    "check": {
+      "url": "https://www.deepl.com",
+      "ok": false,
+      "status": 0,
+      "error": "This operation was aborted"
+    }
+  },
+  {
+    "name": "ELSA Speak",
+    "url": "https://elsaspeak.com",
+    "tool_type": "grading",
+    "education_stage": [
+      "elementary",
+      "secondary"
+    ],
+    "short_description": "AI英语发音训练应用，通过语音识别技术提供实时发音评分。学生跟读英语单词或句子后获得准确率评分和嘴型纠正建议，适用于ESL学生的口语训练。",
+    "check": {
+      "url": "https://elsaspeak.com",
+      "ok": false,
+      "status": 0,
+      "error": "This operation was aborted"
+    }
+  },
+  {
+    "name": "Microsoft Immersive Reader",
+    "url": "https://www.microsoft.com/en-us/education/immersive-reader",
+    "tool_type": "lesson-planning",
+    "education_stage": [
+      "elementary",
+      "secondary",
+      "higher-ed"
+    ],
+    "short_description": "内置于微软产品的阅读辅助工具，支持文本朗读、分音节、翻译和调整字体。学生可个性化阅读体验，适用于阅读障碍和多语言学习者。",
+    "check": {
+      "url": "https://www.microsoft.com/en-us/education/immersive-reader",
+      "ok": false,
+      "status": 404,
+      "finalUrl": "https://www.microsoft.com/en-us/education/immersive-reader"
+    }
+  },
+  {
+    "name": "Read&Write by Texthelp",
+    "url": "https://www.texthelp.com/products/read-write",
+    "tool_type": "grading",
+    "education_stage": [
+      "elementary",
+      "secondary",
+      "higher-ed"
+    ],
+    "short_description": "阅读写作辅助工具套件，支持文字转语音、单词预测、图文词典。学生可在Google Docs或Word中使用，帮助读写障碍和学习差异学生。",
+    "check": {
+      "url": "https://www.texthelp.com/products/read-write",
+      "ok": false,
+      "status": 0,
+      "error": "This operation was aborted"
+    }
+  },
+  {
+    "name": "ChatPDF",
+    "url": "https://www.chatpdf.com",
+    "tool_type": "lesson-planning",
+    "education_stage": [
+      "higher-ed",
+      "general-ai"
+    ],
+    "short_description": "与PDF文档对话，提问获取摘要和内容定位。教师上传学术论文或教材，可通过问答快速提取关键信息，用于备课准备。",
+    "check": {
+      "url": "https://www.chatpdf.com",
+      "ok": false,
+      "status": 0,
+      "error": "This operation was aborted"
+    }
+  },
+  {
+    "name": "Grammarly",
+    "url": "https://www.grammarly.com",
+    "tool_type": "grading",
+    "education_stage": [
+      "secondary",
+      "higher-ed"
+    ],
+    "short_description": "英语写作辅助工具，提供语法检查、抄袭检测、引用格式化和AI批改功能。学生在撰写英语作文时获得实时反馈，教师可使用AI Grader按量规快速评分，提升写作质量与学术诚信。",
+    "check": {
+      "url": "https://www.grammarly.com",
+      "ok": false,
+      "status": 0,
+      "error": "This operation was aborted"
+    }
+  },
+  {
+    "name": "StepWise Math",
+    "url": "https://www.stepwisemath.com",
+    "tool_type": "grading",
+    "education_stage": [
+      "secondary"
+    ],
+    "short_description": "6-12年级数学AI辅导工具，引导学生逐步解决数学问题并提供分步骤讲解。学生输入数学题后获得结构化解题指导，适用于代数、几何等中高年级数学学习。",
+    "check": {
+      "url": "https://www.stepwisemath.com",
+      "ok": false,
+      "status": 0,
+      "error": "This operation was aborted"
+    }
+  },
+  {
+    "name": "CodaKid",
+    "url": "https://codakid.com",
+    "tool_type": "lesson-planning",
+    "education_stage": [
+      "elementary",
+      "secondary"
+    ],
+    "short_description": "面向K-12学生的编程与AI教育平台，涵盖生成式AI、提示词工程、AI伦理等课程。学生通过项目式学习（如AI生成视频）掌握技术技能，适合信息技术教育和研究性学习。",
+    "check": {
+      "url": "https://codakid.com",
+      "ok": false,
+      "status": 0,
+      "error": "This operation was aborted"
+    }
+  },
+  {
+    "name": "Huawei AIEC Solution",
+    "url": "https://e.huawei.com",
+    "tool_type": "teaching-management",
+    "education_stage": [
+      "elementary",
+      "secondary"
+    ],
+    "short_description": "华为AI教育中心解决方案，为基础教育提供AI通识教育平台。目前已覆盖浙江500多所中小学，配备AI算力、开源大模型和50多种实验工具，学生可进行AI实践项目。",
+    "check": {
+      "url": "https://e.huawei.com",
+      "ok": false,
+      "status": 0,
+      "error": "This operation was aborted"
+    }
+  },
+  {
+    "name": "Classover Tutor Studio",
+    "url": "https://www.classover.com",
+    "tool_type": "lesson-planning",
+    "education_stage": [
+      "elementary",
+      "secondary"
+    ],
+    "short_description": "K-12在线教育AI课程创建平台，教师可在Tutor Studio中设计、迭代和发布AI驱动的课程。系统支持跨学科课程扩展和多语言部署，帮助教育机构规模化创建AI课程。六、历史与社会/品德与社会/思想品德",
+    "check": {
+      "url": "https://www.classover.com",
+      "ok": false,
+      "status": 0,
+      "error": "This operation was aborted"
+    }
+  },
+  {
+    "name": "Tutor AI",
+    "url": "https://www.tutorai.com",
+    "tool_type": "lesson-planning",
+    "education_stage": [
+      "elementary",
+      "secondary",
+      "general-ai"
+    ],
+    "short_description": "个性化学习平台，可为任何主题创建10模块定制课程。学生输入学习目标后获得完整的课程路径和测验，适用于自学者和需要额外辅导的学生。",
+    "check": {
+      "url": "https://www.tutorai.com",
+      "ok": false,
+      "status": 0,
+      "error": "This operation was aborted"
+    }
+  },
+  {
+    "name": "Mindgrasp",
+    "url": "https://www.mindgrasp.ai",
+    "tool_type": "quiz-generation",
+    "education_stage": [
+      "secondary",
+      "higher-ed",
+      "general-ai"
+    ],
+    "short_description": "AI学习助手，将讲座、阅读材料快速总结为笔记和测验题。学生上传课程视频或文档后，系统生成摘要、闪卡和测验，适用于高效复习和知识巩固。",
+    "check": {
+      "url": "https://www.mindgrasp.ai",
+      "ok": false,
+      "status": 0,
+      "error": "This operation was aborted"
+    }
+  },
+  {
+    "name": "Otter.ai",
+    "url": "https://otter.ai",
+    "tool_type": "teaching-management",
+    "education_stage": [
+      "secondary",
+      "higher-ed",
+      "general-ai"
+    ],
+    "short_description": "实时语音转文字工具，可转录讲座并生成摘要。学生上课时录制音频，自动获得文字记录和关键点总结，适用于课堂笔记整理和复习。",
+    "check": {
+      "url": "https://otter.ai",
+      "ok": false,
+      "status": 0,
+      "error": "This operation was aborted"
+    }
+  },
+  {
+    "name": "九章龙虾 (NineClaw)",
+    "url": "https://www.jiuzhang.com",
+    "tool_type": "lesson-planning",
+    "education_stage": [
+      "elementary",
+      "secondary"
+    ],
+    "short_description": "好未来2026年3月发布的教师专属AI桌面智能体，开箱即用。教师通过自然语言描述需求，系统自动调用技能包完成教案生成、课件制作、作业批改、学情分析等任务，并打通飞书/钉钉等办公平台一键推送。",
+    "check": {
+      "url": "https://www.jiuzhang.com",
+      "ok": false,
+      "status": 0,
+      "error": "This operation was aborted"
+    }
+  },
+  {
+    "name": "ChatGPT Edu",
+    "url": "https://openai.com/chatgpt-edu",
+    "tool_type": "lesson-planning",
+    "education_stage": [
+      "higher-ed",
+      "general-ai"
+    ],
+    "short_description": "OpenAI面向高等教育机构的企业级方案，包含GPT-4o、数据分析、自定义GPT构建及管理控制台，对话不用于模型训练。教师可批量部署AI辅助备课、批改和课程设计，定价约2.5美元/用户/月。",
+    "check": {
+      "url": "https://openai.com/chatgpt-edu",
+      "ok": false,
+      "status": 0,
+      "error": "This operation was aborted"
+    }
+  },
+  {
+    "name": "Google Gemini (Docs/Slides/Forms集成)",
+    "url": "https://workspace.google.com/gemini",
+    "tool_type": "lesson-planning",
+    "education_stage": [
+      "elementary",
+      "secondary",
+      "higher-ed",
+      "general-ai"
+    ],
+    "short_description": "Google Workspace内置的AI功能，在Docs中“Help Me Write”撰写课程描述，在Slides中从文字提示生成教学幻灯片和图示，在Forms中自动生成测验题和调查问卷，并汇总响应数据，提升备课效率。三、作业批改类",
+    "check": {
+      "url": "https://workspace.google.com/gemini",
+      "ok": false,
+      "status": 0,
+      "error": "This operation was aborted"
+    }
+  },
+  {
+    "name": "Renaissance Intelligence",
+    "url": "https://www.renaissance.com",
+    "tool_type": "grading",
+    "education_stage": [
+      "elementary",
+      "secondary"
+    ],
+    "short_description": "2026年2月发布的K-12教育智能系统，统一评估→分组→教学→练习→精通全流程。教师可获得动态学生分组、个性化测验生成、AI辅助教学设计，系统基于验证评估数据提供教学决策支持。",
+    "check": {
+      "url": "https://www.renaissance.com",
+      "ok": false,
+      "status": 0,
+      "error": "This operation was aborted"
+    }
+  },
+  {
+    "name": "Pearson Foundations of AI for PK-12 Educators",
+    "url": "https://www.pearson.com",
+    "tool_type": "teaching-management",
+    "education_stage": [
+      "elementary",
+      "secondary"
+    ],
+    "short_description": "培生2026年3月推出的教师AI培训课程（6.5小时），教授ChatGPT和Gemini在备课、差异化教学、形成性评价中的应用。教师完成课程后获得可验证的数字徽章，提升AI教学素养。",
+    "check": {
+      "url": "https://www.pearson.com",
+      "ok": false,
+      "status": 0,
+      "error": "This operation was aborted"
+    }
+  },
+  {
+    "name": "Coteach",
+    "url": "https://www.coteach.ai",
+    "tool_type": "lesson-planning",
+    "education_stage": [
+      "elementary",
+      "secondary"
+    ],
+    "short_description": "与Illustrative Mathematics v.360数学课程深度对齐的AI备课助手，理解课程单元结构与学习目标。教师可定制教案、添加学习支架、调整进度，生成适配班级需求的课堂材料，被教师称为“思维伙伴”。",
+    "check": {
+      "url": "https://www.coteach.ai",
+      "ok": false,
+      "status": 0,
+      "error": "This operation was aborted"
+    }
+  },
+  {
+    "name": "EduQuest",
+    "url": "https://www.eduquest.ai（需进一步确认，产品官网暂未在搜索结果中明确）",
+    "tool_type": "quiz-generation",
+    "education_stage": [
+      "higher-ed",
+      "secondary"
+    ],
+    "short_description": "基于Google Gemini的AI试题生成平台，按布鲁姆认知分类学映射生成期中/期末试卷。教师可自定义分值分布、难度级别、学习目标对齐，支持PDF上下文导入和机构品牌导出，测试显示出题时间减少60-70%。",
+    "check": {
+      "url": "https://www.eduquest.ai（需进一步确认，产品官网暂未在搜索结果中明确）",
+      "ok": false,
+      "status": 0,
+      "error": "fetch failed"
+    }
+  },
+  {
+    "name": "Genially AI Quiz Generator",
+    "url": "https://genially.com",
+    "tool_type": "quiz-generation",
+    "education_stage": [
+      "elementary",
+      "secondary",
+      "higher-ed"
+    ],
+    "short_description": "互动内容平台内置AI测验生成器，教师输入主题、题目数量和难度，或上传PDF/文本作为上下文，AI自动生成互动式测验题。支持8种模板设计风格，适合课堂随堂测验和互动活动。二、评价与反馈层（作业批改、学情分析）",
+    "check": {
+      "url": "https://genially.com",
+      "ok": false,
+      "status": 0,
+      "error": "This operation was aborted"
+    }
+  },
+  {
+    "name": "BusyBee Grading Assistant",
+    "url": "https://www.agilix.com",
+    "tool_type": "grading",
+    "education_stage": [
+      "elementary",
+      "secondary",
+      "higher-ed"
+    ],
+    "short_description": "Agilix Buzz学习平台内置AI批改助手，新增Vision视觉功能，可分析手写作业、图表、可填写PDF、JPEG/PNG图片等格式。教师收到AI预测性评分后审核再发给学生，支持多种真实课堂作业形式。",
+    "check": {
+      "url": "https://www.agilix.com",
+      "ok": false,
+      "status": 0,
+      "error": "This operation was aborted"
+    }
+  },
+  {
+    "name": "Anywhere Testing Machine (ATM) by Pratham + Claude",
+    "url": "https://www.parentsquare.com",
+    "tool_type": "teaching-management",
+    "education_stage": [
+      "elementary",
+      "secondary"
+    ],
+    "short_description": "家校沟通平台内置AI和数据智能层，分析沟通活动、出勤模式、支付参与度和平台健康信号，在界面内直接推送建议操作。帮助教师监控沟通覆盖范围、识别出勤风险、维护家庭联系数据。",
+    "check": {
+      "url": "https://www.parentsquare.com",
+      "ok": false,
+      "status": 0,
+      "error": "This operation was aborted"
+    }
+  }
+]

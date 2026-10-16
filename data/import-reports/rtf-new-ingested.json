@@ -1,0 +1,544 @@
+[
+  {
+    "name": "MagicSchool",
+    "url": "https://www.magicschool.ai",
+    "tool_type": "lesson-planning",
+    "education_stage": [
+      "elementary",
+      "secondary"
+    ],
+    "short_description": "专为教师打造的AI平台，提供60多种工具，可生成教案、学习目标、量规、测验和家长沟通稿。教师输入学科与年级即可获得符合标准的完整教学设计框架，免费基础版，Plus版100美元/年。四、教学管理与综合类",
+    "check": {
+      "url": "https://www.magicschool.ai",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://www.magicschool.ai/"
+    }
+  },
+  {
+    "name": "Teach (Microsoft 365 Copilot)",
+    "url": "https://www.microsoft.com/en-us/education/products/microsoft-copilot",
+    "tool_type": "lesson-planning",
+    "education_stage": [
+      "elementary",
+      "secondary",
+      "higher-ed"
+    ],
+    "short_description": "内置于Microsoft 365 Copilot的AI教学助手，帮助教师创建教案、测验和量规，并能将教材适配不同阅读水平。教师输入主题后，可快速获得符合标准的教学活动设计，大幅减少备课时间。",
+    "check": {
+      "url": "https://www.microsoft.com/en-us/education/products/microsoft-copilot",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://www.microsoft.com/zh-cn/education"
+    }
+  },
+  {
+    "name": "Khanmigo Teacher Tools",
+    "url": "https://www.khanacademy.org/khanmigo",
+    "tool_type": "lesson-planning",
+    "education_stage": [
+      "elementary",
+      "secondary"
+    ],
+    "short_description": "可汗学院推出的AI教学助手，无需写提示词即可生成教案、量规、讨论话题、出站票和推荐信。教师使用后可将备课时间缩短50%以上，支持导出Word/PDF或保存至OneDrive。",
+    "check": {
+      "url": "https://www.khanacademy.org/khanmigo",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://www.khanacademy.org/khanmigo"
+    }
+  },
+  {
+    "name": "Curipod",
+    "url": "https://curipod.com",
+    "tool_type": "lesson-planning",
+    "education_stage": [
+      "elementary",
+      "secondary"
+    ],
+    "short_description": "将简单主题快速转化为互动式幻灯片，内置投票、绘画提示和讨论环节。教师输入主题后，可生成符合年级标准的完整课程幻灯片，支持学生实时参与互动。",
+    "check": {
+      "url": "https://curipod.com",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://curipod.com/"
+    }
+  },
+  {
+    "name": "笔墨写作",
+    "url": "https://www.bimoxiezuo.com",
+    "tool_type": "lesson-planning",
+    "education_stage": [
+      "elementary",
+      "secondary",
+      "higher-ed"
+    ],
+    "short_description": "接入DeepSeek-R1的AI写作平台，30秒生成差异化教案和教学文件。教师输入学科、年级、课时目标，即可获得结构规范的教案初稿，覆盖幼儿园到职业教育的全阶段需求。",
+    "check": {
+      "url": "https://www.bimoxiezuo.com",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://www.bimoxiezuo.com/"
+    }
+  },
+  {
+    "name": "ClassPoint",
+    "url": "https://www.classpoint.io",
+    "tool_type": "ppt-generation",
+    "education_stage": [
+      "elementary",
+      "secondary",
+      "higher-ed"
+    ],
+    "short_description": "内置于Microsoft PowerPoint的AI互动工具，教师可在幻灯片中添加实时测验、投票、白板互动和批注。学生通过手机参与答题，系统自动生成参与度热力图，辅助教师调整教学节奏。免费版基础功能，Pro版8美元/月。",
+    "check": {
+      "url": "https://www.classpoint.io",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://www.classpoint.io/"
+    }
+  },
+  {
+    "name": "WPS AI",
+    "url": "https://www.wps.ai",
+    "tool_type": "lesson-planning",
+    "education_stage": [
+      "elementary",
+      "secondary",
+      "higher-ed"
+    ],
+    "short_description": "深度集成于WPS Office的AI服务，支持教案框架生成、智能排版和文本转思维导图。教师输入课程名称与教学目标，AI自动生成结构化教案并推荐适配素材。",
+    "check": {
+      "url": "https://www.wps.ai",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://www.wps.ai/"
+    }
+  },
+  {
+    "name": "Notion AI",
+    "url": "https://www.notion.so",
+    "tool_type": "lesson-planning",
+    "education_stage": [
+      "higher-ed",
+      "general-ai"
+    ],
+    "short_description": "辅助整理课程知识框架、自动生成互动练习题和教学笔记。教师可将零散的教学素材导入Notion，AI自动梳理知识图谱并生成配套练习题。",
+    "check": {
+      "url": "https://www.notion.so",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://www.notion.so/"
+    }
+  },
+  {
+    "name": "Xmind AI",
+    "url": "https://xmind.ai",
+    "tool_type": "lesson-planning",
+    "education_stage": [
+      "elementary",
+      "secondary",
+      "higher-ed"
+    ],
+    "short_description": "AI增强的思维导图工具，支持课程规划、知识点梳理和教学进度设计。教师可将复杂知识点自动转化为可视化导图，用于备课或学生复习资料。",
+    "check": {
+      "url": "https://xmind.ai",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://app.xmind.com/"
+    }
+  },
+  {
+    "name": "Copy.ai",
+    "url": "https://www.copy.ai",
+    "tool_type": "lesson-planning",
+    "education_stage": [
+      "general-ai"
+    ],
+    "short_description": "通用AI内容生成工具，可自动生成不同难度层级的课堂案例与情景模拟脚本。教师输入教学目标，即可获得多版本教学案例供课堂使用。二、PPT生成与课件制作类",
+    "check": {
+      "url": "https://www.copy.ai",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://www.copy.ai/"
+    }
+  },
+  {
+    "name": "Beautiful.ai",
+    "url": "https://www.beautiful.ai",
+    "tool_type": "ppt-generation",
+    "education_stage": [
+      "higher-ed",
+      "general-ai"
+    ],
+    "short_description": "AI驱动演示文稿工具，自动优化排版和视觉设计。教师输入课件内容，系统智能布局图文元素，快速生成符合教学场景的专业幻灯片。",
+    "check": {
+      "url": "https://www.beautiful.ai",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://www.beautiful.ai/"
+    }
+  },
+  {
+    "name": "SlidesAI.io",
+    "url": "https://www.slidesai.io",
+    "tool_type": "ppt-generation",
+    "education_stage": [
+      "elementary",
+      "secondary",
+      "higher-ed"
+    ],
+    "short_description": "Google Slides插件，从文本快速生成演示文稿。教师粘贴教案文字，AI自动拆分为幻灯片并添加配图，大幅缩短课件制作时间。",
+    "check": {
+      "url": "https://www.slidesai.io",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://www.slidesai.io/"
+    }
+  },
+  {
+    "name": "Gradescope",
+    "url": "https://www.gradescope.com",
+    "tool_type": "grading",
+    "education_stage": [
+      "higher-ed",
+      "secondary"
+    ],
+    "short_description": "UC Berkeley开发的AI批改平台，支持手写作业、电子作业批量识别，按题目类型归类后批量批改相同错误，生成班级分析报告。适用于考试、作业和编程任务，免费基础版，机构定价。",
+    "check": {
+      "url": "https://www.gradescope.com",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://www.gradescope.com/"
+    }
+  },
+  {
+    "name": "Brisk Teaching",
+    "url": "https://www.briskteaching.com",
+    "tool_type": "grading",
+    "education_stage": [
+      "elementary",
+      "secondary",
+      "higher-ed"
+    ],
+    "short_description": "免费Chrome扩展，在Google Docs中直接提供AI反馈。教师在学生文档中高亮文本，即可生成反馈评论，同时支持生成量规和测验。",
+    "check": {
+      "url": "https://www.briskteaching.com",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://www.briskteaching.com/"
+    }
+  },
+  {
+    "name": "CoGrader",
+    "url": "https://www.cograder.com",
+    "tool_type": "grading",
+    "education_stage": [
+      "elementary",
+      "secondary",
+      "higher-ed"
+    ],
+    "short_description": "与Google Classroom集成的AI批改工具，上传量规后自动为学生作业打分并提供反馈。教师反馈批改时间减少50-70%，支持在评分前编辑AI评论。",
+    "check": {
+      "url": "https://www.cograder.com",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://cograder.com/"
+    }
+  },
+  {
+    "name": "Writable",
+    "url": "https://www.writable.com",
+    "tool_type": "grading",
+    "education_stage": [
+      "elementary",
+      "secondary",
+      "higher-ed"
+    ],
+    "short_description": "支持学生写作的AI反馈工具，结合AI生成与教师审核，帮助学生完成修订。教师可设置量规，AI提供初稿反馈，学生修改后提交终稿。",
+    "check": {
+      "url": "https://www.writable.com",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://www.writable.com/"
+    }
+  },
+  {
+    "name": "ScribeSense",
+    "url": "https://www.scribesense.com",
+    "tool_type": "grading",
+    "education_stage": [
+      "elementary",
+      "secondary"
+    ],
+    "short_description": "AI扫描批改纸质试卷工具，保持传统纸笔测试流程。教师扫描学生答题卡，系统自动识别并评分，生成班级成绩分析报告。",
+    "check": {
+      "url": "https://www.scribesense.com",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://www.scribesense.com/"
+    }
+  },
+  {
+    "name": "Turnitin Draft Coach",
+    "url": "https://www.turnitin.com",
+    "tool_type": "grading",
+    "education_stage": [
+      "higher-ed"
+    ],
+    "short_description": "集成于Google Docs和Word的写作辅助工具，提供语法检查、引用支持和AI写作检测。学生在写作过程中获得实时反馈，教师可监控原创性。",
+    "check": {
+      "url": "https://www.turnitin.com",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://www.turnitin.com/"
+    }
+  },
+  {
+    "name": "Formative",
+    "url": "https://www.formative.com",
+    "tool_type": "grading",
+    "education_stage": [
+      "elementary",
+      "secondary",
+      "higher-ed"
+    ],
+    "short_description": "实时评估平台，学生完成作业时即时获得AI反馈。教师可创建互动式作业，系统自动评分并生成长条图显示全班掌握情况。",
+    "check": {
+      "url": "https://www.formative.com",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://www.formative.com/"
+    }
+  },
+  {
+    "name": "Mathpix",
+    "url": "https://mathpix.com",
+    "tool_type": "grading",
+    "education_stage": [
+      "secondary",
+      "higher-ed"
+    ],
+    "short_description": "手写数学公式智能转换为数字题型并自动评分。教师拍摄学生手写答案，系统识别公式并判断正误，适用于理科作业批改。四、试题生成与测验类",
+    "check": {
+      "url": "https://mathpix.com",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://mathpix.com/"
+    }
+  },
+  {
+    "name": "Microsoft Elevate for Educators",
+    "url": "https://www.microsoft.com/en-us/education",
+    "tool_type": "lesson-planning",
+    "education_stage": [
+      "elementary",
+      "secondary",
+      "higher-ed"
+    ],
+    "short_description": "微软2026年推出的免费教育AI计划，包含“Teach”AI助手（生成教案、测验、量规、适配不同阅读水平）、“Study and Learn Agent”（引导学生独立练习）、Learning Zone互动学习应用，以及免费教师AI认证课程。",
+    "check": {
+      "url": "https://www.microsoft.com/en-us/education",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://www.microsoft.com/en-us/education"
+    }
+  },
+  {
+    "name": "ClassDojo",
+    "url": "https://www.classdojo.com",
+    "tool_type": "teaching-management",
+    "education_stage": [
+      "elementary",
+      "secondary"
+    ],
+    "short_description": "班级管理与家校沟通平台，支持分享学生动态、鼓励积极行为。教师可发送班级通知、记录学生表现，家长实时接收孩子在校情况。",
+    "check": {
+      "url": "https://www.classdojo.com",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://www.classdojo.com/"
+    }
+  },
+  {
+    "name": "Otus",
+    "url": "https://otus.com",
+    "tool_type": "teaching-management",
+    "education_stage": [
+      "elementary",
+      "secondary",
+      "higher-ed"
+    ],
+    "short_description": "一体化教学管理平台，整合成绩、考勤、行为追踪和家校沟通。教师可自动化日常工作流，AI辅助识别学生趋势并个性化推送。",
+    "check": {
+      "url": "https://otus.com",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://otus.com/"
+    }
+  },
+  {
+    "name": "简道云",
+    "url": "https://www.jiandaoyun.com",
+    "tool_type": "teaching-management",
+    "education_stage": [
+      "elementary",
+      "secondary",
+      "higher-ed"
+    ],
+    "short_description": "零代码平台，支持搭建教务管理系统、教案库和家校沟通表单。教师可自定义表单收集作业、管理班级事务，实现教务数据电子化归档。",
+    "check": {
+      "url": "https://www.jiandaoyun.com",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://www.jiandaoyun.com/"
+    }
+  },
+  {
+    "name": "腾讯会议",
+    "url": "https://meeting.tencent.com",
+    "tool_type": "teaching-management",
+    "education_stage": [
+      "elementary",
+      "secondary",
+      "higher-ed"
+    ],
+    "short_description": "云视频会议工具，支持线上授课、教研会议和家校沟通。课程自动云录制，AI生成文字纪要和大纲，方便学生课后回顾。",
+    "check": {
+      "url": "https://meeting.tencent.com",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://meeting.tencent.com/"
+    }
+  },
+  {
+    "name": "SchoolAI",
+    "url": "https://schoolai.com",
+    "tool_type": "teaching-management",
+    "education_stage": [
+      "elementary",
+      "secondary",
+      "higher-ed"
+    ],
+    "short_description": "为学生提供AI\"思维伙伴\"辅助学习，教师可监控学生活动。学生在AI引导下进行头脑风暴和反思，教师后台查看完整对话记录。六、通用AI辅助教学类",
+    "check": {
+      "url": "https://schoolai.com",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://schoolai.com/"
+    }
+  },
+  {
+    "name": "TalkingPoints",
+    "url": "https://talkingpts.org",
+    "tool_type": "teaching-management",
+    "education_stage": [
+      "elementary",
+      "secondary"
+    ],
+    "short_description": "多语言家校沟通工具，支持100多种语言实时翻译。教师发送消息后，系统自动翻译为家长母语，确保非英语家庭也能及时沟通。八、无障碍与阅读支持类",
+    "check": {
+      "url": "https://talkingpts.org",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://talkingpts.org/"
+    }
+  },
+  {
+    "name": "Speechify",
+    "url": "https://speechify.com",
+    "tool_type": "lesson-planning",
+    "education_stage": [
+      "elementary",
+      "secondary",
+      "higher-ed"
+    ],
+    "short_description": "文字转语音工具，将文章、作业转换为自然语音朗读。学生可调节语速和音色，边听边读提升阅读理解效率。",
+    "check": {
+      "url": "https://speechify.com",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://speechify.com/"
+    }
+  },
+  {
+    "name": "PDF AI",
+    "url": "https://pdf.ai",
+    "tool_type": "lesson-planning",
+    "education_stage": [
+      "higher-ed",
+      "general-ai"
+    ],
+    "short_description": "PDF交互工具，支持标注、提取洞察和组织笔记。教师可在学术文献中高亮关键内容，AI自动整理形成教学笔记。一、语文",
+    "check": {
+      "url": "https://pdf.ai",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://pdf.ai/"
+    }
+  },
+  {
+    "name": "QuillBot",
+    "url": "https://quillbot.com",
+    "tool_type": "grading",
+    "education_stage": [
+      "secondary",
+      "higher-ed"
+    ],
+    "short_description": "AI改写与总结工具，帮助学生在英语写作中优化表达。学生输入文本后获得改写建议、总结摘要和语法修正，适用于英语作文润色和学术写作训练。二、数学",
+    "check": {
+      "url": "https://quillbot.com",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://quillbot.com/"
+    }
+  },
+  {
+    "name": "DreamBox Math",
+    "url": "https://www.discoveryeducation.com",
+    "tool_type": "quiz-generation",
+    "education_stage": [
+      "elementary",
+      "secondary"
+    ],
+    "short_description": "Discovery Education旗下K-8自适应数学练习平台，根据学生掌握情况推送个性化练习。教师可设置优先学习标准，系统自动调整难度并提供即时反馈，帮助学生巩固数学概念。",
+    "check": {
+      "url": "https://www.discoveryeducation.com",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://www.discoveryeducation.com/"
+    }
+  },
+  {
+    "name": "zSpace",
+    "url": "https://www.zspace.com",
+    "tool_type": "lesson-planning",
+    "education_stage": [
+      "elementary",
+      "secondary"
+    ],
+    "short_description": "AR/VR沉浸式学习平台，结合微软AI工具提供3D科学实验模拟。学生在虚拟环境中观察人体结构、化学反应或物理现象，教师通过AI辅助生成实验教学方案。五、信息技术/综合实践活动",
+    "check": {
+      "url": "https://www.zspace.com",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://www.zspace.com/"
+    }
+  },
+  {
+    "name": "九章龙虾 (NineClaw)",
+    "url": "https://www.laoshibang.com",
+    "tool_type": "lesson-planning",
+    "education_stage": [
+      "elementary",
+      "secondary"
+    ],
+    "short_description": "好未来2026年3月发布的教师专属AI桌面智能体，开箱即用。教师以自然语言描述需求，系统自动调用技能包完成教案生成、课件制作、作业批改、试题组卷等任务，深度打通飞书/钉钉，支持定时推送，已服务超20万教师。",
+    "check": {
+      "url": "https://www.laoshibang.com",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://www.laoshibang.com/"
+    }
+  }
+]

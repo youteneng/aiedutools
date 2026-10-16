@@ -1,0 +1,500 @@
+[
+  {
+    "url": "https://www.magicschool.ai",
+    "ok": false,
+    "status": 0,
+    "error": "This operation was aborted"
+  },
+  {
+    "url": "https://www.eduaide.ai",
+    "ok": false,
+    "status": 403,
+    "finalUrl": "https://www.eduaide.ai/"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/education/products/microsoft-copilot",
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://www.microsoft.com/zh-cn/education"
+  },
+  {
+    "url": "https://www.khanacademy.org/khanmigo",
+    "ok": false,
+    "status": 0,
+    "error": "This operation was aborted"
+  },
+  {
+    "url": "https://curipod.com",
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://curipod.com/"
+  },
+  {
+    "url": "https://www.bimoxiezuo.com",
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://www.bimoxiezuo.com/"
+  },
+  {
+    "url": "https://www.ourteacher.ai",
+    "ok": false,
+    "status": 0,
+    "error": "fetch failed"
+  },
+  {
+    "url": "https://twee.com",
+    "ok": false,
+    "status": 0,
+    "error": "This operation was aborted"
+  },
+  {
+    "url": "https://www.classpoint.io",
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://www.classpoint.io/"
+  },
+  {
+    "url": "https://www.canva.com",
+    "ok": false,
+    "status": 0,
+    "error": "This operation was aborted"
+  },
+  {
+    "url": "https://www.iflytek.com",
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://www.iflytek.com/"
+  },
+  {
+    "url": "https://www.wps.ai",
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://www.wps.ai/"
+  },
+  {
+    "url": "https://www.notion.so",
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://www.notion.so/"
+  },
+  {
+    "url": "https://xmind.ai",
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://app.xmind.com/"
+  },
+  {
+    "url": "https://www.copy.ai",
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://www.copy.ai/"
+  },
+  {
+    "url": "https://gamma.app",
+    "ok": false,
+    "status": 0,
+    "error": "This operation was aborted"
+  },
+  {
+    "url": "https://www.beautiful.ai",
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://www.beautiful.ai/"
+  },
+  {
+    "url": "https://www.slidesai.io",
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://www.slidesai.io/"
+  },
+  {
+    "url": "https://www.seewo.com",
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://www.seewo.com/"
+  },
+  {
+    "url": "https://www.gradescope.com",
+    "ok": false,
+    "status": 0,
+    "error": "This operation was aborted"
+  },
+  {
+    "url": "https://www.briskteaching.com",
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://www.briskteaching.com/"
+  },
+  {
+    "url": "https://www.cograder.com",
+    "ok": false,
+    "status": 0,
+    "error": "This operation was aborted"
+  },
+  {
+    "url": "https://www.classcompanion.com",
+    "ok": false,
+    "status": 403,
+    "finalUrl": "https://classcompanion.com/"
+  },
+  {
+    "url": "https://www.writable.com",
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://www.writable.com/"
+  },
+  {
+    "url": "https://www.yuanfudao.com",
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://www.yuanfudao.com/"
+  },
+  {
+    "url": "https://www.zuoyebang.com",
+    "ok": false,
+    "status": 404,
+    "finalUrl": "https://www.zuoyebang.com/"
+  },
+  {
+    "url": "https://www.mathgpt.com",
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://www.mathgpt.com/"
+  },
+  {
+    "url": "https://www.scribesense.com",
+    "ok": false,
+    "status": 0,
+    "error": "This operation was aborted"
+  },
+  {
+    "url": "https://www.turnitin.com",
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://www.turnitin.com/"
+  },
+  {
+    "url": "https://www.formative.com",
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://www.formative.com/"
+  },
+  {
+    "url": "https://mathpix.com",
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://mathpix.com/"
+  },
+  {
+    "url": "https://www.questionwell.org",
+    "ok": false,
+    "status": 0,
+    "error": "This operation was aborted"
+  },
+  {
+    "url": "https://quizgecko.com",
+    "ok": false,
+    "status": 403,
+    "finalUrl": "https://quizgecko.com/"
+  },
+  {
+    "url": "https://quizlet.com",
+    "ok": false,
+    "status": 403,
+    "finalUrl": "https://quizlet.com/"
+  },
+  {
+    "url": "https://www.jotform.com",
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://www.jotform.com/"
+  },
+  {
+    "url": "https://typito.com/trivia",
+    "ok": false,
+    "status": 404,
+    "finalUrl": "https://typito.com/trivia"
+  },
+  {
+    "url": "https://notebooklm.google",
+    "ok": false,
+    "status": 0,
+    "error": "This operation was aborted"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/education",
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://www.microsoft.com/en-us/education"
+  },
+  {
+    "url": "https://classroom.google.com",
+    "ok": false,
+    "status": 0,
+    "error": "This operation was aborted"
+  },
+  {
+    "url": "https://www.classdojo.com",
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://www.classdojo.com/"
+  },
+  {
+    "url": "https://www.remind.com",
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://www.remind.com/"
+  },
+  {
+    "url": "https://otus.com",
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://otus.com/"
+  },
+  {
+    "url": "https://www.jiandaoyun.com",
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://www.jiandaoyun.com/"
+  },
+  {
+    "url": "https://meeting.tencent.com",
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://meeting.tencent.com/"
+  },
+  {
+    "url": "https://schoolai.com",
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://schoolai.com/"
+  },
+  {
+    "url": "https://chat.openai.com",
+    "ok": false,
+    "status": 0,
+    "error": "fetch failed"
+  },
+  {
+    "url": "https://claude.ai",
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://claude.com/app-unavailable-in-region"
+  },
+  {
+    "url": "https://gemini.google.com",
+    "ok": false,
+    "status": 0,
+    "error": "This operation was aborted"
+  },
+  {
+    "url": "https://www.deepseek.com",
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://www.deepseek.com/"
+  },
+  {
+    "url": "https://kimi.moonshot.cn",
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://www.kimi.com/"
+  },
+  {
+    "url": "https://yiyan.baidu.com",
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://yiyan.baidu.com/"
+  },
+  {
+    "url": "https://tongyi.aliyun.com",
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://tongyi.aliyun.com/"
+  },
+  {
+    "url": "https://chatglm.cn",
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://chatglm.cn/"
+  },
+  {
+    "url": "https://www.deepl.com",
+    "ok": false,
+    "status": 0,
+    "error": "This operation was aborted"
+  },
+  {
+    "url": "https://elsaspeak.com",
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://elsaspeak.com/en/"
+  },
+  {
+    "url": "https://talkingpts.org",
+    "ok": false,
+    "status": 0,
+    "error": "This operation was aborted"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/education/immersive-reader",
+    "ok": false,
+    "status": 404,
+    "finalUrl": "https://www.microsoft.com/en-us/education/immersive-reader"
+  },
+  {
+    "url": "https://speechify.com",
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://speechify.com/"
+  },
+  {
+    "url": "https://www.texthelp.com/products/read-write",
+    "ok": false,
+    "status": 404,
+    "finalUrl": "https://www.everway.com/products/read-write/"
+  },
+  {
+    "url": "https://www.chatpdf.com",
+    "ok": false,
+    "status": 0,
+    "error": "This operation was aborted"
+  },
+  {
+    "url": "https://pdf.ai",
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://pdf.ai/"
+  },
+  {
+    "url": "https://www.grammarly.com",
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://www.grammarly.com/"
+  },
+  {
+    "url": "https://quillbot.com",
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://quillbot.com/"
+  },
+  {
+    "url": "https://www.discoveryeducation.com",
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://www.discoveryeducation.com/"
+  },
+  {
+    "url": "https://www.stepwisemath.com",
+    "ok": false,
+    "status": 0,
+    "error": "This operation was aborted"
+  },
+  {
+    "url": "https://www.zspace.com",
+    "ok": false,
+    "status": 0,
+    "error": "fetch failed"
+  },
+  {
+    "url": "https://codakid.com",
+    "ok": false,
+    "status": 0,
+    "error": "This operation was aborted"
+  },
+  {
+    "url": "https://e.huawei.com",
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://e.huawei.com/en/"
+  },
+  {
+    "url": "https://www.classover.com",
+    "ok": false,
+    "status": 0,
+    "error": "This operation was aborted"
+  },
+  {
+    "url": "https://www.tutorai.com",
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://www.tutorai.com/"
+  },
+  {
+    "url": "https://www.mindgrasp.ai",
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://www.mindgrasp.ai/"
+  },
+  {
+    "url": "https://otter.ai",
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://otter.ai/"
+  },
+  {
+    "url": "https://www.jiuzhang.com",
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://www.jiuzhang.com/"
+  },
+  {
+    "url": "https://openai.com/chatgpt-edu",
+    "ok": false,
+    "status": 403,
+    "finalUrl": "https://openai.com/chatgpt-edu/"
+  },
+  {
+    "url": "https://workspace.google.com/gemini",
+    "ok": false,
+    "status": 0,
+    "error": "This operation was aborted"
+  },
+  {
+    "url": "https://www.renaissance.com",
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://www.renaissance.com/"
+  },
+  {
+    "url": "https://www.pearson.com",
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://www.pearson.com/"
+  },
+  {
+    "url": "https://www.laoshibang.com",
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://www.laoshibang.com/"
+  },
+  {
+    "url": "https://www.coteach.ai",
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://www.coteach.ai/"
+  },
+  {
+    "url": "https://www.eduquest.ai（需进一步确认，产品官网暂未在搜索结果中明确）",
+    "ok": false,
+    "status": 0,
+    "error": "fetch failed"
+  },
+  {
+    "url": "https://genially.com",
+    "ok": false,
+    "status": 0,
+    "error": "This operation was aborted"
+  },
+  {
+    "url": "https://www.agilix.com",
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://www.agilix.com/"
+  },
+  {
+    "url": "https://www.parentsquare.com",
+    "ok": false,
+    "status": 0,
+    "error": "This operation was aborted"
+  }
+]

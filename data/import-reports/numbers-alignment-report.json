@@ -1,0 +1,388 @@
+{
+  "timestamp": "2026-03-23T15:03:45.915Z",
+  "addedCount": 36,
+  "changedCount": 0,
+  "untouchedCount": 36,
+  "missingCount": 0,
+  "changed": [],
+  "untouched": [
+    {
+      "id": "eduaide-ai",
+      "name": "Eduaide.ai",
+      "url": "https://www.eduaide.ai",
+      "category": "lesson-planning",
+      "teachingLevels": [
+        "elementary",
+        "secondary",
+        "higher-ed"
+      ]
+    },
+    {
+      "id": "twee",
+      "name": "Twee",
+      "url": "https://twee.com",
+      "category": "lesson-planning",
+      "teachingLevels": [
+        "secondary",
+        "higher-ed"
+      ]
+    },
+    {
+      "id": "canva-magic-write",
+      "name": "Canva Magic Write",
+      "url": "https://www.canva.com",
+      "category": "ppt-generation",
+      "teachingLevels": [
+        "elementary",
+        "secondary",
+        "general-ai"
+      ]
+    },
+    {
+      "id": "gamma",
+      "name": "Gamma",
+      "url": "https://gamma.app",
+      "category": "ppt-generation",
+      "teachingLevels": [
+        "elementary",
+        "secondary",
+        "higher-ed"
+      ]
+    },
+    {
+      "id": "class-companion",
+      "name": "Class Companion",
+      "url": "https://www.classcompanion.com",
+      "category": "grading",
+      "teachingLevels": [
+        "secondary",
+        "higher-ed"
+      ]
+    },
+    {
+      "id": "questionwell",
+      "name": "QuestionWell",
+      "url": "https://www.questionwell.org",
+      "category": "quiz-generation",
+      "teachingLevels": [
+        "elementary",
+        "secondary",
+        "higher-ed"
+      ]
+    },
+    {
+      "id": "quizgecko",
+      "name": "Quizgecko",
+      "url": "https://quizgecko.com",
+      "category": "quiz-generation",
+      "teachingLevels": [
+        "elementary",
+        "secondary",
+        "higher-ed"
+      ]
+    },
+    {
+      "id": "quizlet",
+      "name": "Quizlet",
+      "url": "https://quizlet.com",
+      "category": "quiz-generation",
+      "teachingLevels": [
+        "elementary",
+        "secondary",
+        "higher-ed"
+      ]
+    },
+    {
+      "id": "jotform-ai-trivia-generator",
+      "name": "Jotform AI Trivia Generator",
+      "url": "https://www.jotform.com",
+      "category": "quiz-generation",
+      "teachingLevels": [
+        "elementary",
+        "secondary",
+        "general-ai"
+      ]
+    },
+    {
+      "id": "trivia-by-typito",
+      "name": "Trivia by Typito",
+      "url": "https://typito.com/login?nextUrl=/home",
+      "category": "quiz-generation",
+      "teachingLevels": [
+        "secondary",
+        "general-ai"
+      ]
+    },
+    {
+      "id": "notebooklm",
+      "name": "NotebookLM",
+      "url": "https://notebooklm.google",
+      "category": "lesson-planning",
+      "teachingLevels": [
+        "higher-ed",
+        "general-ai"
+      ]
+    },
+    {
+      "id": "google-classroom",
+      "name": "Google Classroom",
+      "url": "https://classroom.google.com",
+      "category": "teaching-management",
+      "teachingLevels": [
+        "elementary",
+        "secondary",
+        "higher-ed"
+      ]
+    },
+    {
+      "id": "remind",
+      "name": "Remind",
+      "url": "https://www.remind.com",
+      "category": "teaching-management",
+      "teachingLevels": [
+        "elementary",
+        "secondary",
+        "higher-ed"
+      ]
+    },
+    {
+      "id": "chatgpt互动可视化-数学-科学",
+      "name": "ChatGPT互动可视化（数学/科学）",
+      "url": "https://chat.openai.com",
+      "category": "lesson-planning",
+      "teachingLevels": [
+        "elementary",
+        "secondary",
+        "higher-ed",
+        "general-ai"
+      ]
+    },
+    {
+      "id": "claude-anthropic",
+      "name": "Claude (Anthropic)",
+      "url": "https://claude.ai",
+      "category": "lesson-planning",
+      "teachingLevels": [
+        "general-ai"
+      ]
+    },
+    {
+      "id": "google-gemini",
+      "name": "Google Gemini",
+      "url": "https://gemini.google.com",
+      "category": "lesson-planning",
+      "teachingLevels": [
+        "general-ai"
+      ]
+    },
+    {
+      "id": "deepl",
+      "name": "DeepL",
+      "url": "https://www.deepl.com",
+      "category": "lesson-planning",
+      "teachingLevels": [
+        "general-ai"
+      ]
+    },
+    {
+      "id": "elsa-speak",
+      "name": "ELSA Speak",
+      "url": "https://elsaspeak.com",
+      "category": "grading",
+      "teachingLevels": [
+        "elementary",
+        "secondary"
+      ]
+    },
+    {
+      "id": "microsoft-immersive-reader",
+      "name": "Microsoft Immersive Reader",
+      "url": "https://www.microsoft.com/en-us/edge/features/immersive-reader?form=MT0160",
+      "category": "lesson-planning",
+      "teachingLevels": [
+        "elementary",
+        "secondary",
+        "higher-ed"
+      ]
+    },
+    {
+      "id": "read-write-by-texthelp",
+      "name": "Read&Write by Texthelp",
+      "url": "https://www.everway.com/products/read-and-write-education/",
+      "category": "grading",
+      "teachingLevels": [
+        "elementary",
+        "secondary",
+        "higher-ed"
+      ]
+    },
+    {
+      "id": "chatpdf",
+      "name": "ChatPDF",
+      "url": "https://www.chatpdf.com",
+      "category": "lesson-planning",
+      "teachingLevels": [
+        "higher-ed",
+        "general-ai"
+      ]
+    },
+    {
+      "id": "grammarly",
+      "name": "Grammarly",
+      "url": "https://www.grammarly.com",
+      "category": "grading",
+      "teachingLevels": [
+        "secondary",
+        "higher-ed"
+      ]
+    },
+    {
+      "id": "codakid",
+      "name": "CodaKid",
+      "url": "https://codakid.com",
+      "category": "lesson-planning",
+      "teachingLevels": [
+        "elementary",
+        "secondary"
+      ]
+    },
+    {
+      "id": "huawei-aiec-solution",
+      "name": "Huawei AIEC Solution",
+      "url": "https://e.huawei.com",
+      "category": "teaching-management",
+      "teachingLevels": [
+        "elementary",
+        "secondary"
+      ]
+    },
+    {
+      "id": "classover-tutor-studio",
+      "name": "Classover Tutor Studio",
+      "url": "https://www.classover.com",
+      "category": "lesson-planning",
+      "teachingLevels": [
+        "elementary",
+        "secondary"
+      ]
+    },
+    {
+      "id": "tutor-ai",
+      "name": "Tutor AI",
+      "url": "https://www.tutorai.com",
+      "category": "lesson-planning",
+      "teachingLevels": [
+        "elementary",
+        "secondary",
+        "general-ai"
+      ]
+    },
+    {
+      "id": "mindgrasp",
+      "name": "Mindgrasp",
+      "url": "https://www.mindgrasp.ai",
+      "category": "quiz-generation",
+      "teachingLevels": [
+        "secondary",
+        "higher-ed",
+        "general-ai"
+      ]
+    },
+    {
+      "id": "otter-ai",
+      "name": "Otter.ai",
+      "url": "https://otter.ai",
+      "category": "teaching-management",
+      "teachingLevels": [
+        "secondary",
+        "higher-ed",
+        "general-ai"
+      ]
+    },
+    {
+      "id": "九章龙虾-nineclaw-2",
+      "name": "九章龙虾 (NineClaw)",
+      "url": "https://www.jiuzhang.com",
+      "category": "lesson-planning",
+      "teachingLevels": [
+        "elementary",
+        "secondary"
+      ]
+    },
+    {
+      "id": "google-gemini-docs-slides-forms集成",
+      "name": "Google Gemini (Docs/Slides/Forms集成)",
+      "url": "https://workspace.google.com/gemini",
+      "category": "lesson-planning",
+      "teachingLevels": [
+        "elementary",
+        "secondary",
+        "higher-ed",
+        "general-ai"
+      ]
+    },
+    {
+      "id": "renaissance-intelligence",
+      "name": "Renaissance Intelligence",
+      "url": "https://www.renaissance.com",
+      "category": "grading",
+      "teachingLevels": [
+        "elementary",
+        "secondary"
+      ]
+    },
+    {
+      "id": "pearson-foundations-of-ai-for-pk-12-educators",
+      "name": "Pearson Foundations of AI for PK-12 Educators",
+      "url": "https://www.pearson.com",
+      "category": "teaching-management",
+      "teachingLevels": [
+        "elementary",
+        "secondary"
+      ]
+    },
+    {
+      "id": "coteach",
+      "name": "Coteach",
+      "url": "https://www.coteach.ai",
+      "category": "lesson-planning",
+      "teachingLevels": [
+        "elementary",
+        "secondary"
+      ]
+    },
+    {
+      "id": "genially-ai-quiz-generator",
+      "name": "Genially AI Quiz Generator",
+      "url": "https://genially.com",
+      "category": "quiz-generation",
+      "teachingLevels": [
+        "elementary",
+        "secondary",
+        "higher-ed"
+      ]
+    },
+    {
+      "id": "busybee-grading-assistant",
+      "name": "BusyBee Grading Assistant",
+      "url": "https://www.agilix.com",
+      "category": "grading",
+      "teachingLevels": [
+        "elementary",
+        "secondary",
+        "higher-ed"
+      ]
+    },
+    {
+      "id": "anywhere-testing-machine-atm-by-pratham-claude",
+      "name": "Anywhere Testing Machine (ATM) by Pratham + Claude",
+      "url": "https://www.parentsquare.com",
+      "category": "teaching-management",
+      "teachingLevels": [
+        "elementary",
+        "secondary"
+      ]
+    }
+  ],
+  "missing": []
+}
